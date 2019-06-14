@@ -23,7 +23,7 @@ const intro = babeViews.view_generator("intro",{
     trials: 1,
     name: 'intro',
     // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-    text:   `This is a sample introduction view.
+    text:   `This is a sample .......introduction view.
             <br />
             <br />
             The introduction view welcomes the participant and gives general information
@@ -31,7 +31,7 @@ const intro = babeViews.view_generator("intro",{
             <br />
             <br />
             This is a minimal experiment with one forced choice view. It can serve as a starting point for programming your own experiment.`,
-   buttonText: 'Begin the experiment'    
+   buttonText: 'Begin the experiment'
 });
 
 // For most tasks, you need instructions views
