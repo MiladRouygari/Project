@@ -23,7 +23,7 @@ const intro = babeViews.view_generator("intro",{
     trials: 1,
     name: 'intro',
     // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-    text:   ` Hannah has changed some stuff showing that git hub works for her :D. 
+    text:   ` Hannah has changed some stuff showing that git hub works for her :D. Same here. Best, Leona.
 
 
     . Duh Dah Beh
