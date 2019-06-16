@@ -49,6 +49,16 @@ const instructions = babeViews.view_generator("instructions",{
     buttonText: 'go to trials'
 });
 
+const description = babeViews.view_generator("instructions",{
+    trials: 1,
+    name: 'instrucions',
+    title: 'This is the Desription [edit the rest]',
+    text:  `This is a sample instructions view.
+            <br />
+            <br />
+            Tell your participants what they are to do here.`,
+    buttonText: 'go to trials'
+});
 
 // In the post test questionnaire you can ask your participants addtional questions
 const post_test = babeViews.view_generator("post_test",{
@@ -104,9 +114,10 @@ const thanks = babeViews.view_generator("thanks", {
 * https://babe-project.github.io/babe-docs/01_designing_experiments/01_template_views/#trial-views
 */
 
+//"forced_choice", {
 
 // Here, we initialize a normal forced_choice view
-const forced_choice_2A = babeViews.view_generator("forced_choice", {
+const forced_choice_2A = babeViews.view_generator("rating_scale", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     trials: trial_info.forced_choice.length,
     // name should be identical to the variable name

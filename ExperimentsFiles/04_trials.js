@@ -1,5 +1,7 @@
 // In this file you can specify the trial data for your experiment
 
+//This might need to be changed, if we want to counter balanced between Decision and imagination,
+//I don't think imagination needs to be counter balanced or does it?
 
 const trial_info = {
     forced_choice: [
@@ -9,6 +11,20 @@ const trial_info = {
             option1: 'jam',
             option2: 'ham',
             correct: 'jam'
+        },
+        {
+            question: "What's the weather like?",
+            picture: "images/weather.jpg",
+            option1: "shiny",
+            option2: "rainbow",
+            correct: "shiny"
+        },
+        {
+            question: "What's the weather like?",
+            picture: "images/weather.jpg",
+            option1: "shiny",
+            option2: "rainbow",
+            correct: "shiny"
         },
         {
             question: "What's the weather like?",
