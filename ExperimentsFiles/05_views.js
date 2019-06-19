@@ -23,10 +23,8 @@ const intro = babeViews.view_generator("intro",{
     trials: 1,
     name: 'intro',
     // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-    text:   ` Hannah has changed some stuff showing that git hub works for her :D. Same here. Best, Leona. I also want to join! - Vivi
-
-
-    . Duh Dah Beh
+    title: 'Willkommen!',
+    text:   ` Dieses Experiment bla bla. Duh Dah Beh.
             <br />
             <br />
             The introduction view welcomes the participant and gives general information
@@ -34,37 +32,37 @@ const intro = babeViews.view_generator("intro",{
             <br />
             <br />
             This is a minimal experiment with one forced choice view. It can serve as a starting point for programming your own experiment.`,
-   buttonText: 'Begin the experiment'
+   buttonText: 'Zum Experiment'
 });
 
 // For most tasks, you need instructions views
 const instructions = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'instrucions',
-    title: 'General Instructions',
+    title: 'Allgemeine Informationen',
     text:  `This is a sample instructions view.
             <br />
             <br />
             Tell your participants what they are to do here.`,
-    buttonText: 'go to trials'
+    buttonText: 'Zum Experiment'
 });
 
 const description = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'instrucions',
-    title: 'This is the Desription [edit the rest]',
+    title: 'Anleitung',
     text:  `This is a sample instructions view.
             <br />
             <br />
             Tell your participants what they are to do here.`,
-    buttonText: 'go to trials'
+    buttonText: 'Zum Experiment'
 });
 
 // In the post test questionnaire you can ask your participants addtional questions
 const post_test = babeViews.view_generator("post_test",{
     trials: 1,
     name: 'post_test',
-    title: 'Additional information',
+    title: 'Zusätzliche Informationen',
     text: 'Answering the following questions is optional, but your answers will help us analyze our results.'
 
     // You can change much of what appears here, e.g., to present it in a different language, as follows:
@@ -87,7 +85,7 @@ const post_test = babeViews.view_generator("post_test",{
 const thanks = babeViews.view_generator("thanks", {
     trials: 1,
     name: 'thanks',
-    title: 'Thank you for taking part in this experiment!',
+    title: 'Vielen Dank für deine Teilnahme an diesem Experiment!',
     prolificConfirmText: 'Press the button'
 });
 
