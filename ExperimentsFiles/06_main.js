@@ -18,6 +18,10 @@ $("document").ready(function() {
             intro,
             instructions,
             description,
+            // we have three different tasks
+            // generally like this dilemma_description
+            // a few forced choices
+            dilemma_description,
             forced_choice_2A,
             post_test,
             thanks,

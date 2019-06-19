@@ -58,6 +58,17 @@ const description = babeViews.view_generator("instructions",{
     buttonText: 'Zum Experiment'
 });
 
+const dilemma_description = babeViews.view_generator("instructions",{
+    trials: 1,
+    name: 'dilemma_descrip',
+    title: 'Title of the dilemma',
+    text:  `Here comes our beautiful dilemmas.
+            <br />
+            <br />
+            Tell your participants what they are to do here.`,
+    buttonText: 'Zum Experiment'
+});
+
 // In the post test questionnaire you can ask your participants addtional questions
 const post_test = babeViews.view_generator("post_test",{
     trials: 1,
