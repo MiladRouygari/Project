@@ -18,20 +18,6 @@ const trial_info = {
             option1: "shiny",
             option2: "rainbow",
             correct: "shiny"
-        },
-        {
-            question: "What's the weather like?",
-            picture: "images/weather.jpg",
-            option1: "shiny",
-            option2: "rainbow",
-            correct: "shiny"
-        },
-        {
-            question: "What's the weather like?",
-            picture: "images/weather.jpg",
-            option1: "shiny",
-            option2: "rainbow",
-            correct: "shiny"
         }
     ]
 };
