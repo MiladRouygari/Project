@@ -58,9 +58,9 @@ const description = babeViews.view_generator("instructions",{
     buttonText: 'Zum Experiment'
 });
 
-const dilemma_description = babeViews.view_generator("instructions",{
+const dilemma_description_1 = babeViews.view_generator("instructions",{
     trials: 1,
-    name: 'dilemma_descrip',
+    name: 'dilemma_descrip_1',
     title: 'Title of the dilemma',
     text:  `Here comes our beautiful dilemmas.
             <br />
@@ -126,11 +126,11 @@ const thanks = babeViews.view_generator("thanks", {
 //"forced_choice", {
 
 // Here, we initialize a normal forced_choice view
-const forced_choice_2A = babeViews.view_generator("rating_scale", {
+const rating_choice_1 = babeViews.view_generator("rating_scale", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     trials: trial_info.forced_choice.length,
     // name should be identical to the variable name
-    name: 'forced_choice_2A',
+    name: 'rating_choice_1',
     data: trial_info.forced_choice,
     // you can add custom functions at different stages through a view's life cycle
     // hook: {

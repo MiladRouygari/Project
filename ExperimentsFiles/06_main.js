@@ -21,8 +21,8 @@ $("document").ready(function() {
             // we have three different tasks
             // generally like this dilemma_description
             // a few forced choices
-            dilemma_description,
-            forced_choice_2A,
+            dilemma_description_1,
+            rating_choice_1,
             post_test,
             thanks,
         ],
@@ -41,7 +41,7 @@ $("document").ready(function() {
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
-                forced_choice_2A.name,
+                rating_choice_1.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
             style: "separate",
