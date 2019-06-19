@@ -3,6 +3,10 @@
 //This might need to be changed, if we want to counter balanced between Decision and imagination,
 //I don't think imagination needs to be counter balanced or does it?
 
+function get_language(){
+    return (Math.floor(Math.random()*2) == 0) ? 'german': 'english';
+}
+
 const trial_info = {
     forced_choice: [
         {
