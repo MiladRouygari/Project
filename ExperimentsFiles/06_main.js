@@ -8,8 +8,8 @@ $("document").ready(function() {
         }
     };
 
-    // calls babeInit
     // in debug mode this returns the babe-object, which you can access in the console of your browser
+    // calls babeInit
     // e.g. >> window.babe_monitor or window.babe_monitor.findNextView()
     // in all other modes null will be returned
     window.babe_monitor = babeInit({
@@ -23,6 +23,7 @@ $("document").ready(function() {
             // a few forced choices
             dilemma_description_1,
             rating_choice_1,
+            dilemma_description_2,
             post_test,
             thanks,
         ],
