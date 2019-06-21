@@ -1,5 +1,42 @@
 // In this file you initialize and configure your experiment using babeInit
 
+// this function returns random languege english/german
+function getLanguage(){
+    return (Math.floor(Math.random()*2) == 0) ? 'german': 'english';
+}
+
+views_seq_language = []
+if(getLanguage() == 'german'){
+  views_seq_language = [
+      intro,
+      instructions,
+      description,
+      dilemma_1_german,
+      rating_choice_1_german,
+      dilemma_2_german,
+      rating_choice_2_german,
+      dilemma_3_german,
+      rating_choice_3_german,
+      post_test,
+      thanks,
+  ]
+}
+else{
+  views_seq_language = [
+      intro,
+      instructions,
+      description,
+      dilemma_1_english,
+      rating_choice_1_english,
+      dilemma_2_english,
+      rating_choice_2_english,
+      dilemma_3_english,
+      rating_choice_3_english,
+      post_test,
+      thanks,
+  ]
+}
+
 $("document").ready(function() {
     // prevent scrolling when space is pressed
     window.onkeydown = function(e) {
@@ -14,19 +51,9 @@ $("document").ready(function() {
     // in all other modes null will be returned
     window.babe_monitor = babeInit({
         // You have to specify all views you want to use in this experiment and the order of them
-        views_seq: [
-            intro,
-            instructions,
-            description,
-            // we have three different tasks
-            // generally like this dilemma_description
-            // a few forced choices
-            dilemma_description_1,
-            rating_choice_1,
-            dilemma_description_2,
-            post_test,
-            thanks,
-        ],
+
+
+        views_seq: views_seq_language,
         // Here, you can specify all information for the deployment
         deploy: {
             experimentID: "INSERT_A_NUMBER",
@@ -42,7 +69,7 @@ $("document").ready(function() {
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
-                rating_choice_1.name,
+                rating_choice_1_german.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
             style: "separate",

@@ -58,20 +58,69 @@ const description = babeViews.view_generator("instructions",{
     buttonText: 'Zum Experiment'
 });
 
-const dilemma_description_1 = babeViews.view_generator("instructions",{
+
+// Dilemma description in German
+const dilemma_1_german = babeViews.view_generator("instructions",{
     trials: 1,
-    name: 'dilemma_descrip_1',
-    title: 'Title of the dilemma',
+    name: 'dilemma_1_german',
+    title: 'Titel Dilemma 1 - Deutsch',
     text:  `Here comes our beautiful dilemmas.
             <br />
             <br />
             Tell your participants what they are to do here.`,
     buttonText: 'Zum Experiment'
 });
-const dilemma_description_2 = babeViews.view_generator("instructions",{
+
+const dilemma_2_german = babeViews.view_generator("instructions",{
     trials: 1,
-    name: 'dilemma_descrip_2',
-    title: 'Title of the dilemma 2',
+    name: 'dilemma_2_german',
+    title: 'Titel Dilemma 2 - Deutsch',
+    text:  `Here comes our beautiful dilemmas.
+            <br />
+            <br />
+            Tell your participants what they are to do here.`,
+    buttonText: 'Zum Experiment'
+});
+
+const dilemma_3_german = babeViews.view_generator("instructions",{
+    trials: 1,
+    name: 'dilemma_3_german',
+    title: 'Titel Dilemma 3 - Deutsch',
+    text:  `Here comes our beautiful dilemmas.
+            <br />
+            <br />
+            Tell your participants what they are to do here.`,
+    buttonText: 'Zum Experiment'
+});
+
+
+// Dilemma description in English
+const dilemma_1_english = babeViews.view_generator("instructions",{
+    trials: 1,
+    name: 'dilemma_1_english',
+    title: 'Title of dilemma 1 - english',
+    text:  `Here comes our beautiful dilemmas.
+            <br />
+            <br />
+            Tell your participants what they are to do here.`,
+    buttonText: 'Zum Experiment'
+});
+
+const dilemma_2_english = babeViews.view_generator("instructions",{
+    trials: 1,
+    name: 'dilemma_2_english',
+    title: 'Title of dilemma 2 - english',
+    text:  `Here comes our beautiful dilemmas.
+            <br />
+            <br />
+            Tell your participants what they are to do here.`,
+    buttonText: 'Zum Experiment'
+});
+
+const dilemma_3_english = babeViews.view_generator("instructions",{
+    trials: 1,
+    name: 'dilemma_3_english',
+    title: 'Title of dilemma 3 - english',
     text:  `Here comes our beautiful dilemmas.
             <br />
             <br />
@@ -84,22 +133,22 @@ const post_test = babeViews.view_generator("post_test",{
     trials: 1,
     name: 'post_test',
     title: 'Zusätzliche Informationen',
-    text: 'Answering the following questions is optional, but your answers will help us analyze our results.'
+    text: 'Answering the following questions is optional, but your answers will help us analyze our results.',
 
     // You can change much of what appears here, e.g., to present it in a different language, as follows:
-    // buttonText: 'Weiter',
-    // age_question: 'Alter',
-    // gender_question: 'Geschlecht',
-    // gender_male: 'männlich',
-    // gender_female: 'weiblich',
-    // gender_other: 'divers',
-    // edu_question: 'Höchster Bildungsabschluss',
-    // edu_graduated_high_school: 'Abitur',
-    // edu_graduated_college: 'Hochschulabschluss',
-    // edu_higher_degree: 'Universitärer Abschluss',
-    // languages_question: 'Muttersprache',
-    // languages_more: '(in der Regel die Sprache, die Sie als Kind zu Hause gesprochen haben)',
-    // comments_question: 'Weitere Kommentare'
+    buttonText: 'Weiter',
+    age_question: 'Alter',
+    gender_question: 'Geschlecht',
+    gender_male: 'männlich',
+    gender_female: 'weiblich',
+    gender_other: 'divers',
+    edu_question: 'Höchster Bildungsabschluss',
+    edu_graduated_high_school: 'Abitur',
+    edu_graduated_college: 'Hochschulabschluss',
+    edu_higher_degree: 'Universitärer Abschluss',
+    languages_question: 'Muttersprache',
+    languages_more: '(in der Regel die Sprache, die Sie als Kind zu Hause gesprochen haben)',
+    comments_question: 'Weitere Kommentare'
 });
 
 // The 'thanks' view is crucial; never delete it; it submits the results!
@@ -136,12 +185,76 @@ const thanks = babeViews.view_generator("thanks", {
 //"forced_choice", {
 
 // Here, we initialize a normal forced_choice view
-const rating_choice_1 = babeViews.view_generator("rating_scale", {
+// Forced choice in German
+const rating_choice_1_german = babeViews.view_generator("rating_scale", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: trial_info.forced_choice.length,
+    trials: trial_info.forced_choice_1_german.length,
     // name should be identical to the variable name
-    name: 'rating_choice_1',
-    data: trial_info.forced_choice,
+    name: 'rating_choice_1_german',
+    data: trial_info.forced_choice_1_german,
+    // you can add custom functions at different stages through a view's life cycle
+    // hook: {
+    //     after_response_enabled: check_response
+    // }
+});
+
+const rating_choice_2_german = babeViews.view_generator("rating_scale", {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: trial_info.forced_choice_2_german.length,
+    // name should be identical to the variable name
+    name: 'rating_choice_2_german',
+    data: trial_info.forced_choice_2_german,
+    // you can add custom functions at different stages through a view's life cycle
+    // hook: {
+    //     after_response_enabled: check_response
+    // }
+});
+
+const rating_choice_3_german = babeViews.view_generator("rating_scale", {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: trial_info.forced_choice_3_german.length,
+    // name should be identical to the variable name
+    name: 'rating_choice_3_german',
+    data: trial_info.forced_choice_3_german,
+    // you can add custom functions at different stages through a view's life cycle
+    // hook: {
+    //     after_response_enabled: check_response
+    // }
+});
+
+
+// Here, we initialize a normal forced_choice view
+// Forced choices in English
+const rating_choice_1_english = babeViews.view_generator("rating_scale", {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: trial_info.forced_choice_1_english.length,
+    // name should be identical to the variable name
+    name: 'rating_choice_1_english',
+    data: trial_info.forced_choice_1_english,
+    // you can add custom functions at different stages through a view's life cycle
+    // hook: {
+    //     after_response_enabled: check_response
+    // }
+});
+
+const rating_choice_2_english = babeViews.view_generator("rating_scale", {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: trial_info.forced_choice_2_english.length,
+    // name should be identical to the variable name
+    name: 'rating_choice_2_english',
+    data: trial_info.forced_choice_2_english,
+    // you can add custom functions at different stages through a view's life cycle
+    // hook: {
+    //     after_response_enabled: check_response
+    // }
+});
+
+const rating_choice_3_english = babeViews.view_generator("rating_scale", {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: trial_info.forced_choice_3_english.length,
+    // name should be identical to the variable name
+    name: 'rating_choice_3_english',
+    data: trial_info.forced_choice_3_english,
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
