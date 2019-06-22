@@ -64,10 +64,11 @@ const dilemma_1_german = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_1_german',
     title: 'Titel Dilemma 1 - Deutsch',
-    text:  `Here comes our beautiful dilemmas.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
+    text:  `Stell dir vor, du stehst auf einer Brücke von der aus du mehrere Bahngleise überblicken kannst.
+    Du siehst ein Gleis auf dem fünf Personen festgebunden sind und einen Wagon, der auf sie zufährt.
+    Du schaust zu deiner linken und da ist ein großer und schwerer Mann, der neben dir steht.
+    Die einzige Möglichkeit den Wagon zu stoppen ist den Mann von der Brücke auf die Gleise zu stoßen,
+    was den Mann zu tötet aber fünf Menschen rettet.`,
     buttonText: 'Zum Experiment'
 });
 
@@ -99,10 +100,11 @@ const dilemma_1_english = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_1_english',
     title: 'Title of dilemma 1 - english',
-    text:  `Here comes our beautiful dilemmas.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
+    text:  `Imagine you are standing on a bridge overlooking a set of train tracks.
+    You see five people tied to the track and a runaway trolley is barrelling towards them.
+    You look to your left and there is a large and heavy man standing next to you.
+    The only way to stop the trolley would be to push that man off the bridge and onto the tracks,
+    killing the man but saving five people.`,
     buttonText: 'Zum Experiment'
 });
 
