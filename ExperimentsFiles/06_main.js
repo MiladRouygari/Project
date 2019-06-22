@@ -23,7 +23,7 @@ if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
       rating_choice_3_german,
       post_test,
       thanks,
-  ]
+    ]
 }
 else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
   views_seq_language = [
@@ -38,7 +38,7 @@ else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
       rating_choice_2_german,
       post_test,
       thanks,
-  ]
+    ]
 }
 else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
   views_seq_language = [
@@ -53,7 +53,7 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
       rating_choice_3_english,
       post_test,
       thanks,
-  ]
+    ]
 }
 else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
     views_seq_language = [
@@ -104,6 +104,11 @@ $("document").ready(function() {
             in: [
                 // list the view-names of the views for which you want a progress bar
                 rating_choice_1_german.name,
+                rating_choice_2_german.name,
+                rating_choice_3_german.name,
+                rating_choice_1_english.name,
+                rating_choice_2_english.name,
+                rating_choice_3_english.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
             style: "separate",
