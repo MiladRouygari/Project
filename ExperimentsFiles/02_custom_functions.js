@@ -10,6 +10,7 @@
 function getRandomisedRatingChoiceGerman1(){
   firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
 
+//Getting a random  set of numbers between 1 2 3 with no repeate
   var nums = [1,2,3],
     ranNums = [],
     i = nums.length,
@@ -21,6 +22,7 @@ function getRandomisedRatingChoiceGerman1(){
     nums.splice(j,1);
   }
 
+//creating blocks as in first decision then the other 3 vividness or vise versa
    var randomised = new Array(4)
   if (firstBlock == 'decision'){
     randomised[0] = trial_info.forced_choice_1_german[0]
