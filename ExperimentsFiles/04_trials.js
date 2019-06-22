@@ -7,31 +7,35 @@
 const trial_info = {
     forced_choice_1_german: [
         {
-            question: "Was ist auf dem ersten Brot?",
-            picture: "images/question_mark_02.png",
-            option1: 'jam',
-            option2: 'ham',
-            correct: 'jam'
+            question: "Würdest du den Mann stoßen?",
+            optionLeft: 'definitiv stoßen',
+            optionRight: 'definitiv nicht stoßen'
         },
         {
-            question: "Wie ist das Wetter?",
-            picture: "images/weather.jpg",
-            option1: "shiny",
-            option2: "rainbow",
-            correct: "shiny"
+            question: "Wie lebhaft stellst du dir den Mann vor?",
+            optionLeft: "absolut klar",
+            optionRight: "kein Bild"
+        },
+        {
+            question: "Wie lebhaft stellst du dir die fünf Menschen vor?",
+            optionLeft: "absolut klar",
+            optionRight: "kein Bild"
+        },
+        {
+            question: "Wie lebhaft stellst du dir die gesamte Situation vor?",
+            optionLeft: "absolut klar",
+            optionRight: "kein Bild"
         }
     ],
     forced_choice_2_german: [
         {
             question: "Was ist auf dem zweiten Brot?",
-            picture: "images/question_mark_02.png",
             option1: 'jam',
             option2: 'ham',
             correct: 'jam'
         },
         {
             question: "Wie ist das Wetter?",
-            picture: "images/weather.jpg",
             option1: "shiny",
             option2: "rainbow",
             correct: "shiny"
@@ -40,14 +44,12 @@ const trial_info = {
     forced_choice_3_german: [
         {
             question: "Was ist auf dem dritten Brot?",
-            picture: "images/question_mark_02.png",
             option1: 'jam',
             option2: 'ham',
             correct: 'jam'
         },
         {
             question: "Wie ist das Wetter?",
-            picture: "images/weather.jpg",
             option1: "shiny",
             option2: "rainbow",
             correct: "shiny"
@@ -55,31 +57,25 @@ const trial_info = {
     ],
     forced_choice_1_english: [
         {
-            question: "What's on the first bread?",
-            picture: "images/question_mark_02.png",
-            option1: 'jam',
-            option2: 'ham',
-            correct: 'jam'
+            question: "Would you push the man?",
+            optionLeft: 'definitely would not push him',
+            optionRight: 'definitely would push him'
         },
         {
-            question: "How is the weather?",
-            picture: "images/weather.jpg",
-            option1: "shiny",
-            option2: "rainbow",
-            correct: "shiny"
+            question: "How vividly can you picture this scene?",
+            optionLeft: "no image",
+            optionRight: "very clear"
         }
     ],
     forced_choice_2_english: [
         {
             question: "What's on the second bread?",
-            picture: "images/question_mark_02.png",
             option1: 'jam',
             option2: 'ham',
             correct: 'jam'
         },
         {
             question: "How is the weather?",
-            picture: "images/weather.jpg",
             option1: "shiny",
             option2: "rainbow",
             correct: "shiny"
@@ -88,14 +84,12 @@ const trial_info = {
     forced_choice_3_english: [
         {
             question: "What's on the third bread?",
-            picture: "images/question_mark_02.png",
             option1: 'jam',
             option2: 'ham',
             correct: 'jam'
         },
         {
             question: "How is the weather?",
-            picture: "images/weather.jpg",
             option1: "shiny",
             option2: "rainbow",
             correct: "shiny"
