@@ -39,7 +39,7 @@ const intro = babeViews.view_generator("intro",{
 const instructions = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'instrucions',
-    title: 'Allgemeine Informationen',
+    title: 'Anleitung',
     text:  `This is a sample instructions view.
             <br />
             <br />

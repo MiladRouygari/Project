@@ -14,7 +14,6 @@ if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
   views_seq_language = [
       intro,
       instructions,
-      description,
       dilemma_1_german,
       rating_choice_1_german,
       dilemma_2_german,
@@ -29,7 +28,6 @@ else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
   views_seq_language = [
       intro,
       instructions,
-      description,
       dilemma_1_german,
       rating_choice_1_german,
       dilemma_3_german,
@@ -44,7 +42,6 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
   views_seq_language = [
       intro,
       instructions,
-      description,
       dilemma_1_english,
       rating_choice_1_english,
       dilemma_2_english,
@@ -59,7 +56,6 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
     views_seq_language = [
         intro,
         instructions,
-        description,
         dilemma_1_english,
         rating_choice_1_english,
         dilemma_3_english,
