@@ -26,3 +26,40 @@
     float: right;
     margin: 0 10px 6px 10px;
 }
+
+.babe-response-buttons {
+
+    border: none;
+    border-radius: 2px;
+    /*color: white;
+    background-color: #5187BA;*/
+    color:black;
+    background-color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Lato", "Noto Sans", sans-serif;
+    width: 200px; /*add*/
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    margin: 0 5px 10px 5px;
+    outline: none;
+    border: 2px solid black;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.babe-response-buttons:hover{
+  background-color: 	#00BFFF;
+}
+
+
+.babe-view-question {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 17px;
+    line-height: 27px;
+    font-family: "Lato", "Noto Sans", sans-serif;
+    margin: 30px auto;
+    max-width: 90%;
+    text-align: center;
+}

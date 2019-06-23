@@ -1,5 +1,5 @@
 // In this file you initialize and configure your experiment using babeInit
-
+$(window).bind("load", function() {
 // this function returns random languege english/german
 function getLanguage(){
     return (Math.floor(Math.random()*2) == 0) ? 'german': 'english';
@@ -11,14 +11,10 @@ function tinyBityRandomNum(){
 
 views_seq_language = []
 if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
+  console.log("german,1");
   views_seq_language = [
       intro,
       instructions,
-<<<<<<< HEAD
-      description,
-
-=======
->>>>>>> 8e5d97cabfb0fa2d7ed75f410b51e7b2cc7b0604
       dilemma_1_german,
       rating_choice_1_german,
       dilemma_2_german,
@@ -30,14 +26,10 @@ if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
     ]
 }
 else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
+  console.log("german,2");
   views_seq_language = [
       intro,
       instructions,
-<<<<<<< HEAD
-      description,
-
-=======
->>>>>>> 8e5d97cabfb0fa2d7ed75f410b51e7b2cc7b0604
       dilemma_1_german,
       rating_choice_1_german,
       dilemma_3_german,
@@ -49,11 +41,14 @@ else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
     ]
 }
 else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
+  console.log("english,1");
   views_seq_language = [
+
       intro,
       instructions,
       dilemma_1_english,
       rating_choice_1_english,
+      test_english_man,
       dilemma_2_english,
       rating_choice_2_english,
       dilemma_3_english,
@@ -63,11 +58,15 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
     ]
 }
 else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
+  console.log("english,2");
     views_seq_language = [
+      test_english_man,
         intro,
         instructions,
         dilemma_1_english,
         rating_choice_1_english,
+        test_english_man,
+        test_english_man,
         dilemma_3_english,
         rating_choice_3_english,
         dilemma_2_english,
@@ -77,7 +76,7 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
     ]
 }
 
-$("document").ready(function() {
+
     // prevent scrolling when space is pressed
     window.onkeydown = function(e) {
         if (e.keyCode === 32 && e.target === document.body) {
@@ -89,10 +88,9 @@ $("document").ready(function() {
     // calls babeInit
     // e.g. >> window.babe_monitor or window.babe_monitor.findNextView()
     // in all other modes null will be returned
-    window.babe_monitor = babeInit({
+
+      window.babe_monitor = babeInit({
         // You have to specify all views you want to use in this experiment and the order of them
-
-
         views_seq: views_seq_language,
         // Here, you can specify all information for the deployment
         deploy: {
@@ -120,5 +118,9 @@ $("document").ready(function() {
             style: "separate",
             width: 100
         }
+
     });
+
+
+
 });
