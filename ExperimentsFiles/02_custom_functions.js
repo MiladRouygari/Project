@@ -4,6 +4,220 @@
 *
 *
 */
+// Costume function for randomization
+
+// This is for German1
+function getRandomisedRatingChoiceGerman1(){
+  firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
+
+//Getting a random  set of numbers between 1 2 3 with no repeate
+  var nums = [1,2,3],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+  while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+  }
+
+//creating blocks as in first decision then the other 3 vividness or vise versa
+   var randomised = new Array(4)
+  if (firstBlock == 'decision'){
+    randomised[0] = trial_info.forced_choice_1_german[0]
+    // Populate randomised with the next 3 values
+    randomised[1] = trial_info.forced_choice_1_german[ranNums[0]]
+    randomised[2] = trial_info.forced_choice_1_german[ranNums[1]]
+    randomised[3] = trial_info.forced_choice_1_german[ranNums[2]]
+  }
+
+  else {
+    // vividness is the first 3
+    randomised[0] = trial_info.forced_choice_1_german[ranNums[0]]
+    randomised[1] = trial_info.forced_choice_1_german[ranNums[1]]
+    randomised[2] = trial_info.forced_choice_1_german[ranNums[2]]
+    randomised[3] = trial_info.forced_choice_1_german[0]
+  }
+
+   return randomised
+}
+
+// German 2
+function getRandomisedRatingChoiceGerman2(){
+  firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
+
+  var nums = [1,2,3],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+  while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+  }
+
+   var randomised = new Array(4)
+  if (firstBlock == 'decision'){
+    randomised[0] = trial_info.forced_choice_2_german[0]
+    // Populate randomised with the next 3 values
+    randomised[1] = trial_info.forced_choice_2_german[ranNums[0]]
+    randomised[2] = trial_info.forced_choice_2_german[ranNums[1]]
+    randomised[3] = trial_info.forced_choice_2_german[ranNums[2]]
+  }
+
+  else {
+    // vividness is the first 3
+    randomised[0] = trial_info.forced_choice_2_german[ranNums[0]]
+    randomised[1] = trial_info.forced_choice_2_german[ranNums[1]]
+    randomised[2] = trial_info.forced_choice_2_german[ranNums[2]]
+    randomised[3] = trial_info.forced_choice_2_german[0]
+  }
+
+   return randomised
+}
+
+// German 3
+function getRandomisedRatingChoiceGerman3(){
+  firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
+
+  var nums = [1,2,3],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+  while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+  }
+
+   var randomised = new Array(4)
+  if (firstBlock == 'decision'){
+    randomised[0] = trial_info.forced_choice_3_german[0]
+    // Populate randomised with the next 3 values
+    randomised[1] = trial_info.forced_choice_3_german[ranNums[0]]
+    randomised[2] = trial_info.forced_choice_3_german[ranNums[1]]
+    randomised[3] = trial_info.forced_choice_3_german[ranNums[2]]
+  }
+
+  else {
+    // vividness is the first 3
+    randomised[0] = trial_info.forced_choice_3_german[ranNums[0]]
+    randomised[1] = trial_info.forced_choice_3_german[ranNums[1]]
+    randomised[2] = trial_info.forced_choice_3_german[ranNums[2]]
+    randomised[3] = trial_info.forced_choice_3_german[0]
+  }
+
+   return randomised
+}
+
+// Enlgish1
+function getRandomisedRatingChoiceEnglish1(){
+  firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
+
+  var nums = [1,2,3],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+  while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+  }
+
+   var randomised = new Array(4)
+  if (firstBlock == 'decision'){
+    randomised[0] = trial_info.forced_choice_1_english[0]
+    // Populate randomised with the next 3 values
+    randomised[1] = trial_info.forced_choice_1_english[ranNums[0]]
+    randomised[2] = trial_info.forced_choice_1_english[ranNums[1]]
+    randomised[3] = trial_info.forced_choice_1_english[ranNums[2]]
+  }
+
+  else {
+    // vividness is the first 3
+    randomised[0] = trial_info.forced_choice_1_english[ranNums[0]]
+    randomised[1] = trial_info.forced_choice_1_english[ranNums[1]]
+    randomised[2] = trial_info.forced_choice_1_english[ranNums[2]]
+    randomised[3] = trial_info.forced_choice_1_english[0]
+  }
+
+   return randomised
+}
+// English 2
+function getRandomisedRatingChoiceEnglish2(){
+  firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
+
+  var nums = [1,2,3],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+  while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+  }
+
+   var randomised = new Array(4)
+  if (firstBlock == 'decision'){
+    randomised[0] = trial_info.forced_choice_2_english[0]
+    // Populate randomised with the next 3 values
+    randomised[1] = trial_info.forced_choice_2_english[ranNums[0]]
+    randomised[2] = trial_info.forced_choice_2_english[ranNums[1]]
+    randomised[3] = trial_info.forced_choice_2_english[ranNums[2]]
+  }
+
+  else {
+    // vividness is the first 3
+    randomised[0] = trial_info.forced_choice_2_english[ranNums[0]]
+    randomised[1] = trial_info.forced_choice_2_english[ranNums[1]]
+    randomised[2] = trial_info.forced_choice_2_english[ranNums[2]]
+    randomised[3] = trial_info.forced_choice_2_english[0]
+  }
+
+   return randomised
+}
+// English 3
+function getRandomisedRatingChoiceEnglish3(){
+  firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
+
+  var nums = [1,2,3],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+  while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+  }
+
+   var randomised = new Array(4)
+  if (firstBlock == 'decision'){
+    randomised[0] = trial_info.forced_choice_3_english[0]
+    // Populate randomised with the next 3 values
+    randomised[1] = trial_info.forced_choice_3_english[ranNums[0]]
+    randomised[2] = trial_info.forced_choice_3_english[ranNums[1]]
+    randomised[3] = trial_info.forced_choice_3_english[ranNums[2]]
+  }
+
+  else {
+    // vividness is the first 3
+    randomised[0] = trial_info.forced_choice_3_english[ranNums[0]]
+    randomised[1] = trial_info.forced_choice_3_english[ranNums[1]]
+    randomised[2] = trial_info.forced_choice_3_english[ranNums[2]]
+    randomised[3] = trial_info.forced_choice_3_english[0]
+  }
+
+   return randomised
+}
+
+
+
 const coin = _.sample(["head", "tail"]); // You can determine global (random) parameters here
 // Declare your variables here
 
@@ -31,7 +245,7 @@ const generateID = function(len) {
 
 
 
-/* Hooks  
+/* Hooks
 *
 *
 */

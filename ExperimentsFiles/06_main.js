@@ -5,8 +5,12 @@ function getLanguage(){
     return (Math.floor(Math.random()*2) == 0) ? 'german': 'english';
 }
 
+function tinyBityRandomNum(){
+  return (Math.floor(Math.random()*2) == 0) ? '1': '2';
+}
+
 views_seq_language = []
-if(getLanguage() == 'german'){
+if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
   views_seq_language = [
       intro,
       instructions,
@@ -19,9 +23,24 @@ if(getLanguage() == 'german'){
       rating_choice_3_german,
       post_test,
       thanks,
-  ]
+    ]
 }
-else{
+else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
+  views_seq_language = [
+      intro,
+      instructions,
+      description,
+      dilemma_1_german,
+      rating_choice_1_german,
+      dilemma_3_german,
+      rating_choice_3_german,
+      dilemma_2_german,
+      rating_choice_2_german,
+      post_test,
+      thanks,
+    ]
+}
+else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
   views_seq_language = [
       intro,
       instructions,
@@ -34,7 +53,22 @@ else{
       rating_choice_3_english,
       post_test,
       thanks,
-  ]
+    ]
+}
+else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
+    views_seq_language = [
+        intro,
+        instructions,
+        description,
+        dilemma_1_english,
+        rating_choice_1_english,
+        dilemma_3_english,
+        rating_choice_3_english,
+        dilemma_2_english,
+        rating_choice_2_english,
+        post_test,
+        thanks,
+    ]
 }
 
 $("document").ready(function() {
@@ -70,6 +104,11 @@ $("document").ready(function() {
             in: [
                 // list the view-names of the views for which you want a progress bar
                 rating_choice_1_german.name,
+                rating_choice_2_german.name,
+                rating_choice_3_german.name,
+                rating_choice_1_english.name,
+                rating_choice_2_english.name,
+                rating_choice_3_english.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
             style: "separate",

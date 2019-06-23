@@ -188,12 +188,13 @@ const thanks = babeViews.view_generator("thanks", {
 
 // Here, we initialize a normal forced_choice view
 // Forced choice in German
+
 const rating_choice_1_german = babeViews.view_generator("rating_scale", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     trials: trial_info.forced_choice_1_german.length,
     // name should be identical to the variable name
     name: 'rating_choice_1_german',
-    data: trial_info.forced_choice_1_german,
+    data: getRandomisedRatingChoiceGerman1(),
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
@@ -205,7 +206,7 @@ const rating_choice_2_german = babeViews.view_generator("rating_scale", {
     trials: trial_info.forced_choice_2_german.length,
     // name should be identical to the variable name
     name: 'rating_choice_2_german',
-    data: trial_info.forced_choice_2_german,
+    data: getRandomisedRatingChoiceGerman2(),
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
@@ -217,7 +218,7 @@ const rating_choice_3_german = babeViews.view_generator("rating_scale", {
     trials: trial_info.forced_choice_3_german.length,
     // name should be identical to the variable name
     name: 'rating_choice_3_german',
-    data: trial_info.forced_choice_3_german,
+    data: getRandomisedRatingChoiceGerman3(),
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
@@ -232,7 +233,7 @@ const rating_choice_1_english = babeViews.view_generator("rating_scale", {
     trials: trial_info.forced_choice_1_english.length,
     // name should be identical to the variable name
     name: 'rating_choice_1_english',
-    data: trial_info.forced_choice_1_english,
+    data: getRandomisedRatingChoiceEnglish1(),
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
@@ -244,7 +245,7 @@ const rating_choice_2_english = babeViews.view_generator("rating_scale", {
     trials: trial_info.forced_choice_2_english.length,
     // name should be identical to the variable name
     name: 'rating_choice_2_english',
-    data: trial_info.forced_choice_2_english,
+    data: getRandomisedRatingChoiceEnglish2(),
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
@@ -256,7 +257,7 @@ const rating_choice_3_english = babeViews.view_generator("rating_scale", {
     trials: trial_info.forced_choice_3_english.length,
     // name should be identical to the variable name
     name: 'rating_choice_3_english',
-    data: trial_info.forced_choice_3_english,
+    data: getRandomisedRatingChoiceEnglish3(),
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
