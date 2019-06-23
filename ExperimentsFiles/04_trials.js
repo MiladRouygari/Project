@@ -72,69 +72,203 @@ const trial_info = {
       }
     ],
     forced_choice_1_english: [
-        {
-            question: "Would you push the man?",
-            optionLeft: 'definitely would not push him',
-            optionRight: 'definitely would push him'
-        },
-        {
-            question: "How vividly can you picture the man?",
-            optionLeft: "no image",
-            optionRight: "very clear"
-        },
-        {
-            question: "How vividly can you picture the five people?",
-            optionLeft: "no image",
-            optionRight: "very clear"
-        },
-        {
-            question: "How vividly can you picture the overall scene?",
-            optionLeft: "no image",
-            optionRight: "very clear"
-        },
+      {
+          question: "Would you push the man?",
+          optionLeft: 'definitely would not push him',
+          v01: '1',
+          v02: '2',
+          v03: "3",
+          v04: "4",
+          v05: "5",
+          v06: "6",
+          v07: "7",
+          optionRight: 'definitely would not push him'
+      },
+      {
+          question: "How vividly can you picture the man?",
+          optionLeft: '',
+          v01: 'no image                   ',
+          v02: 'Very vague & dim           ',
+          v03: "Vague and dim              ",
+          v04: "Not clear, but recognizable",
+          v05: "More or less clear         ",
+          v06: "Very clear                 ",
+          v07: "Absolutely clear image     ",
+          optionRight: ' '
+      },
+      {
+          question: "How vividly can you picture the five people?",
+          optionLeft: '',
+          v01: 'no image                    ',
+          v02: 'Very vague & dim            ',
+          v03: "Vague and dim               ",
+          v04: "Not clear, but recognizable ",
+          v05: "More or less clear          ",
+          v06: "Very clear                  ",
+          v07: "Absolutely clear image      ",
+          optionRight: ' '
+      },
+      {
+          question: "How vividly can you picture the overall scene?",
+          optionLeft: '',
+          v01: 'no image                    ',
+          v02: 'Very vague & dim            ',
+          v03: "Vague and dim               ",
+          v04: "Not clear, but recognizable ",
+          v05: "More or less clear          ",
+          v06: "Very clear                  ",
+          v07: "Absolutely clear image     ",
+          optionRight: ' '
+      },
     ],
     forced_choice_2_english: [
       {
           question: "Would you push the man?",
           optionLeft: 'definitely would not push him',
-          optionRight: 'definitely would push him'
+          v01: '1',
+          v02: '2',
+          v03: "3",
+          v04: "4",
+          v05: "5",
+          v06: "6",
+          v07: "7",
+          optionRight: 'definitely would not push him'
       },
       {
           question: "How vividly can you picture the man?",
-          optionLeft: "no image",
-          optionRight: "very clear"
+          optionLeft: '',
+          v01: 'no image',
+          v02: 'Very vague & dim',
+          v03: "Vague and dim",
+          v04: "Not clear, but recognizable ",
+          v05: "More or less clear",
+          v06: "Very clear",
+          v07: "Absolutely clear image",
+          optionRight: ' '
       },
       {
           question: "How vividly can you picture the five people?",
-          optionLeft: "no image",
-          optionRight: "very clear"
+          optionLeft: '',
+          v01: 'no image',
+          v02: 'Very vague & dim',
+          v03: "Vague and dim",
+          v04: "Not clear, but recognizable ",
+          v05: "More or less clear",
+          v06: "Very clear",
+          v07: "Absolutely clear image",
+          optionRight: ' '
       },
       {
           question: "How vividly can you picture the overall scene?",
-          optionLeft: "no image",
-          optionRight: "very clear"
+          optionLeft: '',
+          v01: 'no image',
+          v02: 'Very vague & dim',
+          v03: "Vague and dim",
+          v04: "Not clear, but recognizable ",
+          v05: "More or less clear",
+          v06: "Very clear",
+          v07: "Absolutely clear image",
+          optionRight: ' '
       },
   ],
     forced_choice_3_english: [
       {
           question: "Would you push the man?",
           optionLeft: 'definitely would not push him',
-          optionRight: 'definitely would push him'
+          v01: '1',
+          v02: '2',
+          v03: "3",
+          v04: "4",
+          v05: "5",
+          v06: "6",
+          v07: "7",
+          optionRight: 'definitely would not push him'
       },
       {
           question: "How vividly can you picture the man?",
-          optionLeft: "no image",
-          optionRight: "very clear"
+          optionLeft: '',
+          v01: 'no image',
+          v02: 'Very vague & dim',
+          v03: "Vague and dim",
+          v04: "Not clear, but recognizable ",
+          v05: "More or less clear",
+          v06: "Very clear",
+          v07: "Absolutely clear image",
+          optionRight: ' '
       },
       {
           question: "How vividly can you picture the five people?",
-          optionLeft: "no image",
-          optionRight: "very clear"
+          optionLeft: '',
+          v01: 'no image',
+          v02: 'Very vague & dim',
+          v03: "Vague and dim",
+          v04: "Not clear, but recognizable ",
+          v05: "More or less clear",
+          v06: "Very clear",
+          v07: "Absolutely clear image",
+          optionRight: ' '
       },
       {
           question: "How vividly can you picture the overall scene?",
-          optionLeft: "no image",
-          optionRight: "very clear"
+          optionLeft: '',
+          v01: 'no image',
+          v02: 'Very vague & dim',
+          v03: "Vague and dim",
+          v04: "Not clear, but recognizable ",
+          v05: "More or less clear",
+          v06: "Very clear",
+          v07: "Absolutely clear image",
+          optionRight: ' '
       },
   ],
+  forced_choice_test_english: [
+    {
+        question: "Would you push the man?",
+        optionLeft: 'definitely would not push him',
+        v01: '1',
+        v02: '2',
+        v03: "3",
+        v04: "4",
+        v05: "5",
+        v06: "6",
+        v07: "7",
+        optionRight: 'definitely would not push him'
+    },
+    {
+        question: "How vividly can you picture the man?",
+        optionLeft: '',
+        v01: 'no image',
+        v02: 'Very vague & dim',
+        v03: "Vague and dim",
+        v04: "Not clear, but recognizable ",
+        v05: "More or less clear",
+        v06: "Very clear",
+        v07: "Absolutely clear image",
+        optionRight: ' '
+    },
+    {
+        question: "How vividly can you picture the five people?",
+        optionLeft: '',
+        v01: 'no image',
+        v02: 'Very vague & dim',
+        v03: "Vague and dim",
+        v04: "Not clear, but recognizable ",
+        v05: "More or less clear",
+        v06: "Very clear",
+        v07: "Absolutely clear image",
+        optionRight: ' '
+    },
+    {
+        question: "How vividly can you picture the overall scene?",
+        optionLeft: '',
+        v01: 'no image',
+        v02: 'Very vague & dim',
+        v03: "Vague and dim",
+        v04: "Not clear, but recognizable ",
+        v05: "More or less clear",
+        v06: "Very clear",
+        v07: "Absolutely clear image",
+        optionRight: ' '
+    },
+],
 };

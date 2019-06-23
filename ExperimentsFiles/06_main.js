@@ -15,6 +15,7 @@ if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
       intro,
       instructions,
       description,
+
       dilemma_1_german,
       rating_choice_1_german,
       dilemma_2_german,
@@ -30,6 +31,7 @@ else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
       intro,
       instructions,
       description,
+
       dilemma_1_german,
       rating_choice_1_german,
       dilemma_3_german,

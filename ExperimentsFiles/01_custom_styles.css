@@ -2,17 +2,27 @@
 
 /* Example of extending a given babe-style */
 
-/*.babe-view-stimulus-container {
-    height: auto;
-    max-height: 350px;
-} */
-
+.babe-view-stimulus-container {
+    height: 0;
+}
+.babe-view-title {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: "Playfair Display", "Noto Serif", serif;
+    font-size: 34px;
+    text-align: center;
+    margin: 0 0 0 0;
+}
 /* Display all titles in red */
-/*.babe-view-title {
+/* .rating_choice_1_english .babe-view-title {
+  background-color: pink;
     color: red;
-}*/
+} */
 
 /* Example of declaring your own style */
 .custom-border {
    border: 1px solid powderblue;
+}
+.progress-bar-container {
+    float: right;
+    margin: 0 10px 6px 10px;
 }

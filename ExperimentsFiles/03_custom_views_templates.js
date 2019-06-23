@@ -8,4 +8,3 @@
 // and a render function, the render function gets CT and the babe-object as input
 // and has to call babe.findNextView() eventually to proceed to the next view (or the next trial in this view),
 // if it is an trial view it also makes sense to call babe.trial_data.push(trial_data) to save the trial information
-

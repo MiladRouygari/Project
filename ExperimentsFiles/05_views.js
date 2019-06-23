@@ -233,24 +233,89 @@ const rating_choice_1_english = babeViews.view_generator("rating_scale", {
     trials: trial_info.forced_choice_1_english.length,
     // name should be identical to the variable name
     name: 'rating_choice_1_english',
-    data: getRandomisedRatingChoiceEnglish1(),
+    data: getRandomisedRatingChoiceEnglish1(),},
+  // you can add custom functions at different stages through a view's life cycle
+  // hook: {
+  //     after_response_enabled: check_response
+  // }
+  {
+    answer_container_generator: function (config, CT) {
+     return `<div class='babe-view-answer-container'>
+              <p class='babe-view-question'>${config.data[CT].question}</p>
+            <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionLeft}</strong>
+            <br>
+             <label for='o1' class='babe-response-buttons'>${config.data[CT].v01}</label>
+             <input type='radio' name='answer' id='o1' value=1 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v02}</label>
+             <input type='radio' name='answer' id='o2' value=2 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v03}</label>
+             <input type='radio' name='answer' id='o3' value=3 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v04}</label>
+             <input type='radio' name='answer' id='o4' value=4 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v05}</label>
+             <input type='radio' name='answer' id='o5' value=5 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v06}</label>
+             <input type='radio' name='answer' id='o6' value=6 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v07}</label>
+             <input type='radio' name='answer' id='o7' value=7 />
+             <br>
+             <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionRight}</strong>
+             </div>`;
+
+}
+  }
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
     // }
-});
+  );
 
 const rating_choice_2_english = babeViews.view_generator("rating_scale", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     trials: trial_info.forced_choice_2_english.length,
     // name should be identical to the variable name
     name: 'rating_choice_2_english',
-    data: getRandomisedRatingChoiceEnglish2(),
+    data: getRandomisedRatingChoiceEnglish2(),},
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
     // }
-});
+    {
+      stimulus_container_generator: stimulus_container_generators.empty,
+      answer_container_generator: function (config, CT) {
+       return `<div class='babe-view-answer-container'>
+               <p class='babe-view-question'>${config.data[CT].question}</p>
+              <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionLeft}</strong>
+               <label for='o1' class='babe-response-buttons'>${config.data[CT].v01}</label>
+               <input type='radio' name='answer' id='o1' value=1 />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].v02}</label>
+               <input type='radio' name='answer' id='o2' value=2 />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].v03}</label>
+               <input type='radio' name='answer' id='o3' value=3 />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].v04}</label>
+               <input type='radio' name='answer' id='o4' value=4 />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].v05}</label>
+               <input type='radio' name='answer' id='o5' value=5 />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].v06}</label>
+               <input type='radio' name='answer' id='o6' value=6 />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].v07}</label>
+               <input type='radio' name='answer' id='o7' value=7 />
+               <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionRight}</strong>
+               </div>`;
+
+  }
+    }
+    // you can add custom functions at different stages through a view's life cycle
+    // hook: {
+    //     after_response_enabled: check_response
+    // }
+);
 
 const rating_choice_3_english = babeViews.view_generator("rating_scale", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
@@ -258,11 +323,76 @@ const rating_choice_3_english = babeViews.view_generator("rating_scale", {
     // name should be identical to the variable name
     name: 'rating_choice_3_english',
     data: getRandomisedRatingChoiceEnglish3(),
+  },
+  // you can add custom functions at different stages through a view's life cycle
+  // hook: {
+  //     after_response_enabled: check_response
+  // }
+  {
+    answer_container_generator: function (config, CT) {
+     return `<div class='babe-view-answer-container'>
+             <p class='babe-view-question'>${config.data[CT].question}</p>
+            <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionLeft}</strong>
+             <label for='o1' class='babe-response-buttons'>${config.data[CT].v01}</label>
+             <input type='radio' name='answer' id='o1' value=1 />
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v02}</label>
+             <input type='radio' name='answer' id='o2' value=2 />
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v03}</label>
+             <input type='radio' name='answer' id='o3' value=3 />
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v04}</label>
+             <input type='radio' name='answer' id='o4' value=4 />
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v05}</label>
+             <input type='radio' name='answer' id='o5' value=5 />
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v06}</label>
+             <input type='radio' name='answer' id='o6' value=6 />
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v07}</label>
+             <input type='radio' name='answer' id='o7' value=7 />
+             <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionRight}</strong>
+             </div>`;
+
+}
+  }
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
     // }
-});
+);
+// const test = babeViews.view_generator("rating_scale",
+//   {
+//     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+//     trials: trial_info.forced_choice_test_english.length,
+//     // name should be identical to the variable name
+//     name: 'test',
+//     data: getRandomisedRatingChoiceEnglishtest(),},
+//     // you can add custom functions at different stages through a view's life cycle
+//     // hook: {
+//     //     after_response_enabled: check_response
+//     // }
+//     {
+//       answer_container_generator: function (config, CT) {
+//        return `<div class='babe-view-answer-container'>
+//                <p class='babe-view-question'>${config.data[CT].question}</p>
+//               <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionLeft}</strong>
+//                <label for='o1' class='babe-response-buttons'>${config.data[CT].v01}</label>
+//                <input type='radio' name='answer' id='o1' value=1 />
+//                <label for='o2' class='babe-response-buttons'>${config.data[CT].v02}</label>
+//                <input type='radio' name='answer' id='o2' value=2 />
+//                <label for='o2' class='babe-response-buttons'>${config.data[CT].v03}</label>
+//                <input type='radio' name='answer' id='o3' value=3 />
+//                <label for='o2' class='babe-response-buttons'>${config.data[CT].v04}</label>
+//                <input type='radio' name='answer' id='o4' value=4 />
+//                <label for='o2' class='babe-response-buttons'>${config.data[CT].v05}</label>
+//                <input type='radio' name='answer' id='o5' value=5 />
+//                <label for='o2' class='babe-response-buttons'>${config.data[CT].v06}</label>
+//                <input type='radio' name='answer' id='o6' value=6 />
+//                <label for='o2' class='babe-response-buttons'>${config.data[CT].v07}</label>
+//                <input type='radio' name='answer' id='o7' value=7 />
+//                <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionRight}</strong>
+//                </div>`;
+//
+//   }
+//     }
+// );
 
 // There are many more templates available:
 // forced_choice, slider_rating, dropdown_choice, testbox_input, rating_scale, image_selection, sentence_choice,
