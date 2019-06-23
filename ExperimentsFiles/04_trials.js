@@ -10,21 +10,29 @@ const trial_info = {
             question: "Würdest du den Mann stoßen?",
             optionLeft: 'definitiv stoßen',
             optionRight: 'definitiv nicht stoßen',
+            dilemma: 'footbridge',
+            language: 'german'
         },
         {
             question: "Wie lebhaft stellst du dir den Mann vor?",
             optionLeft: "absolut klar",
             optionRight: "kein Bild",
+            dilemma: 'footbridge',
+            language: 'german'
         },
         {
             question: "Wie lebhaft stellst du dir die fünf Menschen vor?",
             optionLeft: "absolut klar",
             optionRight: "kein Bild",
+            dilemma: 'footbridge',
+            language: 'german'
         },
         {
             question: "Wie lebhaft stellst du dir die gesamte Situation vor?",
             optionLeft: "absolut klar",
             optionRight: "kein Bild",
+            dilemma: 'footbridge',
+            language: 'german'
         }
     ],
     forced_choice_2_german: [
@@ -32,21 +40,29 @@ const trial_info = {
           question: "Würdest du den Mann stoßen ? -need to edit here-",
           optionLeft: 'definitiv stoßen',
           optionRight: 'definitiv nicht stoßen',
+          dilemma: 'bikers',
+          language: 'german'
       },
       {
           question: "Wie lebhaft stellst du dir den Mann vor?",
           optionLeft: "absolut klar",
           optionRight: "kein Bild",
+          dilemma: 'bikers',
+          language: 'german'
       },
       {
           question: "Wie lebhaft stellst du dir die fünf Menschen vor?",
           optionLeft: "absolut klar",
           optionRight: "kein Bild",
+          dilemma: 'bikers',
+          language: 'german'
       },
       {
           question: "Wie lebhaft stellst du dir die gesamte Situation vor?",
           optionLeft: "absolut klar",
           optionRight: "kein Bild",
+          dilemma: 'bikers',
+          language: 'german'
       }
     ],
     forced_choice_3_german: [
@@ -54,21 +70,29 @@ const trial_info = {
           question: "Würdest du den Mann stoßen ? -need to edit here-",
           optionLeft: 'definitiv stoßen',
           optionRight: 'definitiv nicht stoßen',
+          dilemma: 'fairyland',
+          language: 'german'
       },
       {
           question: "Wie lebhaft stellst du dir den Mann vor?",
           optionLeft: "absolut klar",
           optionRight: "kein Bild",
+          dilemma: 'fairyland',
+          language: 'german'
       },
       {
           question: "Wie lebhaft stellst du dir die fünf Menschen vor?",
           optionLeft: "absolut klar",
           optionRight: "kein Bild",
+          dilemma: 'fairyland',
+          language: 'german'
       },
       {
           question: "Wie lebhaft stellst du dir die gesamte Situation vor?",
           optionLeft: "absolut klar",
           optionRight: "kein Bild",
+          dilemma: 'fairyland',
+          language: 'german'
       }
     ],
     forced_choice_1_english: [
@@ -82,7 +106,9 @@ const trial_info = {
           v05: "5",
           v06: "6",
           v07: "7",
-          optionRight: 'definitely would not push him'
+          optionRight: 'definitely would not push him',
+          dilemma: 'footbridge',
+          language: 'english'
       },
       {
           question: "How vividly can you picture the man?",
@@ -94,7 +120,9 @@ const trial_info = {
           v05: "More or less clear         ",
           v06: "Very clear                 ",
           v07: "Absolutely clear image     ",
-          optionRight: ' '
+          optionRight: ' ',
+          dilemma: 'footbridge',
+          language: 'english'
       },
       {
           question: "How vividly can you picture the five people?",
@@ -106,7 +134,9 @@ const trial_info = {
           v05: "More or less clear          ",
           v06: "Very clear                  ",
           v07: "Absolutely clear image      ",
-          optionRight: ' '
+          optionRight: ' ',
+          dilemma: 'footbridge',
+          language: 'english'
       },
       {
           question: "How vividly can you picture the overall scene?",
@@ -118,7 +148,9 @@ const trial_info = {
           v05: "More or less clear          ",
           v06: "Very clear                  ",
           v07: "Absolutely clear image     ",
-          optionRight: ' '
+          optionRight: ' ',
+          dilemma: 'footbridge',
+          language: 'english'
       },
     ],
     forced_choice_2_english: [
@@ -132,7 +164,9 @@ const trial_info = {
           v05: "5",
           v06: "6",
           v07: "7",
-          optionRight: 'definitely would not push him'
+          optionRight: 'definitely would not push him',
+          dilemma: 'bikers',
+          language: 'english'
       },
       {
           question: "How vividly can you picture the man?",
@@ -144,7 +178,9 @@ const trial_info = {
           v05: "More or less clear",
           v06: "Very clear",
           v07: "Absolutely clear image",
-          optionRight: ' '
+          optionRight: ' ',
+          dilemma: 'bikers',
+          language: 'english'
       },
       {
           question: "How vividly can you picture the five people?",
@@ -156,7 +192,9 @@ const trial_info = {
           v05: "More or less clear",
           v06: "Very clear",
           v07: "Absolutely clear image",
-          optionRight: ' '
+          optionRight: ' ',
+          dilemma: 'bikers',
+          language: 'english'
       },
       {
           question: "How vividly can you picture the overall scene?",
@@ -168,7 +206,9 @@ const trial_info = {
           v05: "More or less clear",
           v06: "Very clear",
           v07: "Absolutely clear image",
-          optionRight: ' '
+          optionRight: ' ',
+          dilemma: 'bikers',
+          language: 'english'
       },
   ],
     forced_choice_3_english: [
@@ -182,7 +222,9 @@ const trial_info = {
           v05: "5",
           v06: "6",
           v07: "7",
-          optionRight: 'definitely would not push him'
+          optionRight: 'definitely would not push him',
+          dilemma: 'fairyland',
+          language: 'english'
       },
       {
           question: "How vividly can you picture the man?",
@@ -194,7 +236,9 @@ const trial_info = {
           v05: "More or less clear",
           v06: "Very clear",
           v07: "Absolutely clear image",
-          optionRight: ' '
+          optionRight: ' ',
+          dilemma: 'fairyland',
+          language: 'english'
       },
       {
           question: "How vividly can you picture the five people?",
@@ -206,7 +250,9 @@ const trial_info = {
           v05: "More or less clear",
           v06: "Very clear",
           v07: "Absolutely clear image",
-          optionRight: ' '
+          optionRight: ' ',
+          dilemma: 'fairyland',
+          language: 'english'
       },
       {
           question: "How vividly can you picture the overall scene?",
@@ -218,7 +264,9 @@ const trial_info = {
           v05: "More or less clear",
           v06: "Very clear",
           v07: "Absolutely clear image",
-          optionRight: ' '
+          optionRight: ' ',
+            dilemma: 'fairyland',
+            language: 'english'
       },
   ],
   forced_choice_test_english: [

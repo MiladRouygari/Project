@@ -24,14 +24,16 @@ const intro = babeViews.view_generator("intro",{
     name: 'intro',
     // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
     title: 'Willkommen!',
-    text:   ` Dieses Experiment bla bla. Duh Dah Beh.
+    text:   `Im Rahmen von unserem Kurs „Experimental Psychology Lab“ replizieren wir eine Studie.
+            Vielen Dank, dass du an unserem Experiment teilnimmst, damit unterstützt Du uns sehr.
             <br />
             <br />
-            The introduction view welcomes the participant and gives general information
-            about the experiment. You are in the <strong>${coin}</strong> group.
+            Es ist wichtig, dass Du dieses Experiment eigenständig und fokussiert bearbeitest.
+            Bitte schalte alles aus, was Dich ablenken könnte (z.B. Hintergrundmusik, Fernseher, Benachrichtigungsmitteilungen an deinem Handy, …).
             <br />
             <br />
-            This is a minimal experiment with one forced choice view. It can serve as a starting point for programming your own experiment.`,
+            Das Experiment wird ungefähr 15 Minuten dauern.
+ `,
    buttonText: 'Zum Experiment'
 });
 
@@ -39,59 +41,56 @@ const intro = babeViews.view_generator("intro",{
 const instructions = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'instrucions',
-    title: 'Allgemeine Informationen',
-    text:  `This is a sample instructions view.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
-    buttonText: 'Zum Experiment'
-});
-
-const description = babeViews.view_generator("instructions",{
-    trials: 1,
-    name: 'instrucions',
     title: 'Anleitung',
-    text:  `This is a sample instructions view.
+    text:  `Um an diesem Experiment teilzunehmen, ist es notwendig, dass Du Deutsch Muttersprachler*in bist und in der Lage Englisch zu verstehen.
             <br />
             <br />
-            Tell your participants what they are to do here.`,
+            Im Folgenden wirst Du 3 Dilemmata lesen und dazu Fragen beantworten.
+            Lese Dir die Dilemmata sorgfältig durch und stelle sicher, dass Du sie verstanden hast.
+            Bitte nutze dafür keine Übersetzungsinstrumente.
+            <br />
+            <br />
+            Falls Du auch nach sorgfältigem Lesen das Dilemma nicht verstanden haben solltest,
+            wirst du später die Möglichkeit haben, dies anzugeben.
+            <br />
+            <br />
+            Wenn Du bereit bist, kannst du nun das Experiment beginnen.
+`,
     buttonText: 'Zum Experiment'
 });
-
 
 // Dilemma description in German
 const dilemma_1_german = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_1_german',
-    title: 'Titel Dilemma 1 - Deutsch',
+    title: 'Dilemma',
     text:  `Stell dir vor, du stehst auf einer Brücke von der aus du mehrere Bahngleise überblicken kannst.
     Du siehst ein Gleis auf dem fünf Personen festgebunden sind und einen Wagon, der auf sie zufährt.
     Du schaust zu deiner linken und da ist ein großer und schwerer Mann, der neben dir steht.
-    Die einzige Möglichkeit den Wagon zu stoppen ist den Mann von der Brücke auf die Gleise zu stoßen,
-    was den Mann zu tötet aber fünf Menschen rettet.`,
-    buttonText: 'Zum Experiment'
+    Die einzige Möglichkeit den Wagon zu stoppen, ist den Mann von der Brücke auf die Gleise zu stoßen,
+    was den Mann tötet, aber fünf Menschen rettet.`,
+    buttonText: 'Zu den Fragen'
 });
 
 const dilemma_2_german = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_2_german',
-    title: 'Titel Dilemma 2 - Deutsch',
-    text:  `Here comes our beautiful dilemmas.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
-    buttonText: 'Zum Experiment'
+    title: 'Dilemma',
+    text:  `Stell dir vor, du reist mit dem Auto, vor dir siehst du zwei Fahrbahnen.
+    Du siehst fünf Fahrradfahrer, die darauf warten, dass die Ampel umschaltet (die auf die Ampel warten) und das Auto fährt direkt auf sie zu, zu schnell um rechtzeitig zu bremsen.
+    Du schaust zu deiner linken und siehst einen Mann, der zu Fuß geht (der die Straße überqueren will?)
+    Die einzige Möglichkeit den Zusammenstoß mit den Fahrradfahrern zu verhindern ist das Lenkrad herumzureißen,
+    die Spur zu wechseln, was die gehende Person tötet aber fünf Menschen rettet.`,
+    buttonText: 'Zu den Fragen'
 });
 
 const dilemma_3_german = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_3_german',
-    title: 'Titel Dilemma 3 - Deutsch',
-    text:  `Here comes our beautiful dilemmas.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
-    buttonText: 'Zum Experiment'
+    title: 'Dilemma',
+    text:  `Stell dir vor, du bist ein Troll in einem Märchenland und blickest in eine Schlucht hinunter.
+    Du siehst fünf Trolle am Ende der Schlucht in die Enge getrieben sind und ein hungriges Monster, das sich auf sie zubewegt.Du schaust nach links und da steht ein großer und schwerer Troll mit Stacheln neben dir.Der einzige Weg, das Monster aufzuhalten (das die anderen Trolle fressen wird), wäre, diesen Troll in die Schlucht auf das Monster zu schubsen, dadurch den Troll mit den Stacheln zu töten, aber fünf Trolle zu retten.`,
+    buttonText: 'Zu den Fragen'
 });
 
 
@@ -99,35 +98,37 @@ const dilemma_3_german = babeViews.view_generator("instructions",{
 const dilemma_1_english = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_1_english',
-    title: 'Title of dilemma 1 - english',
+    title: 'Dilemma',
     text:  `Imagine you are standing on a bridge overlooking a set of train tracks.
     You see five people tied to the track and a runaway trolley is barrelling towards them.
     You look to your left and there is a large and heavy man standing next to you.
     The only way to stop the trolley would be to push that man off the bridge and onto the tracks,
     killing the man but saving five people.`,
-    buttonText: 'Zum Experiment'
+    buttonText: 'To the questions'
 });
 
 const dilemma_2_english = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_2_english',
-    title: 'Title of dilemma 2 - english',
-    text:  `Here comes our beautiful dilemmas.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
-    buttonText: 'Zum Experiment'
+    title: 'Dilemma',
+    text:  `Imagine you are traveling by car seeing two lanes in front of you.
+    You see five bikers waiting for the traffic light and the car is heading towards them.
+    You look to your left and see a lane where a person in walking.
+    The only way to avoid the crash would to jerk the wheel and thereby switch the lane,
+    killing the one walking person but saving five people.`,
+    buttonText: 'To the questions'
 });
 
 const dilemma_3_english = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_3_english',
-    title: 'Title of dilemma 3 - english',
-    text:  `Here comes our beautiful dilemmas.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
-    buttonText: 'Zum Experiment'
+    title: 'Dilemma',
+    text:  `Imagine you are a troll in fairyland looking down a canyon.
+    You see five trolls cornered at the end of the canyon and a hungry monster barrelling towards them.
+    You look to your left and there is a large and heavy troll with spikes standing next to you.
+    The only way to stop the monster from eating the other trolls would be to push that troll off into the canyon onto the monster,
+    killing the spiky troll but saving but saving five trolls.`,
+    buttonText: 'To the questions'
 });
 
 // In the post test questionnaire you can ask your participants addtional questions
@@ -157,7 +158,7 @@ const post_test = babeViews.view_generator("post_test",{
 const thanks = babeViews.view_generator("thanks", {
     trials: 1,
     name: 'thanks',
-    title: 'Vielen Dank für deine Teilnahme an diesem Experiment!',
+    title: 'Vielen Dank für deine Teilnahme an diesem Experiment! Wir freuen uns, wenn Du es mit deinen Freund*innnen teilst',
     prolificConfirmText: 'Press the button'
 });
 

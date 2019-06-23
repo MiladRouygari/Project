@@ -14,8 +14,11 @@ if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
   views_seq_language = [
       intro,
       instructions,
+<<<<<<< HEAD
       description,
 
+=======
+>>>>>>> 8e5d97cabfb0fa2d7ed75f410b51e7b2cc7b0604
       dilemma_1_german,
       rating_choice_1_german,
       dilemma_2_german,
@@ -30,8 +33,11 @@ else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
   views_seq_language = [
       intro,
       instructions,
+<<<<<<< HEAD
       description,
 
+=======
+>>>>>>> 8e5d97cabfb0fa2d7ed75f410b51e7b2cc7b0604
       dilemma_1_german,
       rating_choice_1_german,
       dilemma_3_german,
@@ -46,7 +52,6 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
   views_seq_language = [
       intro,
       instructions,
-      description,
       dilemma_1_english,
       rating_choice_1_english,
       dilemma_2_english,
@@ -61,7 +66,6 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
     views_seq_language = [
         intro,
         instructions,
-        description,
         dilemma_1_english,
         rating_choice_1_english,
         dilemma_3_english,
