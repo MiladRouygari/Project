@@ -42,10 +42,11 @@ const instructions = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'instrucions',
     title: 'Anleitung',
-    text:  `Um an diesem Experiment teilzunehmen, ist es notwendig, dass Du Deutsch Muttersprachler*in bist und in der Lage bist, Englisch zu verstehen.
+    text:  `Um an diesem Experiment teilzunehmen, ist es notwendig, dass Du Deutsch Muttersprachler*in bist und in der Lage Englisch zu verstehen.
             <br />
             <br />
-            Im Folgenden wirst Du 3 Dilemmata lesen und dazu Fragen beantworten. Lese Dir die Dilemmata sorgfältig durch und stelle sicher, dass Du sie verstanden hast.
+            Im Folgenden wirst Du 3 Dilemmata lesen und dazu Fragen beantworten.
+            Lese Dir die Dilemmata sorgfältig durch und stelle sicher, dass Du sie verstanden hast.
             Bitte nutze dafür keine Übersetzungsinstrumente.
             <br />
             <br />
@@ -75,10 +76,11 @@ const dilemma_2_german = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_2_german',
     title: 'Dilemma',
-    text:  `Here comes our beautiful dilemmas.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
+    text:  `Stell dir vor, du reist mit dem Auto, vor dir siehst du zwei Fahrbahnen.
+    Du siehst fünf Fahrradfahrer, die darauf warten, dass die Ampel umschaltet (die auf die Ampel warten) und das Auto fährt direkt auf sie zu, zu schnell um rechtzeitig zu bremsen.
+    Du schaust zu deiner linken und siehst einen Mann, der zu Fuß geht (der die Straße überqueren will?)
+    Die einzige Möglichkeit den Zusammenstoß mit den Fahrradfahrern zu verhindern ist das Lenkrad herumzureißen,
+    die Spur zu wechseln, was die gehende Person tötet aber fünf Menschen rettet.`,
     buttonText: 'Zu den Fragen'
 });
 
@@ -86,10 +88,8 @@ const dilemma_3_german = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_3_german',
     title: 'Dilemma',
-    text:  `Here comes our beautiful dilemmas.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
+    text:  `Stell dir vor, du bist ein Troll in einem Märchenland und blickest in eine Schlucht hinunter.
+    Du siehst fünf Trolle am Ende der Schlucht in die Enge getrieben sind und ein hungriges Monster, das sich auf sie zubewegt.Du schaust nach links und da steht ein großer und schwerer Troll mit Stacheln neben dir.Der einzige Weg, das Monster aufzuhalten (das die anderen Trolle fressen wird), wäre, diesen Troll in die Schlucht auf das Monster zu schubsen, dadurch den Troll mit den Stacheln zu töten, aber fünf Trolle zu retten.`,
     buttonText: 'Zu den Fragen'
 });
 
@@ -111,10 +111,11 @@ const dilemma_2_english = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_2_english',
     title: 'Dilemma',
-    text:  `Here comes our beautiful dilemmas.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
+    text:  `Imagine you are traveling by car seeing two lanes in front of you.
+    You see five bikers waiting for the traffic light and the car is heading towards them.
+    You look to your left and see a lane where a person in walking.
+    The only way to avoid the crash would to jerk the wheel and thereby switch the lane,
+    killing the one walking person but saving five people.`,
     buttonText: 'To the questions'
 });
 
@@ -122,10 +123,11 @@ const dilemma_3_english = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_3_english',
     title: 'Dilemma',
-    text:  `Here comes our beautiful dilemmas.
-            <br />
-            <br />
-            Tell your participants what they are to do here.`,
+    text:  `Imagine you are a troll in fairyland looking down a canyon.
+    You see five trolls cornered at the end of the canyon and a hungry monster barrelling towards them.
+    You look to your left and there is a large and heavy troll with spikes standing next to you.
+    The only way to stop the monster from eating the other trolls would be to push that troll off into the canyon onto the monster,
+    killing the spiky troll but saving but saving five trolls.`,
     buttonText: 'To the questions'
 });
 
