@@ -139,7 +139,7 @@ const post_test = babeViews.view_generator("post_test",{
     trials: 1,
     name: 'post_test',
     title: 'Zusätzliche Informationen',
-    text: 'Answering the following questions is optional, but your answers will help us analyze our results.',
+    text: 'Die folgenden Fragen zu beantworten ist optional, aber deine Antworten helfen uns bei der Analyse.',
 
     // You can change much of what appears here, e.g., to present it in a different language, as follows:
     buttonText: 'Weiter',
@@ -154,7 +154,7 @@ const post_test = babeViews.view_generator("post_test",{
     edu_higher_degree: 'Universitärer Abschluss',
     languages_question: 'Muttersprache',
     languages_more: '(in der Regel die Sprache, die Sie als Kind zu Hause gesprochen haben)',
-    //yearsEnglish_question: 'Alter ab dem Englisch gerlernt',
+    //age_question: 'Alter ab dem Englisch gerlernt',
     comments_question: 'Weitere Kommentare'
 },
 //{
@@ -203,7 +203,7 @@ const post_test = babeViews.view_generator("post_test",{
             </p>
             <p class='babe-view-text'>
                 <label for="age">${quest.age.title}:</label>
-                <input type="number" name="age" min="0" max="110" id="age" />
+                <input type="number" name="age" min="0" max="110" id="years" />
             </p>
             <p class="babe-view-text">
                 <label for="comments">${quest.comments.title}</label>
