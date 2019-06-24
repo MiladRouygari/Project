@@ -151,6 +151,7 @@ const post_test = babeViews.view_generator("post_test",{
     edu_higher_degree: 'Universitärer Abschluss',
     languages_question: 'Muttersprache',
     languages_more: '(in der Regel die Sprache, die Sie als Kind zu Hause gesprochen haben)',
+    //yearsEnglish_question: 'Alter ab dem Englisch gerlernt',
     comments_question: 'Weitere Kommentare'
 },
 //{
@@ -194,6 +195,10 @@ const post_test = babeViews.view_generator("post_test",{
                 <label for="languages" name="languages">${quest.langs.title}:<br /><span>${quest.langs.text}</</span></label>
                 <input type="text" id="languages"/>
             </p>
+            <p class='babe-view-text'>
+                <label for="yearsEnglish">${quest.yearsEnglish.title}:</label>
+                <input type="number" name="yearsEnglish" min="0" max="110" id="yearsEnglish" />
+            </p>
             <p class="babe-view-text">
                 <label for="comments">${quest.comments.title}</label>
                 <textarea name="comments" id="comments" rows="6" cols="40"></textarea>
@@ -201,23 +206,36 @@ const post_test = babeViews.view_generator("post_test",{
             <button id="next" class='babe-view-button'>${config.button}</button>
     </form>`
   }
-}
-//answer_container_generator: answer_container_generators.button_choice,
-// or
-//answer_container_generator: function (config, CT) {
-//  return `<div class='babe-view-answer-container'>
-//          <p class='babe-view-question'>${config.data[CT].question}</p>
-//          <label for='o1' class='babe-response-buttons'>${config.data[CT].option1}</label>
-//          <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
-//          <label for='o2' class='babe-response-buttons'>${config.data[CT].option2}</label>
-//          <input type='radio' name='answer' id='o2' value=${config.data[CT].option2} />
-//          <label for='o2' class='babe-response-buttons'>${config.data[CT].option3}</label>
-//          <input type='radio' name='answer' id='o3' value=${config.data[CT].option3} />
-//          </div>`;
-// }
+},
 
-//handle_response_function: handle_response_functions.button_choice
-//}
+{
+handle_response_functions: function(config, CT, babe, answer_container_generator, startingTime) {
+        $(".babe-view").append(answer_container_generator(config, CT));
+
+        $("#next").on("click", function(e) {
+            // prevents the form from submitting
+            e.preventDefault();
+
+            // records the post test info
+            babe.global_data.age = $("#age").val();
+            babe.global_data.gender = $("#gender").val();
+            babe.global_data.education = $("#education").val();
+            babe.global_data.languages = $("#languages").val();
+            babe.global_data.yearsEnglish = $("#age").val();
+            babe.global_data.comments = $("#comments")
+            .val()
+            .trim();
+            babe.global_data.endTime = Date.now();
+            babe.global_data.timeSpent =
+                (babe.global_data.endTime -
+                    babe.global_data.startTime) /
+                60000;
+
+            // moves to the next view
+            babe.findNextView();
+        });
+    }
+}
 );
 
 // The 'thanks' view is crucial; never delete it; it submits the results!
