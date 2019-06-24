@@ -89,7 +89,10 @@ const dilemma_3_german = babeViews.view_generator("instructions",{
     name: 'dilemma_3_german',
     title: 'Dilemma',
     text:  `Stell dir vor, du bist ein Troll in einem Märchenland und blickest in eine Schlucht hinunter.
-    Du siehst fünf Trolle am Ende der Schlucht in die Enge getrieben sind und ein hungriges Monster, das sich auf sie zubewegt.Du schaust nach links und da steht ein großer und schwerer Troll mit Stacheln neben dir.Der einzige Weg, das Monster aufzuhalten (das die anderen Trolle fressen wird), wäre, diesen Troll in die Schlucht auf das Monster zu schubsen, dadurch den Troll mit den Stacheln zu töten, aber fünf Trolle zu retten.`,
+    Du siehst fünf Trolle am Ende der Schlucht in die Enge getrieben sind und ein hungriges Monster, das sich auf sie zubewegt.
+    Du schaust nach links und da steht ein großer und schwerer Troll mit Stacheln neben dir.Der einzige Weg,
+    das Monster aufzuhalten (das die anderen Trolle fressen wird), wäre, diesen Troll in die Schlucht auf das Monster zu schubsen,
+    dadurch den Troll mit den Stacheln zu töten, aber fünf Trolle zu retten.`,
     buttonText: 'Zu den Fragen'
 });
 
@@ -166,6 +169,9 @@ const post_test = babeViews.view_generator("post_test",{
     //                 </div>`;}
     // }
 {
+
+  //  changes for additional Informationen
+  // not quite sure how to do it (yet)
   answer_container_generator: function(config,CT){
     const quest = babeUtils.view.fill_defaults_post_test(config);
     return `<form>
@@ -196,8 +202,8 @@ const post_test = babeViews.view_generator("post_test",{
                 <input type="text" id="languages"/>
             </p>
             <p class='babe-view-text'>
-                <label for="yearsEnglish">${quest.yearsEnglish.title}:</label>
-                <input type="number" name="yearsEnglish" min="0" max="110" id="yearsEnglish" />
+                <label for="age">${quest.age.title}:</label>
+                <input type="number" name="age" min="0" max="110" id="age" />
             </p>
             <p class="babe-view-text">
                 <label for="comments">${quest.comments.title}</label>
@@ -243,7 +249,7 @@ const thanks = babeViews.view_generator("thanks", {
     trials: 1,
     name: 'thanks',
     title: 'Vielen Dank für deine Teilnahme an diesem Experiment! Wir freuen uns, wenn Du es mit deinen Freund*innnen teilst',
-    prolificConfirmText: 'Press the button'
+    prolificConfirmText: 'Drück den Knopf!'
 });
 
 /** trial (babe's Trial Type Views) below
