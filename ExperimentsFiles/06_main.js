@@ -26,7 +26,7 @@ if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
     ]
 }
 else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
-  console.log("german,2");
+  //console.log("german,2");
   views_seq_language = [
       intro,
       instructions,
@@ -60,7 +60,7 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
 else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
   console.log("english,2");
     views_seq_language = [
-      test_english_man,
+      //test_english_man,
         intro,
         instructions,
         dilemma_1_english,

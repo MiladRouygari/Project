@@ -435,12 +435,12 @@ const rating_choice_2_english = babeViews.view_generator("rating_scale", {
     trials: trial_info.forced_choice_2_english.length,
     // name should be identical to the variable name
     name: 'rating_choice_2_english',
-<<<<<<< HEAD
-    data: getRandomisedRatingChoiceEnglish2(),},
+    data: getRandomisedRatingChoiceEnglish2()
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
     // }
+  },
     {
       answer_container_generator: function (config, CT) {
        return `<div class='babe-view-answer-container'>
@@ -473,14 +473,11 @@ const rating_choice_2_english = babeViews.view_generator("rating_scale", {
 
   }
     }
-=======
-    data: getRandomisedRatingChoiceEnglish2(),
->>>>>>> 249f74f3dda04f1d41c0028e593d2b02da436ddd
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
     // }
-});
+);
 
 const rating_choice_3_english = babeViews.view_generator("rating_scale", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
@@ -488,7 +485,6 @@ const rating_choice_3_english = babeViews.view_generator("rating_scale", {
     // name should be identical to the variable name
     name: 'rating_choice_3_english',
     data: getRandomisedRatingChoiceEnglish3(),
-<<<<<<< HEAD
   },
   // you can add custom functions at different stages through a view's life cycle
   // hook: {
@@ -526,13 +522,6 @@ const rating_choice_3_english = babeViews.view_generator("rating_scale", {
 
 }
   }
-=======
->>>>>>> 249f74f3dda04f1d41c0028e593d2b02da436ddd
-    // you can add custom functions at different stages through a view's life cycle
-    // hook: {
-    //     after_response_enabled: check_response
-    // }
-<<<<<<< HEAD
 );
 
 
@@ -609,9 +598,6 @@ const test_english_man= babeViews.view_generator("forced_choice", {
 //   }
 //     }
 // );
-=======
-});
->>>>>>> 249f74f3dda04f1d41c0028e593d2b02da436ddd
 
 // There are many more templates available:
 // forced_choice, slider_rating, dropdown_choice, testbox_input, rating_scale, image_selection, sentence_choice,
