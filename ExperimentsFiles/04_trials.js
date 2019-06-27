@@ -8,7 +8,7 @@ const trial_info = {
     forced_choice_1_german: [
         {
             question: "Würdest du den Mann stoßen?",
-            optionLeft: 'definitiv stoßen',
+            optionLeft: 'Würde ihn definitiv nicht stoßen',
             v01: '1',
             v02: '2',
             v03: "3",
@@ -16,7 +16,7 @@ const trial_info = {
             v05: "5",
             v06: "6",
             v07: "7",
-            optionRight: 'definitiv nicht stoßen',
+            optionRight: 'Würde ihn definitiv stoßen',
             dilemma: 'footbridge',
             language: 'german'
         },
@@ -65,8 +65,8 @@ const trial_info = {
     ],
     forced_choice_2_german: [
       {
-          question: "Würdest du den Mann stoßen ? -need to edit here-",
-          optionLeft: 'definitiv stoßen',
+          question: "Würdest du den Mann überfahren?",
+          optionLeft: 'Würde ihn definitiv nicht überfahren',
           v01: '1',
           v02: '2',
           v03: "3",
@@ -74,7 +74,7 @@ const trial_info = {
           v05: "5",
           v06: "6",
           v07: "7",
-          optionRight: 'definitiv nicht stoßen',
+          optionRight: 'Würde ihn definitiv überfahren',
           dilemma: 'bikers',
           language: 'german'
       },
@@ -123,8 +123,8 @@ const trial_info = {
     ],
     forced_choice_3_german: [
       {
-          question: "Würdest du den Mann stoßen ? -need to edit here-",
-          optionLeft: 'definitiv stoßen',
+          question: "Würdest du den Troll stoßen?",
+          optionLeft: 'Würde ihn definitiv nicht stoßen',
           v01: '1',
           v02: '2',
           v03: "3",
@@ -132,12 +132,12 @@ const trial_info = {
           v05: "5",
           v06: "6",
           v07: "7",
-          optionRight: 'definitiv nicht stoßen',
+          optionRight: 'Würde ihn definitiv stoßen',
           dilemma: 'fairyland',
           language: 'german'
       },
       {
-          question: "Wie lebhaft stellst du dir den Mann vor?",
+          question: "Wie lebhaft stellst du dir den Troll vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -151,7 +151,7 @@ const trial_info = {
           language: 'german'
       },
       {
-          question: "Wie lebhaft stellst du dir die fünf Menschen vor?",
+          question: "Wie lebhaft stellst du dir die fünf Trolle vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -182,7 +182,7 @@ const trial_info = {
     forced_choice_1_english: [
       {
           question: "Would you push the man?",
-          optionLeft: 'definitely would not push him',
+          optionLeft: 'Definitely would not push him',
           v01: '1',
           v02: '2',
           v03: "3",
@@ -190,7 +190,7 @@ const trial_info = {
           v05: "5",
           v06: "6",
           v07: "7",
-          optionRight: 'definitely would not push him',
+          optionRight: 'Definitely would push him',
           dilemma: 'footbridge',
           language: 'english'
       },
@@ -239,8 +239,8 @@ const trial_info = {
     ],
     forced_choice_2_english: [
       {
-          question: "Would you push the man?",
-          optionLeft: 'definitely would not push him',
+          question: "Would you run over the man?",
+          optionLeft: 'Definitely would not run over him',
           v01: '1',
           v02: '2',
           v03: "3",
@@ -248,7 +248,7 @@ const trial_info = {
           v05: "5",
           v06: "6",
           v07: "7",
-          optionRight: 'definitely would not push him',
+          optionRight: 'Definitely would run over him',
           dilemma: 'bikers',
           language: 'english'
       },
@@ -297,8 +297,8 @@ const trial_info = {
   ],
     forced_choice_3_english: [
       {
-          question: "Would you push the man?",
-          optionLeft: 'definitely would not push him',
+          question: "Would you push the troll?",
+          optionLeft: 'Definitely would not push him',
           v01: '1',
           v02: '2',
           v03: "3",
@@ -306,7 +306,7 @@ const trial_info = {
           v05: "5",
           v06: "6",
           v07: "7",
-          optionRight: 'definitely would not push him',
+          optionRight: 'Definitely would push him',
           dilemma: 'fairyland',
           language: 'english'
       },
