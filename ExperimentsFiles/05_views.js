@@ -198,13 +198,30 @@ const post_test = babeViews.view_generator("post_test",{
                 </select>
             </p>
             <p class='babe-view-text'>
-                <label for="languages" name="languages">${quest.langs.title}:<br /><span>${quest.langs.text}</</span></label>
-                <input type="text" id="languages"/>
+                <label for="languages">${quest.langs.title}:</label>
+                <select id="languages" name="languages">
+                    <option></option>
+                    <option value="${"Deutsch"}">${"Deutsch"}</option>
+                    <option value="${"andere"}">${"andere"}</option>
+                </select>
+            <p class='babe-view-text'>
+                <label for="foreign">${"Fremdsprache Englisch in Jahren"}:</label>
+                <input type="number" name="foreign" min="0" max="110" id="years" />
             </p>
             <p class='babe-view-text'>
-                <label for="age">${quest.age.title}:</label>
-                <input type="number" name="age" min="0" max="110" id="years" />
-            </p>
+                <label for="provicency">${"Englisch Level"}:</label>
+                <select id="provicency" name="provicency">
+                    <option></option>
+                    <option value="${"A1"}">${"A1 - Elementare Sprachanwendung"}</option>
+                    <option value="${"A2"}">${"A2"}</option>
+                    <option value="${"B1"}">${"B1 - Selbstsändige Sprachanwendung"}</option>
+                    <option value="${"B2"}">${"B2"}</option>
+                    <option value="${"C1"}">${"C1 - Kompetente Sprachanwendung"}</option>
+                    <option value="${"C2"}">${"C2"}</option>
+                    <option value="${"Muttersprachler*in"}">${"Muttersprachler*in"}</option>
+
+
+                </select>
             <p class="babe-view-text">
                 <label for="comments">${quest.comments.title}</label>
                 <textarea name="comments" id="comments" rows="6" cols="40"></textarea>
@@ -320,32 +337,32 @@ const rating_choice_1_german = babeViews.view_generator("rating_scale", {
              <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionRight}</strong>
              </div>`;
 
-}
-{
-  handle_response_function: function(config, CT, babe, answer_container_generator, startingTime) {
-
-      // create the answer container
-      $(".babe-view").append(answer_container_generator(config, CT));
-
-      // attaches an event listener to the radio button input
-      // when an input is selected a response property with a value equal
-      // to the answer is added to the trial object
-      // as well as a readingTimes property with value
-      $("input[name=answer]").on("change", function() {
-      const RT = Date.now() - startingTime;
-      let trial_data = {
-          trial_name: config.name,
-          trial_number: CT + 1,
-          response: $("input[name=answer]:checked").val(),
-          RT: RT
-      };
-      trial_data = babeUtils.view.save_config_trial_data(config.data[CT], trial_data);
-      babe.trial_data.push(trial_data);
-      babe.findNextView();
-      });
-
-  }
 },
+// {
+//   handle_response_function: function(config, CT, babe, answer_container_generator, startingTime) {
+//
+//       // create the answer container
+//       $(".babe-view").append(answer_container_generator(config, CT));
+//
+//       // attaches an event listener to the radio button input
+//       // when an input is selected a response property with a value equal
+//       // to the answer is added to the trial object
+//       // as well as a readingTimes property with value
+//       $("input[name=answer]").on("change", function() {
+//       const RT = Date.now() - startingTime;
+//       let trial_data = {
+//           trial_name: config.name,
+//           trial_number: CT + 1,
+//           response: $("input[name=answer]:checked").val(),
+//           RT: RT
+//       };
+//       trial_data = babeUtils.view.save_config_trial_data(config.data[CT], trial_data);
+//       babe.trial_data.push(trial_data);
+//       babe.findNextView();
+//       });
+//
+//   }
+// },
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response

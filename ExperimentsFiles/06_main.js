@@ -2,7 +2,7 @@
 $(window).bind("load", function() {
 // this function returns random languege english/german
 function getLanguage(){
-    return (Math.floor(Math.random()*2) == 0) ? 'german': 'english';
+  return (Math.floor(Math.random()*2) == 0) ? 'german': 'english';
 }
 
 function tinyBityRandomNum(){
