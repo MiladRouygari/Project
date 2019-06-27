@@ -321,6 +321,31 @@ const rating_choice_1_german = babeViews.view_generator("rating_scale", {
              </div>`;
 
 }
+{
+  handle_response_function: function(config, CT, babe, answer_container_generator, startingTime) {
+
+      // create the answer container
+      $(".babe-view").append(answer_container_generator(config, CT));
+
+      // attaches an event listener to the radio button input
+      // when an input is selected a response property with a value equal
+      // to the answer is added to the trial object
+      // as well as a readingTimes property with value
+      $("input[name=answer]").on("change", function() {
+      const RT = Date.now() - startingTime;
+      let trial_data = {
+          trial_name: config.name,
+          trial_number: CT + 1,
+          response: $("input[name=answer]:checked").val(),
+          RT: RT
+      };
+      trial_data = babeUtils.view.save_config_trial_data(config.data[CT], trial_data);
+      babe.trial_data.push(trial_data);
+      babe.findNextView();
+      });
+
+  }
+},
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
@@ -367,7 +392,7 @@ const rating_choice_2_german = babeViews.view_generator("rating_scale", {
              <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionRight}</strong>
              </div>`;
 
-}
+},
     // you can add custom functions at different stages through a view's life cycle
     // hook: {
     //     after_response_enabled: check_response
