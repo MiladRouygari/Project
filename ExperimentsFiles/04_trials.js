@@ -21,7 +21,7 @@ const trial_info = {
             language: 'german'
         },
         {
-            question: "Wie lebhaft stellst du dir den Mann vor?",
+            question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir den Mann vor?",
             optionLeft: '',
             v01: 'Kein Bild                 ',
             v02: 'Sehr wage & trüb           ',
@@ -35,7 +35,7 @@ const trial_info = {
             language: 'german'
         },
         {
-            question: "Wie lebhaft stellst du dir die fünf Menschen vor?",
+            question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die fünf Menschen vor?",
             optionLeft: '',
             v01: 'Kein Bild                 ',
             v02: 'Sehr wage & trüb           ',
@@ -49,7 +49,7 @@ const trial_info = {
             language: 'german'
         },
         {
-            question: "Wie lebhaft stellst du dir die gesamte Situation vor?",
+            question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die gesamte Situation vor?",
             optionLeft: '',
             v01: 'Kein Bild                 ',
             v02: 'Sehr wage & trüb           ',
@@ -93,7 +93,7 @@ const trial_info = {
           language: 'german'
       },
       {
-          question: "Wie lebhaft stellst du dir die fünf Menschen vor?",
+          question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die fünf Menschen vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -107,7 +107,7 @@ const trial_info = {
           language: 'german'
       },
       {
-          question: "Wie lebhaft stellst du dir die gesamte Situation vor?",
+          question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die gesamte Situation vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -137,7 +137,7 @@ const trial_info = {
           language: 'german'
       },
       {
-          question: "Wie lebhaft stellst du dir den Troll vor?",
+          question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir den Troll vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -151,7 +151,7 @@ const trial_info = {
           language: 'german'
       },
       {
-          question: "Wie lebhaft stellst du dir die fünf Trolle vor?",
+          question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die fünf Trolle vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -165,7 +165,7 @@ const trial_info = {
           language: 'german'
       },
       {
-          question: "Wie lebhaft stellst du dir die gesamte Situation vor?",
+          question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die gesamte Situation vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -195,7 +195,7 @@ const trial_info = {
           language: 'english'
       },
       {
-          question: "How vividly can you picture the man?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the man?",
           optionLeft: '',
           v01: 'no image                   ',
           v02: 'Very vague & dim           ',
@@ -209,7 +209,7 @@ const trial_info = {
           language: 'english'
       },
       {
-          question: "How vividly can you picture the five people?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the five people?",
           optionLeft: '',
           v01: 'no image                    ',
           v02: 'Very vague & dim            ',
@@ -223,7 +223,7 @@ const trial_info = {
           language: 'english'
       },
       {
-          question: "How vividly can you picture the overall scene?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the overall scene?",
           optionLeft: '',
           v01: 'no image                    ',
           v02: 'Very vague & dim            ',
@@ -253,7 +253,7 @@ const trial_info = {
           language: 'english'
       },
       {
-          question: "How vividly can you picture the man?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the man?",
           optionLeft: '',
           v01: 'no image',
           v02: 'Very vague & dim',
@@ -267,7 +267,7 @@ const trial_info = {
           language: 'english'
       },
       {
-          question: "How vividly can you picture the five people?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the five people?",
           optionLeft: '',
           v01: 'no image',
           v02: 'Very vague & dim',
@@ -281,7 +281,7 @@ const trial_info = {
           language: 'english'
       },
       {
-          question: "How vividly can you picture the overall scene?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the overall scene?",
           optionLeft: '',
           v01: 'no image',
           v02: 'Very vague & dim',
@@ -311,7 +311,7 @@ const trial_info = {
           language: 'english'
       },
       {
-          question: "How vividly can you picture the man?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the troll?",
           optionLeft: '',
           v01: 'no image',
           v02: 'Very vague & dim',
@@ -325,7 +325,7 @@ const trial_info = {
           language: 'english'
       },
       {
-          question: "How vividly can you picture the five people?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the five trolls?",
           optionLeft: '',
           v01: 'no image',
           v02: 'Very vague & dim',
@@ -339,7 +339,7 @@ const trial_info = {
           language: 'english'
       },
       {
-          question: "How vividly can you picture the overall scene?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the overall scene?",
           optionLeft: '',
           v01: 'no image',
           v02: 'Very vague & dim',
