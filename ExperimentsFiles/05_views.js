@@ -434,6 +434,39 @@ const rating_choice_1_english = babeViews.view_generator("rating_scale", {
     // hook: {
     //     after_response_enabled: check_response
     // }
+  },
+  {
+    answer_container_generator: function (config, CT) {
+     return `<div class='babe-view-answer-container'>
+              <p class='babe-view-question'>${config.data[CT].question}</p>
+            <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionLeft}</strong>
+            <br>
+             <label for='o1' class='babe-response-buttons'>${config.data[CT].v01}</label>
+             <input type='radio' name='answer' id='o1' value=1 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v02}</label>
+             <input type='radio' name='answer' id='o2' value=2 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v03}</label>
+             <input type='radio' name='answer' id='o3' value=3 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v04}</label>
+             <input type='radio' name='answer' id='o4' value=4 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v05}</label>
+             <input type='radio' name='answer' id='o5' value=5 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v06}</label>
+             <input type='radio' name='answer' id='o6' value=6 />
+             <br>
+             <label for='o2' class='babe-response-buttons'>${config.data[CT].v07}</label>
+             <input type='radio' name='answer' id='o7' value=7 />
+             <br>
+             <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionRight}</strong>
+             </div>`;
+
+}
+
 });
 
 const rating_choice_2_english = babeViews.view_generator("rating_scale", {
