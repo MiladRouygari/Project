@@ -251,7 +251,8 @@ function getRandomisedRatingChoiceEnglishtest(){
 }
 
 
-const coin = _.sample(["head", "tail"]); // You can determine global (random) parameters here
+
+ // You can determine global (random) parameters here
 // Declare your variables here
 
 

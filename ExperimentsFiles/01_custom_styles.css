@@ -1,6 +1,17 @@
 /* In this file you can overwrite/extend the given babe-styles or declare your own ones */
 
 /* Example of extending a given babe-style */
+body{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+/*overflow: hidden;
+position: fixed;*/
+}
 
 .babe-view-stimulus-container {
     height: 0;
@@ -59,7 +70,26 @@
     font-size: 17px;
     line-height: 27px;
     font-family: "Lato", "Noto Sans", sans-serif;
-    margin: 30px auto;
+    margin: 5px auto;
     max-width: 90%;
     text-align: center;
+}
+
+
+.babe-view-answer-container {
+    text-align: center;
+    margin: 10px 0 0 0 ;
+}
+
+.noScroll {
+    overflow: hidden;
+    position:fixed;
+}
+
+.babe-post-test-view form {
+    padding: 0;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }

@@ -26,7 +26,7 @@ if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
     ]
 }
 else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
-  //console.log("german,2");
+  console.log("german,2");
   views_seq_language = [
       intro,
       instructions,
@@ -51,8 +51,10 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
       test_english_man,
       dilemma_2_english,
       rating_choice_2_english,
+      test_english_car,
       dilemma_3_english,
       rating_choice_3_english,
+      test_english_fairy,
       post_test,
       thanks,
     ]
@@ -66,11 +68,12 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
         dilemma_1_english,
         rating_choice_1_english,
         test_english_man,
-        test_english_man,
         dilemma_3_english,
         rating_choice_3_english,
+        test_english_fairy,
         dilemma_2_english,
         rating_choice_2_english,
+        test_english_car,
         post_test,
         thanks,
     ]
@@ -83,6 +86,8 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
             e.preventDefault();
         }
     };
+    
+
 
     // in debug mode this returns the babe-object, which you can access in the console of your browser
     // calls babeInit
@@ -94,7 +99,7 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
         views_seq: views_seq_language,
         // Here, you can specify all information for the deployment
         deploy: {
-            experimentID: "INSERT_A_NUMBER",
+            experimentID: generateID(8),
             serverAppURL: "https://babe-demo.herokuapp.com/api/submit_experiment/",
             // Possible deployment methods are:
             // "debug" and "directLink"
