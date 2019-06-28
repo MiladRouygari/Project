@@ -25,15 +25,14 @@ if(getLanguage() == 'german') {
 else if (getLanguage() == 'english') {
   console.log("english");
   views_seq_language = [
-
       intro,
       instructions,
       dilemma_1_english,
       rating_choice_1_english,
-      test_english_man,
+      test_comprehension_1_english,
       dilemma_2_english,
       rating_choice_2_english,
-      test_english_car,
+      test_comprehension_2_english,
       post_test,
       thanks,
     ]
