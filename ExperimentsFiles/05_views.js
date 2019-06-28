@@ -542,7 +542,7 @@ const test_comprehension_2_english= babeViews.view_generator("forced_choice", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     trials: comprehension_test.fc_comprehension_2_english.length,
     // name should be identical to the variable name
-    name: 'test_english_car',
+    name: 'test_comprehension_2_english',
     data: comprehension_test.fc_comprehension_2_english,
   },
   // you can add custom functions at different stages through a view's life cycle
