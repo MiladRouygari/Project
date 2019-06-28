@@ -18,7 +18,8 @@ const trial_info = {
             v07: "7",
             optionRight: 'Würde ihn definitiv stoßen',
             dilemma: 'footbridge',
-            language: 'german'
+            language: 'german',
+            question_kind: 'decision'
         },
         {
             question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir den Mann vor?",
@@ -32,7 +33,8 @@ const trial_info = {
             v07: "Absolut klares Bild     ",
             optionRight: ' ',
             dilemma: 'footbridge',
-            language: 'german'
+            language: 'german',
+            question_kind: 'vivid_man'
         },
         {
             question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die fünf Menschen vor?",
@@ -46,7 +48,8 @@ const trial_info = {
             v07: "Absolut klares Bild     ",
             optionRight: ' ',
             dilemma: 'footbridge',
-            language: 'german'
+            language: 'german',
+            question_kind: 'vivid_people'
         },
         {
             question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die gesamte Situation vor?",
@@ -60,7 +63,8 @@ const trial_info = {
             v07: "Absolut klares Bild     ",
             optionRight: ' ',
             dilemma: 'footbridge',
-            language: 'german'
+            language: 'german',
+            question_kind: 'vivid_overall'
         }
     ],
     forced_choice_2_german: [
@@ -76,7 +80,8 @@ const trial_info = {
           v07: "7",
           optionRight: 'Würde ihn definitiv überfahren',
           dilemma: 'bikers',
-          language: 'german'
+          language: 'german',
+          question_kind: 'decision'
       },
       {
           question: "Wie lebhaft stellst du dir den Mann vor?",
@@ -90,7 +95,8 @@ const trial_info = {
           v07: "Absolut klares Bild     ",
           optionRight: ' ',
           dilemma: 'bikers',
-          language: 'german'
+          language: 'german',
+          question_kind: 'vivid_man'
       },
       {
           question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die fünf Menschen vor?",
@@ -104,7 +110,8 @@ const trial_info = {
           v07: "Absolut klares Bild     ",
           optionRight: ' ',
           dilemma: 'bikers',
-          language: 'german'
+          language: 'german',
+          question_kind: 'vivid_people'
       },
       {
           question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die gesamte Situation vor?",
@@ -118,7 +125,8 @@ const trial_info = {
           v07: "Absolut klares Bild     ",
           optionRight: ' ',
           dilemma: 'bikers',
-          language: 'german'
+          language: 'german',
+          question_kind: 'vivid_overall'
       }
     ],
     forced_choice_3_german: [
@@ -192,7 +200,8 @@ const trial_info = {
           v07: "7",
           optionRight: 'Definitely would push him',
           dilemma: 'footbridge',
-          language: 'english'
+          language: 'english',
+          question_kind: 'decision'
       },
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the man?",
@@ -206,7 +215,8 @@ const trial_info = {
           v07: "Absolutely clear image     ",
           optionRight: ' ',
           dilemma: 'footbridge',
-          language: 'english'
+          language: 'english',
+          question_kind: 'vivid_man'
       },
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the five people?",
@@ -220,7 +230,8 @@ const trial_info = {
           v07: "Absolutely clear image      ",
           optionRight: ' ',
           dilemma: 'footbridge',
-          language: 'english'
+          language: 'english',
+          question_kind: 'vivid_people'
       },
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the overall scene?",
@@ -234,7 +245,8 @@ const trial_info = {
           v07: "Absolutely clear image     ",
           optionRight: ' ',
           dilemma: 'footbridge',
-          language: 'english'
+          language: 'english',
+          question_kind: 'vivid_overall'
       },
     ],
     forced_choice_2_english: [
@@ -250,7 +262,8 @@ const trial_info = {
           v07: "7",
           optionRight: 'Definitely would run over him',
           dilemma: 'bikers',
-          language: 'english'
+          language: 'english',
+          question_kind: 'decision'
       },
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the man?",
@@ -264,7 +277,8 @@ const trial_info = {
           v07: "Absolutely clear image",
           optionRight: ' ',
           dilemma: 'bikers',
-          language: 'english'
+          language: 'english',
+          question_kind: 'vivid_man'
       },
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the five people?",
@@ -278,7 +292,8 @@ const trial_info = {
           v07: "Absolutely clear image",
           optionRight: ' ',
           dilemma: 'bikers',
-          language: 'english'
+          language: 'english',
+          question_kind: 'vivid_people'
       },
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the overall scene?",
@@ -292,7 +307,8 @@ const trial_info = {
           v07: "Absolutely clear image",
           optionRight: ' ',
           dilemma: 'bikers',
-          language: 'english'
+          language: 'english',
+          question_kind: 'vivid_overall'
       },
   ],
     forced_choice_3_english: [
@@ -349,8 +365,9 @@ const trial_info = {
           v06: "Very clear",
           v07: "Absolutely clear image",
           optionRight: ' ',
-            dilemma: 'fairyland',
-            language: 'english'
+          dilemma: 'fairyland',
+          language: 'english',
+
       },
   ],
 
@@ -367,7 +384,8 @@ forced_choice_english_test_trolly:[
   pic3:"<img src='images/trolly3.jpg' alt='trolly3' style='width:100%;height:auto;'>",
   pic4:"<img src='images/trolly4.jpg' alt='trolly4' style='width:100%;height:auto;'>",
   dilemma: 'footbridge',
-  language: 'german'
+  language: 'german',
+  question_kind: 'english_test'
 },
 
 ],
@@ -379,7 +397,8 @@ forced_choice_english_test_car:[
   pic3:"<img src='images/weather.jpg' alt='trolly3' style='width:100%;height:auto;'>",
   pic4:"<img src='images/weather.jpg' alt='trolly4' style='width:100%;height:auto;'>",
   dilemma: 'footbridge',
-  language: 'german'
+  language: 'german',
+  question_kind: 'english_test'
 },
 
 ],

@@ -1,6 +1,7 @@
 /* In this file you can overwrite/extend the given babe-styles or declare your own ones */
 
 /* Example of extending a given babe-style */
+
 body{
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -8,7 +9,7 @@ body{
        -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+                                  supported by Chrome and Opera */ */
 /*overflow: hidden;
 position: fixed;*/
 }
