@@ -78,40 +78,6 @@ function getRandomisedRatingChoiceGerman2(){
    return randomised
 }
 
-// German 3
-function getRandomisedRatingChoiceGerman3(){
-  firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
-
-  var nums = [1,2,3],
-    ranNums = [],
-    i = nums.length,
-    j = 0;
-
-  while (i--) {
-    j = Math.floor(Math.random() * (i+1));
-    ranNums.push(nums[j]);
-    nums.splice(j,1);
-  }
-
-   var randomised = new Array(4)
-  if (firstBlock == 'decision'){
-    randomised[0] = trial_info.forced_choice_3_german[0]
-    // Populate randomised with the next 3 values
-    randomised[1] = trial_info.forced_choice_3_german[ranNums[0]]
-    randomised[2] = trial_info.forced_choice_3_german[ranNums[1]]
-    randomised[3] = trial_info.forced_choice_3_german[ranNums[2]]
-  }
-
-  else {
-    // vividness is the first 3
-    randomised[0] = trial_info.forced_choice_3_german[ranNums[0]]
-    randomised[1] = trial_info.forced_choice_3_german[ranNums[1]]
-    randomised[2] = trial_info.forced_choice_3_german[ranNums[2]]
-    randomised[3] = trial_info.forced_choice_3_german[0]
-  }
-
-   return randomised
-}
 
 // Enlgish1
 function getRandomisedRatingChoiceEnglish1(){
@@ -181,40 +147,7 @@ function getRandomisedRatingChoiceEnglish2(){
 
    return randomised
 }
-// English 3
-function getRandomisedRatingChoiceEnglish3(){
-  firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
 
-  var nums = [1,2,3],
-    ranNums = [],
-    i = nums.length,
-    j = 0;
-
-  while (i--) {
-    j = Math.floor(Math.random() * (i+1));
-    ranNums.push(nums[j]);
-    nums.splice(j,1);
-  }
-
-   var randomised = new Array(4)
-  if (firstBlock == 'decision'){
-    randomised[0] = trial_info.forced_choice_3_english[0]
-    // Populate randomised with the next 3 values
-    randomised[1] = trial_info.forced_choice_3_english[ranNums[0]]
-    randomised[2] = trial_info.forced_choice_3_english[ranNums[1]]
-    randomised[3] = trial_info.forced_choice_3_english[ranNums[2]]
-  }
-
-  else {
-    // vividness is the first 3
-    randomised[0] = trial_info.forced_choice_3_english[ranNums[0]]
-    randomised[1] = trial_info.forced_choice_3_english[ranNums[1]]
-    randomised[2] = trial_info.forced_choice_3_english[ranNums[2]]
-    randomised[3] = trial_info.forced_choice_3_english[0]
-  }
-
-   return randomised
-}
 
 function getRandomisedRatingChoiceEnglishtest(){
   firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
