@@ -1,17 +1,15 @@
 // In this file you initialize and configure your experiment using babeInit
 $(window).bind("load", function() {
 // this function returns random languege english/german
+// could also make this global variable
 function getLanguage(){
   return (Math.floor(Math.random()*2) == 0) ? 'german': 'english';
 }
 
-function tinyBityRandomNum(){
-  return (Math.floor(Math.random()*2) == 0) ? '1': '2';
-}
 
 views_seq_language = []
-if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
-  console.log("german,1");
+if(getLanguage() == 'german') {
+  console.log("german");
   views_seq_language = [
       intro,
       instructions,
@@ -19,29 +17,13 @@ if(getLanguage() == 'german' && tinyBityRandomNum() == '1') {
       rating_choice_1_german,
       dilemma_2_german,
       rating_choice_2_german,
-      dilemma_3_german,
-      rating_choice_3_german,
       post_test,
       thanks,
     ]
 }
-else if (getLanguage() == 'german' && tinyBityRandomNum() == '2') {
-  console.log("german,2");
-  views_seq_language = [
-      intro,
-      instructions,
-      dilemma_1_german,
-      rating_choice_1_german,
-      dilemma_3_german,
-      rating_choice_3_german,
-      dilemma_2_german,
-      rating_choice_2_german,
-      post_test,
-      thanks,
-    ]
-}
-else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
-  console.log("english,1");
+
+else if (getLanguage() == 'english') {
+  console.log("english");
   views_seq_language = [
 
       intro,
@@ -52,32 +34,11 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '1') {
       dilemma_2_english,
       rating_choice_2_english,
       test_english_car,
-      dilemma_3_english,
-      rating_choice_3_english,
-      test_english_fairy,
       post_test,
       thanks,
     ]
 }
-else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
-  console.log("english,2");
-    views_seq_language = [
-      //test_english_man,
-        intro,
-        instructions,
-        dilemma_1_english,
-        rating_choice_1_english,
-        test_english_man,
-        dilemma_3_english,
-        rating_choice_3_english,
-        test_english_fairy,
-        dilemma_2_english,
-        rating_choice_2_english,
-        test_english_car,
-        post_test,
-        thanks,
-    ]
-}
+
 
 
     // prevent scrolling when space is pressed
@@ -86,7 +47,7 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
             e.preventDefault();
         }
     };
-    
+
 
 
     // in debug mode this returns the babe-object, which you can access in the console of your browser
@@ -114,10 +75,8 @@ else if (getLanguage() == 'english' && tinyBityRandomNum() == '2') {
                 // list the view-names of the views for which you want a progress bar
                 rating_choice_1_german.name,
                 rating_choice_2_german.name,
-                rating_choice_3_german.name,
                 rating_choice_1_english.name,
                 rating_choice_2_english.name,
-                rating_choice_3_english.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
             style: "separate",
