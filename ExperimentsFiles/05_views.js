@@ -239,34 +239,34 @@ const post_test = babeViews.view_generator("post_test", {
   }
 },
 
-{
-handle_response_functions: function(config, CT, babe, answer_container_generator, startingTime) {
-        $(".babe-view").append(answer_container_generator(config, CT));
-
-        $("#next").on("click", function(e) {
-            // prevents the form from submitting
-            e.preventDefault();
-
-            // records the post test info
-            babe.global_data.age = $("#age").val();
-            babe.global_data.gender = $("#gender").val();
-            babe.global_data.education = $("#education").val();
-            babe.global_data.languages = $("#languages").val();
-            babe.global_data.yearsEnglish = $("#age").val();
-            babe.global_data.comments = $("#comments")
-            .val()
-            .trim();
-            babe.global_data.endTime = Date.now();
-            babe.global_data.timeSpent =
-                (babe.global_data.endTime -
-                    babe.global_data.startTime) /
-                60000;
-
-            // moves to the next view
-            babe.findNextView();
-        });
-    }
-}
+// {
+// handle_response_functions: function(config, CT, babe, answer_container_generator, startingTime) {
+//         $(".babe-view").append(answer_container_generator(config, CT));
+//
+//         $("#next").on("click", function(e) {
+//             // prevents the form from submitting
+//             e.preventDefault();
+//
+//             // records the post test info
+//             babe.global_data.age = $("#age").val();
+//             babe.global_data.gender = $("#gender").val();
+//             babe.global_data.education = $("#education").val();
+//             babe.global_data.languages = $("#languages").val();
+//             babe.global_data.yearsEnglish = $("#age").val();
+//             babe.global_data.comments = $("#comments")
+//             .val()
+//             .trim();
+//             babe.global_data.endTime = Date.now();
+//             babe.global_data.timeSpent =
+//                 (babe.global_data.endTime -
+//                     babe.global_data.startTime) /
+//                 60000;
+//
+//             // moves to the next view
+//             babe.findNextView();
+//         });
+//     }
+// }
 );
 
 // The 'thanks' view is crucial; never delete it; it submits the results!
@@ -345,7 +345,7 @@ const rating_choice_1_german = babeViews.view_generator("rating_scale", {
              <strong class='babe-response-rating-option babe-view-text'>${config.data[CT].optionRight}</strong>
              </div>`;
 
-},
+}
 // {
 //   handle_response_function: function(config, CT, babe, answer_container_generator, startingTime) {
 //
