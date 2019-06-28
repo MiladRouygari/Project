@@ -249,3 +249,60 @@ check_response = function(data, next) {
 *
 *
 */
+
+
+const handle_response_functions_2 = {
+  post_test: function(config, CT, babe, answer_container_generator, startingTime) {
+      console.log("In handle response");
+       $(".babe-view").append(answer_container_generator(config, CT));
+
+       $("#next").on("click", function(e) {
+           // prevents the form from submitting
+           e.preventDefault();
+
+           // records the post test info
+           // babe.global_data.age = $("#age").val();
+           babe.global_data.age = $("#age").val();
+           babe.global_data.gender = $("#gender").val();
+           babe.global_data.education = $("#education").val();
+           babe.global_data.languages = $("#languages").val();
+           babe.global_data.years = $("#years").val();
+           babe.global_data.abroad = $("#abroad_months").val();
+           babe.global_data.provicency = $("#provicency").val();
+           babe.global_data.comments = $("#comments")
+           .val()
+           .trim();
+           babe.global_data.endTime = Date.now();
+           babe.global_data.timeSpent =
+               (babe.global_data.endTime -
+                   babe.global_data.startTime) /
+               60000;
+
+           // moves to the next view
+           babe.findNextView();
+       });
+   },
+   button_choice: function(config, CT, babe, answer_container_generator, startingTime) {
+        $(".babe-view").append(answer_container_generator(config, CT));
+
+        // attaches an event listener to the yes / no radio inputs
+        // when an input is selected a response property with a value equal
+        // to the answer is added to the trial object
+        // as well as a readingTimes property with value
+        $("input[name=answer]").on("change", function() {
+            const RT = Date.now() - startingTime;
+            let trial_data = {
+                trial_name: config.name,
+                trial_number: CT + 1,
+                response: $("input[name=answer]:checked").val(),
+                RT: RT
+            };
+
+            trial_data = babeUtils.view.save_config_trial_data(config.data[CT], trial_data);
+
+            babe.trial_data.push(trial_data);
+            babe.findNextView();
+        });
+    },
+
+}
