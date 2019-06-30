@@ -1,4 +1,4 @@
-// In this file you can instantiate your views
+comprehension_test// In this file you can instantiate your views
 // We here first instantiate wrapping views, then the trial views
 
 
@@ -511,10 +511,10 @@ const rating_choice_2_english = babeViews.view_generator("forced_choice", {
 
 const test_english_man= babeViews.view_generator("forced_choice", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: english_test.forced_choice_english_test_trolly.length,
+    trials: comprehension_test.forced_choice_english_test_trolly.length,
     // name should be identical to the variable name
     name: 'test_english_man',
-    data: english_test.forced_choice_english_test_trolly,
+    data: comprehension_test.forced_choice_english_test_trolly,
   },
   // you can add custom functions at different stages through a view's life cycle
   // hook: {
@@ -549,10 +549,86 @@ const test_english_man= babeViews.view_generator("forced_choice", {
 
 const test_english_car= babeViews.view_generator("forced_choice", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: english_test.forced_choice_english_test_car.length,
+    trials: comprehension_test.forced_choice_english_test_car.length,
     // name should be identical to the variable name
     name: 'test_english_car',
-    data: english_test.forced_choice_english_test_car,
+    data: comprehension_test.forced_choice_english_test_car,
+  },
+  // you can add custom functions at different stages through a view's life cycle
+  // hook: {
+  //     after_response_enabled: check_response
+  // }
+  {
+    answer_container_generator: function (config, CT) {
+     return  ` <div class='babe-view-answer-container'>
+              <p class='babe-view-question'>${config.data[CT].question}</p>
+               <label for='o1' class='babe-response-buttons'>${config.data[CT].pic1}</label>
+               <input type='radio' name='answer' id='o1' value='correct' />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic2}</label>
+               <input type='radio' name='answer' id='o2' value='false' />
+               <br>
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic3}</label>
+               <input type='radio' name='answer' id='o3' value='false' />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic4}</label>
+               <input type='radio' name='answer' id='o4' value='false' />
+               <br>
+               <label for='o2' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
+               <input type='radio' name='answer' id='o5' value='false' />
+               </div>`;
+
+},
+  }
+    // you can add custom functions at different stages through a view's life cycle
+    // hook: {
+    //     after_response_enabled: check_response
+    // }
+);
+
+//german
+const test_german_man= babeViews.view_generator("forced_choice", {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: comprehension_test.forced_choice_english_test_trolly.length,
+    // name should be identical to the variable name
+    name: 'test_german_man',
+    data: comprehension_test.forced_choice_german_test_trolly,
+  },
+  // you can add custom functions at different stages through a view's life cycle
+  // hook: {
+  //     after_response_enabled: check_response
+  // }
+  {
+    answer_container_generator: function (config, CT) {
+     return  ` <div class='babe-view-answer-container'>
+              <p class='babe-view-question'>${config.data[CT].question}</p>
+               <label for='o1' class='babe-response-buttons'>${config.data[CT].pic1}</label>
+               <input type='radio' name='answer' id='o1' value='correct' />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic2}</label>
+               <input type='radio' name='answer' id='o2' value='false' />
+               <br>
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic3}</label>
+               <input type='radio' name='answer' id='o3' value='false' />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic4}</label>
+               <input type='radio' name='answer' id='o4' value='false' />
+               <br>
+               <label for='o2' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
+               <input type='radio' name='answer' id='o5' value='false' />
+               </div>`;
+
+},
+  }
+    // you can add custom functions at different stages through a view's life cycle
+    // hook: {
+    //     after_response_enabled: check_response
+    // }
+);
+
+
+const test_german_car= babeViews.view_generator("forced_choice", {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: comprehension_test.forced_choice_german_test_car.length,
+    // name should be identical to the variable name
+    name: 'test_german_car',
+    data: comprehension_test.forced_choice_german_test_car,
   },
   // you can add custom functions at different stages through a view's life cycle
   // hook: {
