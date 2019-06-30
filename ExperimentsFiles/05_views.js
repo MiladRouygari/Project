@@ -132,7 +132,7 @@ const post_test = babeViews.view_generator("post_test", {
     edu_graduated_college: 'Bachelor oder vergleichbares',
     edu_higher_degree: 'Höherer Universitärer Abschluss',
     edu_training:'Vollendete Ausbildung',
-    languages_question: 'Muttersprache',
+    languages_question: 'Deutsch als Muttersprache',
     languages_more: '(in der Regel die Sprache, die Sie als Kind zu Hause gesprochen haben)',
     //age_question: 'Alter ab dem Englisch gerlernt',
     comments_question: 'Weitere Kommentare'
@@ -176,36 +176,36 @@ const post_test = babeViews.view_generator("post_test", {
                     <option value="${quest.edu.graduated_high_school}">${quest.edu.graduated_high_school}</option>
                     <option value="${quest.edu.graduated_college}">${quest.edu.graduated_college}</option>
                     <option value="${quest.edu.higher_degree}">${quest.edu.higher_degree}</option>
-                    <option value="${quest.edu.training}">${quest.edu.higher_training}</option>
-                    <option value="${quest.edu.secondary_school}">${quest.edu.secondary_school}</option>
+                    <option value="${"abgeschlossene Berufsausbildung"}">${"abgeschlossene Berufsausbildung"}</option>
+                    <option value="${"Haupt- oder Realschulabschluss"}">${"Haupt- oder Realschulsbschluss"}</option>
                 </select>
             </p>
             <p class='babe-view-text'>
                 <label for="languages">${quest.langs.title}:</label>
                 <select id="languages" name="languages">
                     <option></option>
-                    <option value="${"Deutsch"}">${"Deutsch"}</option>
-                    <option value="${"andere"}">${"andere"}</option>
+                    <option value="${"ja"}">${"ja"}</option>
+                    <option value="${"nein"}">${"nein"}</option>
                 </select>
             <p class='babe-view-text'>
-                <label if="foreign" for="foreign">${"Fremdsprache Englisch in Jahren"}:</label>
+                <label if="foreign" for="foreign">${"Englisch als Fremdsprache <br />(in Jahren)"}:</label>
                 <input type="number" name="foreign" min="0" max="110" id="years" />
             </p>
             <p class='babe-view-text'>
-                <label for="living_abroad">${"Solange habe ich einem englischsprachigen Lang gelebt <br>(in Monaten)"}:</label>
+                <label for="living_abroad">${"Auslandsaufenthalte in einem englischsprachigen Ländern<br>(in Monaten)"}:</label>
                 <input type="number" name="living_abroad" min="0" max="110" id="abroad_months" />
             </p>
             <p class='babe-view-text'>
-                <label for="provicency">${"Englisch Level"}:</label>
+                <label for="provicency">${"Bewerte deine Englischkenntinisse auf einer Skala von 1 bis 7"}:</label>
                 <select id="provicency" name="provicency">
                     <option></option>
-                    <option value="${"A1"}">${"A1 - Elementare Sprachanwendung"}</option>
-                    <option value="${"A2"}">${"A2"}</option>
-                    <option value="${"B1"}">${"B1 - Selbstsändige Sprachanwendung"}</option>
-                    <option value="${"B2"}">${"B2"}</option>
-                    <option value="${"C1"}">${"C1 - Kompetente Sprachanwendung"}</option>
-                    <option value="${"C2"}">${"C2"}</option>
-                    <option value="${"Muttersprachler*in"}">${"Muttersprachler*in"}</option>
+                    <option value="${"1"}">${"1"}</option>
+                    <option value="${"2"}">${"2"}</option>
+                    <option value="${"3"}">${"3"}</option>
+                    <option value="${"4"}">${"4"}</option>
+                    <option value="${"5"}">${"5"}</option>
+                    <option value="${"6"}">${"6"}</option>
+                    <option value="${"7"}">${"7"}</option>
 
 
                 </select>

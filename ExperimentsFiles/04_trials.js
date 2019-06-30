@@ -279,7 +279,7 @@ forced_choice_english_test_car:[
   pic2:"<img src='images/weather.jpg' alt='trolly2' style='width:100%;height:auto;'>",
   pic3:"<img src='images/weather.jpg' alt='trolly3' style='width:100%;height:auto;'>",
   pic4:"<img src='images/weather.jpg' alt='trolly4' style='width:100%;height:auto;'>",
-  dilemma: 'footbridge',
+  dilemma: 'bikers',
   language: 'german',
   question_kind: 'english_test'
 },
@@ -306,8 +306,8 @@ forced_choice_german_test_car:[
   pic2:"<img src='images/weather.jpg' alt='trolly2' style='width:100%;height:auto;'>",
   pic3:"<img src='images/weather.jpg' alt='trolly3' style='width:100%;height:auto;'>",
   pic4:"<img src='images/weather.jpg' alt='trolly4' style='width:100%;height:auto;'>",
-  dilemma: 'footbridge',
-  language: 'german',
+  dilemma: 'car',
+  language: 'bikers',
   question_kind: 'german_test'
 },
 ],
