@@ -185,7 +185,7 @@ const post_test = babeViews.view_generator("post_test", {
               </select>
            <p class='babe-view-text'>
               <label for="spoken_at_home">${"Wurde Englisch in denem Haushalt gesprochen in dem du aufgewachsen bist?"}</label>
-              <select id="spoken_at_home" name="spoken_at_home">
+              <select id="athome" name="athome">
                   <option></option>
                   <option value="${"ja"}">${"ja"}</option>
                   <option value="${"nein"}">${"nein"}</option>
@@ -199,8 +199,8 @@ const post_test = babeViews.view_generator("post_test", {
                 <input type="number" name="living_abroad" min="0" max="110" id="abroad_months" />
             </p>
             <p class='babe-view-text'>
-                <label for="provicency">${"Bewerte deine Deutschkenntinisse auf einer Skala von 1 bis 7"}:</label>
-                <select id="provicency_german" name="provicency_german">
+                <label for="proficiency">${"Bewerte deine Deutschkenntinisse auf einer Skala von 1 bis 7"}:</label>
+                <select id="proficiency_german" name="proficiency_german">
                     <option></option>
                     <option value="${"1"}">${"1"}</option>
                     <option value="${"2"}">${"2"}</option>
@@ -213,8 +213,8 @@ const post_test = babeViews.view_generator("post_test", {
 
                 </select>
             <p class='babe-view-text'>
-                <label for="provicency">${"Bewerte deine Englischkenntinisse auf einer Skala von 1 bis 7"}:</label>
-                <select id="provicency" name="provicency">
+                <label for="proficiency">${"Bewerte deine Englischkenntinisse auf einer Skala von 1 bis 7"}:</label>
+                <select id="proficiency" name="proficiency">
                     <option></option>
                     <option value="${"1"}">${"1"}</option>
                     <option value="${"2"}">${"2"}</option>
