@@ -177,7 +177,7 @@ const post_test = babeViews.view_generator("post_test", {
                     <option value="${"nein"}">${"nein"}</option>
                 </select>
           <p class='babe-view-text'>
-              <label for="languages">${"Ist Englisch deine dominate Sprache? <br> (Die Sprache die du am häugisten benutzt)"}</label>
+              <label for="languages">${"Ist Deutsch deine dominate Sprache? <br> (Die Sprache die du am häugisten benutzt)"}</label>
               <select id="dominant" name="dominant">
                   <option></option>
                   <option value="${"ja"}">${"ja"}</option>
