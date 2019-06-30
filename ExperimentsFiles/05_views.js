@@ -168,18 +168,7 @@ const post_test = babeViews.view_generator("post_test", {
                     <option value="${quest.gender.other}">${quest.gender.other}</option>
                 </select>
             </p>
-            <p class='babe-view-text'>
-                <label for="education">${quest.edu.title}:</label>
-                <select id="education" name="education">
-                    <option></option>
-                    <option value="${quest.edu.graduated_high_school}">${quest.edu.graduated_high_school}</option>
-                    <option value="${quest.edu.graduated_college}">${quest.edu.graduated_college}</option>
-                    <option value="${quest.edu.higher_degree}">${quest.edu.higher_degree}</option>
-                    <option value="${"abgeschlossene Berufsausbildung"}">${"abgeschlossene Berufsausbildung"}</option>
-                    <option value="${"Haupt- oder Realschulabschluss"}">${"Haupt- oder Realschulsbschluss"}</option>
-                    <option value="${"Kein Abschluss"}">${"Kein Abschluss"}</option>
-                </select>
-            </p>
+
             <p class='babe-view-text'>
                 <label for="languages">${quest.langs.title}:</label>
                 <select id="languages" name="languages">
@@ -692,3 +681,15 @@ const test_german_car= babeViews.view_generator("forced_choice", {
 // There are many more templates available:
 // forced_choice, slider_rating, dropdown_choice, testbox_input, rating_scale, image_selection, sentence_choice,
 // key_press, self_paced_reading and self_paced_reading_rating_scale
+// <p class='babe-view-text'>
+//     <label for="education">${quest.edu.title}:</label>
+//     <select id="education" name="education">
+//         <option></option>
+//         <option value="${quest.edu.graduated_high_school}">${quest.edu.graduated_high_school}</option>
+//         <option value="${quest.edu.graduated_college}">${quest.edu.graduated_college}</option>
+//         <option value="${quest.edu.higher_degree}">${quest.edu.higher_degree}</option>
+//         <option value="${"abgeschlossene Berufsausbildung"}">${"abgeschlossene Berufsausbildung"}</option>
+//         <option value="${"Haupt- oder Realschulabschluss"}">${"Haupt- oder Realschulsbschluss"}</option>
+//         <option value="${"Kein Abschluss"}">${"Kein Abschluss"}</option>
+//     </select>
+// </p>
