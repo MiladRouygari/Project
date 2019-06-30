@@ -511,17 +511,10 @@ const rating_choice_2_english = babeViews.view_generator("forced_choice", {
 
 const test_comprehension_1_english = babeViews.view_generator("forced_choice", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-<<<<<<< HEAD
-    trials: comprehension_test.fc_comprehension_1_english.length,
-    // name should be identical to the variable name
-    name: 'test_comprehension_1_english',
-    data: comprehension_test.fc_comprehension_1_english,
-=======
     trials: comprehension_test.forced_choice_english_test_trolly.length,
     // name should be identical to the variable name
     name: 'test_english_man',
     data: comprehension_test.forced_choice_english_test_trolly,
->>>>>>> tmp
   },
   // you can add custom functions at different stages through a view's life cycle
   // hook: {
@@ -556,12 +549,6 @@ const test_comprehension_1_english = babeViews.view_generator("forced_choice", {
 
 const test_comprehension_2_english= babeViews.view_generator("forced_choice", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-<<<<<<< HEAD
-    trials: comprehension_test.fc_comprehension_2_english.length,
-    // name should be identical to the variable name
-    name: 'test_comprehension_2_english',
-    data: comprehension_test.fc_comprehension_2_english,
-=======
     trials: comprehension_test.forced_choice_english_test_car.length,
     // name should be identical to the variable name
     name: 'test_english_car',
@@ -642,7 +629,6 @@ const test_german_car= babeViews.view_generator("forced_choice", {
     // name should be identical to the variable name
     name: 'test_german_car',
     data: comprehension_test.forced_choice_german_test_car,
->>>>>>> tmp
   },
   // you can add custom functions at different stages through a view's life cycle
   // hook: {

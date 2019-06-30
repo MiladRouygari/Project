@@ -259,45 +259,33 @@ const trial_info = {
 
 
 const comprehension_test = {
-forced_choice_english_test_trolly:[
-  {
-  question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
-  pic1:"<img src='images/trolly1.jpg' alt='trolly1' style='width:100%;height:auto;'>",
-  pic2:"<img src='images/trolly2.jpg' alt='trolly2' style='width:100%;height:auto;'>",
-  pic3:"<img src='images/trolly3.jpg' alt='trolly3' style='width:100%;height:auto;'>",
-  pic4:"<img src='images/trolly4.jpg' alt='trolly4' style='width:100%;height:auto;'>",
-  dilemma: 'footbridge',
-  language: 'german',
-  question_kind: 'comprehension_test'
-},
 
-],
-fc_comprehension_2_german:[
-  {
-  question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
-  pic1:"<img src='images/weather.jpg' alt='trolly1' style='width:100%;height:auto;'>",
-  pic2:"<img src='images/weather.jpg' alt='trolly2' style='width:100%;height:auto;'>",
-  pic3:"<img src='images/weather.jpg' alt='trolly3' style='width:100%;height:auto;'>",
-  pic4:"<img src='images/weather.jpg' alt='trolly4' style='width:100%;height:auto;'>",
-  dilemma: 'bikers',
-  language: 'german',
-  question_kind: 'comprehension_test'
-},
-],
-// English trial
-fc_comprehension_1_english:[
-  {
-  question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
-  pic1:"<img src='images/trolly1.jpg' alt='trolly1' style='width:100%;height:auto;'>",
-  pic2:"<img src='images/trolly2.jpg' alt='trolly2' style='width:100%;height:auto;'>",
-  pic3:"<img src='images/trolly3.jpg' alt='trolly3' style='width:100%;height:auto;'>",
-  pic4:"<img src='images/trolly4.jpg' alt='trolly4' style='width:100%;height:auto;'>",
-  dilemma: 'footbridge',
-  language: 'english',
-  question_kind: 'comprehension_test'
-},
+  forced_choice_english_test_trolly:[
+    {
+    question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
+    pic1:"<img src='images/trolly1.jpg' alt='trolly1' style='width:100%;height:auto;'>",
+    pic2:"<img src='images/trolly2.jpg' alt='trolly2' style='width:100%;height:auto;'>",
+    pic3:"<img src='images/trolly3.jpg' alt='trolly3' style='width:100%;height:auto;'>",
+    pic4:"<img src='images/trolly4.jpg' alt='trolly4' style='width:100%;height:auto;'>",
+    dilemma: 'footbridge',
+    language: 'english',
+    question_kind: 'english_test'
+  },
 
-],
+  ],
+  forced_choice_english_test_car:[
+    {
+    question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
+    pic1:"<img src='images/weather.jpg' alt='trolly1' style='width:100%;height:auto;'>",
+    pic2:"<img src='images/weather.jpg' alt='trolly2' style='width:100%;height:auto;'>",
+    pic3:"<img src='images/weather.jpg' alt='trolly3' style='width:100%;height:auto;'>",
+    pic4:"<img src='images/weather.jpg' alt='trolly4' style='width:100%;height:auto;'>",
+    dilemma: 'bikers',
+    language: 'english',
+    question_kind: 'english_test'
+  },
+  ],
+
 
 forced_choice_german_test_trolly:[
   {
@@ -306,7 +294,7 @@ forced_choice_german_test_trolly:[
   pic2:"<img src='images/trolly2.jpg' alt='trolly2' style='width:100%;height:auto;'>",
   pic3:"<img src='images/trolly3.jpg' alt='trolly3' style='width:100%;height:auto;'>",
   pic4:"<img src='images/trolly4.jpg' alt='trolly4' style='width:100%;height:auto;'>",
-  dilemma: 'footbridge',
+  dilemma: 'footbride',
   language: 'german',
   question_kind: 'german_test'
 },
