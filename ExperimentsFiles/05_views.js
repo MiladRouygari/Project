@@ -131,7 +131,6 @@ const post_test = babeViews.view_generator("post_test", {
     edu_graduated_high_school: '(Fach-)Abitur',
     edu_graduated_college: 'Bachelor oder vergleichbares',
     edu_higher_degree: 'Höherer Universitärer Abschluss',
-    edu_training:'Vollendete Ausbildung',
     languages_question: 'Deutsch als Muttersprache',
     languages_more: '(in der Regel die Sprache, die Sie als Kind zu Hause gesprochen haben)',
     //age_question: 'Alter ab dem Englisch gerlernt',
@@ -158,7 +157,7 @@ const post_test = babeViews.view_generator("post_test", {
     return `<form>
             <p class='babe-view-text'>
                 <label for="age">${quest.age.title}:</label>
-                <input type="number" name="age" min="16" max="110" id="age" />
+                <input type="number" name="age" min="14" max="110" id="age" />
             </p>
             <p class='babe-view-text'>
                 <label for="gender">${quest.gender.title}:</label>
@@ -178,6 +177,7 @@ const post_test = babeViews.view_generator("post_test", {
                     <option value="${quest.edu.higher_degree}">${quest.edu.higher_degree}</option>
                     <option value="${"abgeschlossene Berufsausbildung"}">${"abgeschlossene Berufsausbildung"}</option>
                     <option value="${"Haupt- oder Realschulabschluss"}">${"Haupt- oder Realschulsbschluss"}</option>
+                    <option value="${"Kein Abschluss"}">${"Kein Abschluss"}</option>
                 </select>
             </p>
             <p class='babe-view-text'>
@@ -188,7 +188,7 @@ const post_test = babeViews.view_generator("post_test", {
                     <option value="${"nein"}">${"nein"}</option>
                 </select>
             <p class='babe-view-text'>
-                <label if="foreign" for="foreign">${"Englisch als Fremdsprache <br />(in Jahren)"}:</label>
+                <label if="foreign" for="foreign">${"Startzeitpunk des English Lernens/Nutzens"}:</label>
                 <input type="number" name="foreign" min="0" max="110" id="years" />
             </p>
             <p class='babe-view-text'>
