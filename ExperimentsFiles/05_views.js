@@ -187,14 +187,42 @@ const post_test = babeViews.view_generator("post_test", {
                     <option value="${"ja"}">${"ja"}</option>
                     <option value="${"nein"}">${"nein"}</option>
                 </select>
+          <p class='babe-view-text'>
+              <label for="languages">${"Ist Englisch deine dominate Sprache? <br> (Die Sprache die du am häugisten benutzt)"}</label>
+              <select id="dominant" name="dominant">
+                  <option></option>
+                  <option value="${"ja"}">${"ja"}</option>
+                  <option value="${"nein"}">${"nein"}</option>
+              </select>
+           <p class='babe-view-text'>
+              <label for="spoken_at_home">${"Wurde Englisch in denem Haushalt gesprochen in dem du aufgewachsen bist?"}</label>
+              <select id="spoken_at_home" name="spoken_at_home">
+                  <option></option>
+                  <option value="${"ja"}">${"ja"}</option>
+                  <option value="${"nein"}">${"nein"}</option>
+              </select>
             <p class='babe-view-text'>
                 <label if="foreign" for="foreign">${"Startzeitpunk des English Lernens/Nutzens"}:</label>
                 <input type="number" name="foreign" min="0" max="110" id="years" />
             </p>
             <p class='babe-view-text'>
-                <label for="living_abroad">${"Auslandsaufenthalte in einem englischsprachigen Ländern<br>(in Monaten)"}:</label>
+                <label for="living_abroad">${"Auslandsaufenthalte in englischsprachigen Ländern<br>(in Monaten)"}:</label>
                 <input type="number" name="living_abroad" min="0" max="110" id="abroad_months" />
             </p>
+            <p class='babe-view-text'>
+                <label for="provicency">${"Bewerte deine Deutschkenntinisse auf einer Skala von 1 bis 7"}:</label>
+                <select id="provicency_german" name="provicency_german">
+                    <option></option>
+                    <option value="${"1"}">${"1"}</option>
+                    <option value="${"2"}">${"2"}</option>
+                    <option value="${"3"}">${"3"}</option>
+                    <option value="${"4"}">${"4"}</option>
+                    <option value="${"5"}">${"5"}</option>
+                    <option value="${"6"}">${"6"}</option>
+                    <option value="${"7"}">${"7"}</option>
+
+
+                </select>
             <p class='babe-view-text'>
                 <label for="provicency">${"Bewerte deine Englischkenntinisse auf einer Skala von 1 bis 7"}:</label>
                 <select id="provicency" name="provicency">

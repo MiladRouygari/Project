@@ -266,8 +266,11 @@ const handle_response_functions_2 = {
            babe.global_data.gender = $("#gender").val();
            babe.global_data.education = $("#education").val();
            babe.global_data.languages = $("#languages").val();
+           babe.global_data.spoken_at_home = $("#spoken_at_homes").val();
            babe.global_data.years = $("#years").val();
            babe.global_data.abroad = $("#abroad_months").val();
+           babe.global_data.dominant = $("#dominant").val();
+           babe.global_data.provicency_german = $("#provicency_german").val();
            babe.global_data.provicency = $("#provicency").val();
            babe.global_data.comments = $("#comments")
            .val()
