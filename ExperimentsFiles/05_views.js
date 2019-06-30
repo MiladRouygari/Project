@@ -1,4 +1,4 @@
-// In this file you can instantiate your views
+comprehension_test// In this file you can instantiate your views
 // We here first instantiate wrapping views, then the trial views
 
 
@@ -132,7 +132,7 @@ const post_test = babeViews.view_generator("post_test", {
     edu_graduated_college: 'Bachelor oder vergleichbares',
     edu_higher_degree: 'Höherer Universitärer Abschluss',
     edu_training:'Vollendete Ausbildung',
-    languages_question: 'Muttersprache',
+    languages_question: 'Deutsch als Muttersprache',
     languages_more: '(in der Regel die Sprache, die Sie als Kind zu Hause gesprochen haben)',
     //age_question: 'Alter ab dem Englisch gerlernt',
     comments_question: 'Weitere Kommentare'
@@ -176,36 +176,36 @@ const post_test = babeViews.view_generator("post_test", {
                     <option value="${quest.edu.graduated_high_school}">${quest.edu.graduated_high_school}</option>
                     <option value="${quest.edu.graduated_college}">${quest.edu.graduated_college}</option>
                     <option value="${quest.edu.higher_degree}">${quest.edu.higher_degree}</option>
-                    <option value="${quest.edu.training}">${quest.edu.higher_training}</option>
-                    <option value="${quest.edu.secondary_school}">${quest.edu.secondary_school}</option>
+                    <option value="${"abgeschlossene Berufsausbildung"}">${"abgeschlossene Berufsausbildung"}</option>
+                    <option value="${"Haupt- oder Realschulabschluss"}">${"Haupt- oder Realschulsbschluss"}</option>
                 </select>
             </p>
             <p class='babe-view-text'>
                 <label for="languages">${quest.langs.title}:</label>
                 <select id="languages" name="languages">
                     <option></option>
-                    <option value="${"Deutsch"}">${"Deutsch"}</option>
-                    <option value="${"andere"}">${"andere"}</option>
+                    <option value="${"ja"}">${"ja"}</option>
+                    <option value="${"nein"}">${"nein"}</option>
                 </select>
             <p class='babe-view-text'>
-                <label if="foreign" for="foreign">${"Fremdsprache Englisch in Jahren"}:</label>
+                <label if="foreign" for="foreign">${"Englisch als Fremdsprache <br />(in Jahren)"}:</label>
                 <input type="number" name="foreign" min="0" max="110" id="years" />
             </p>
             <p class='babe-view-text'>
-                <label for="living_abroad">${"Solange habe ich einem englischsprachigen Lang gelebt <br>(in Monaten)"}:</label>
+                <label for="living_abroad">${"Auslandsaufenthalte in einem englischsprachigen Ländern<br>(in Monaten)"}:</label>
                 <input type="number" name="living_abroad" min="0" max="110" id="abroad_months" />
             </p>
             <p class='babe-view-text'>
-                <label for="provicency">${"Englisch Level"}:</label>
+                <label for="provicency">${"Bewerte deine Englischkenntinisse auf einer Skala von 1 bis 7"}:</label>
                 <select id="provicency" name="provicency">
                     <option></option>
-                    <option value="${"A1"}">${"A1 - Elementare Sprachanwendung"}</option>
-                    <option value="${"A2"}">${"A2"}</option>
-                    <option value="${"B1"}">${"B1 - Selbstsändige Sprachanwendung"}</option>
-                    <option value="${"B2"}">${"B2"}</option>
-                    <option value="${"C1"}">${"C1 - Kompetente Sprachanwendung"}</option>
-                    <option value="${"C2"}">${"C2"}</option>
-                    <option value="${"Muttersprachler*in"}">${"Muttersprachler*in"}</option>
+                    <option value="${"1"}">${"1"}</option>
+                    <option value="${"2"}">${"2"}</option>
+                    <option value="${"3"}">${"3"}</option>
+                    <option value="${"4"}">${"4"}</option>
+                    <option value="${"5"}">${"5"}</option>
+                    <option value="${"6"}">${"6"}</option>
+                    <option value="${"7"}">${"7"}</option>
 
 
                 </select>
@@ -511,10 +511,17 @@ const rating_choice_2_english = babeViews.view_generator("forced_choice", {
 
 const test_comprehension_1_english = babeViews.view_generator("forced_choice", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+<<<<<<< HEAD
     trials: comprehension_test.fc_comprehension_1_english.length,
     // name should be identical to the variable name
     name: 'test_comprehension_1_english',
     data: comprehension_test.fc_comprehension_1_english,
+=======
+    trials: comprehension_test.forced_choice_english_test_trolly.length,
+    // name should be identical to the variable name
+    name: 'test_english_man',
+    data: comprehension_test.forced_choice_english_test_trolly,
+>>>>>>> tmp
   },
   // you can add custom functions at different stages through a view's life cycle
   // hook: {
@@ -549,10 +556,93 @@ const test_comprehension_1_english = babeViews.view_generator("forced_choice", {
 
 const test_comprehension_2_english= babeViews.view_generator("forced_choice", {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+<<<<<<< HEAD
     trials: comprehension_test.fc_comprehension_2_english.length,
     // name should be identical to the variable name
     name: 'test_comprehension_2_english',
     data: comprehension_test.fc_comprehension_2_english,
+=======
+    trials: comprehension_test.forced_choice_english_test_car.length,
+    // name should be identical to the variable name
+    name: 'test_english_car',
+    data: comprehension_test.forced_choice_english_test_car,
+  },
+  // you can add custom functions at different stages through a view's life cycle
+  // hook: {
+  //     after_response_enabled: check_response
+  // }
+  {
+    answer_container_generator: function (config, CT) {
+     return  ` <div class='babe-view-answer-container'>
+              <p class='babe-view-question'>${config.data[CT].question}</p>
+               <label for='o1' class='babe-response-buttons'>${config.data[CT].pic1}</label>
+               <input type='radio' name='answer' id='o1' value='correct' />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic2}</label>
+               <input type='radio' name='answer' id='o2' value='false' />
+               <br>
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic3}</label>
+               <input type='radio' name='answer' id='o3' value='false' />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic4}</label>
+               <input type='radio' name='answer' id='o4' value='false' />
+               <br>
+               <label for='o2' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
+               <input type='radio' name='answer' id='o5' value='false' />
+               </div>`;
+
+},
+  }
+    // you can add custom functions at different stages through a view's life cycle
+    // hook: {
+    //     after_response_enabled: check_response
+    // }
+);
+
+//german
+const test_german_man= babeViews.view_generator("forced_choice", {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: comprehension_test.forced_choice_english_test_trolly.length,
+    // name should be identical to the variable name
+    name: 'test_german_man',
+    data: comprehension_test.forced_choice_german_test_trolly,
+  },
+  // you can add custom functions at different stages through a view's life cycle
+  // hook: {
+  //     after_response_enabled: check_response
+  // }
+  {
+    answer_container_generator: function (config, CT) {
+     return  ` <div class='babe-view-answer-container'>
+              <p class='babe-view-question'>${config.data[CT].question}</p>
+               <label for='o1' class='babe-response-buttons'>${config.data[CT].pic1}</label>
+               <input type='radio' name='answer' id='o1' value='correct' />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic2}</label>
+               <input type='radio' name='answer' id='o2' value='false' />
+               <br>
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic3}</label>
+               <input type='radio' name='answer' id='o3' value='false' />
+               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic4}</label>
+               <input type='radio' name='answer' id='o4' value='false' />
+               <br>
+               <label for='o2' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
+               <input type='radio' name='answer' id='o5' value='false' />
+               </div>`;
+
+},
+  }
+    // you can add custom functions at different stages through a view's life cycle
+    // hook: {
+    //     after_response_enabled: check_response
+    // }
+);
+
+
+const test_german_car= babeViews.view_generator("forced_choice", {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: comprehension_test.forced_choice_german_test_car.length,
+    // name should be identical to the variable name
+    name: 'test_german_car',
+    data: comprehension_test.forced_choice_german_test_car,
+>>>>>>> tmp
   },
   // you can add custom functions at different stages through a view's life cycle
   // hook: {

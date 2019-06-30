@@ -15,8 +15,10 @@ if(getLanguage() == 'german') {
       instructions,
       dilemma_1_german,
       rating_choice_1_german,
+      test_german_man,
       dilemma_2_german,
       rating_choice_2_german,
+      test_german_car,
       post_test,
       thanks,
     ]
