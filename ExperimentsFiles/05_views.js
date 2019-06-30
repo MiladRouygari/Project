@@ -67,7 +67,7 @@ const dilemma_1_german = babeViews.view_generator("instructions",{
     text:  `Stell dir vor, du stehst auf einer Brücke von der aus du mehrere Bahngleise überblicken kannst.
     Du siehst ein Gleis auf dem fünf Personen festgebunden sind und einen Wagon, der auf sie zufährt.
     Du schaust zu deiner linken und da ist ein großer und schwerer Mann, der neben dir steht.
-    Die einzige Möglichkeit den Wagon zu stoppen, ist den Mann von der Brücke auf die Gleise zu stoßen,
+    Die einzige Möglichkeit den Wagon zu stoppen, wäre den Mann von der Brücke auf die Gleise zu stoßen,
     was den Mann tötet, aber fünf Menschen rettet.`,
     buttonText: 'Zu den Fragen'
 });
@@ -76,11 +76,11 @@ const dilemma_2_german = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_2_german',
     title: 'Dilemma',
-    text:  `Stell dir vor, du reist mit dem Auto, vor dir siehst du zwei Fahrbahnen.
-    Du siehst fünf Fahrradfahrer, die darauf warten, dass die Ampel umschaltet (die auf die Ampel warten) und das Auto fährt direkt auf sie zu, zu schnell um rechtzeitig zu bremsen.
-    Du schaust zu deiner linken und siehst einen Mann, der zu Fuß geht (der die Straße überqueren will?)
-    Die einzige Möglichkeit den Zusammenstoß mit den Fahrradfahrern zu verhindern ist das Lenkrad herumzureißen,
-    die Spur zu wechseln, was die gehende Person tötet aber fünf Menschen rettet.`,
+    text:  `Stell dir vor, du reist mit einem selbstfahrenden Auto, vor dir siehst du zwei Fahrbahnen.
+    Du siehst fünf Menschen, die einen Zebrastreifen überqueren und das Auto fährt auf sie zu.
+    Du schaust zu deiner linken auf die andere Fahrbahn und siehst eine Person, die den Zebrastreifen überquert.
+    Die einzige Möglichkeit den Zusammenstoß zu verhindern, wäre das Lenkrad herumzureißen, damit die
+    Fahrbahn zu wechseln, was die eine Person tötet, aber fünf Menschen rettet.`,
     buttonText: 'Zu den Fragen'
 });
 
@@ -103,11 +103,11 @@ const dilemma_2_english = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'dilemma_2_english',
     title: 'Dilemma',
-    text:  `Imagine you are traveling by car seeing two lanes in front of you.
-    You see five bikers waiting for the traffic light and the car is heading towards them.
-    You look to your left and see a lane where a person in walking.
-    The only way to avoid the crash would to jerk the wheel and thereby switch the lane,
-    killing the one walking person but saving five people.`,
+    text:  `Imagine you are traveling with a self-driving car seeing two lanes in front of you.
+    You see five people on a pedestrian crossing and the car is heading towards them.
+    You look to the left to the other lane where one person is on the pedestrian crossing.
+    The only way to avoid the crash would be to jerk the wheel and thereby switch the lane,
+    killing the one person but saving five people.`,
     buttonText: 'To the questions'
 });
 
