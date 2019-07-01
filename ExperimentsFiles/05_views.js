@@ -163,9 +163,9 @@ const post_test = babeViews.view_generator("post_test", {
                 <label for="gender">${quest.gender.title}:</label>
                 <select id="gender" name="gender">
                     <option></option>
-                    <option value="${quest.gender.male}">${quest.gender.male}</option>
-                    <option value="${quest.gender.female}">${quest.gender.female}</option>
-                    <option value="${quest.gender.other}">${quest.gender.other}</option>
+                    <option value="m">${quest.gender.male}</option>
+                    <option value="f">${quest.gender.female}</option>
+                    <option value="d">${quest.gender.other}</option>
                 </select>
             </p>
 
@@ -177,7 +177,7 @@ const post_test = babeViews.view_generator("post_test", {
                     <option value="${"nein"}">${"nein"}</option>
                 </select>
           <p class='babe-view-text'>
-              <label for="languages">${"Ist Deutsch deine dominate Sprache? <br> (Die Sprache die du am häugisten benutzt)"}</label>
+              <label for="dominant">${"Ist Deutsch deine dominate Sprache? <br> (Die Sprache die du am häugisten benutzt)"}</label>
               <select id="dominant" name="dominant">
                   <option></option>
                   <option value="${"ja"}">${"ja"}</option>
@@ -199,7 +199,7 @@ const post_test = babeViews.view_generator("post_test", {
                 <input type="number" name="living_abroad" min="0" max="110" id="abroad_months" />
             </p>
             <p class='babe-view-text'>
-                <label for="proficiency">${"Bewerte deine Deutschkenntinisse auf einer Skala von 1 bis 7"}:</label>
+                <label for="proficiency">${"Bewerte deine Deutschkenntinisse auf einer Skala von 1 bis 7 <br> (7= sehr gut)"}:</label>
                 <select id="proficiency_german" name="proficiency_german">
                     <option></option>
                     <option value="${"1"}">${"1"}</option>
@@ -213,7 +213,7 @@ const post_test = babeViews.view_generator("post_test", {
 
                 </select>
             <p class='babe-view-text'>
-                <label for="proficiency">${"Bewerte deine Englischkenntinisse auf einer Skala von 1 bis 7"}:</label>
+                <label for="proficiency">${"Bewerte deine Englischkenntinisse auf einer Skala von 1 bis 7 <br> (7= sehr gut)"}:</label>
                 <select id="proficiency" name="proficiency">
                     <option></option>
                     <option value="${"1"}">${"1"}</option>

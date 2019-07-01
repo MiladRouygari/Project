@@ -265,13 +265,13 @@ const handle_response_functions_2 = {
            babe.global_data.age = $("#age").val();
            babe.global_data.gender = $("#gender").val();
            // babe.global_data.education = $("#education").val();
-           babe.global_data.languages = $("#languages").val();
+           babe.global_data.native = $("#languages").val();
            babe.global_data.athome = $("#athome").val();
-           babe.global_data.years = $("#years").val();
+           babe.global_data.start_age = $("#years").val();
            babe.global_data.abroad = $("#abroad_months").val();
            babe.global_data.dominant = $("#dominant").val();
            babe.global_data.proficiency_german = $("#proficiency_german").val();
-           babe.global_data.proficiency = $("#proficiency").val();
+           babe.global_data.proficiency_english = $("#proficiency").val();
            babe.global_data.comments = $("#comments")
            .val()
            .trim();
