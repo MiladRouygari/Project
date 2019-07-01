@@ -79,7 +79,7 @@ const trial_info = {
           v06: "6",
           v07: "7",
           optionRight: 'Würde ihn definitiv überfahren',
-          dilemma: 'bikers',
+          dilemma: 'car',
           language: 'german',
           question_kind: 'decision'
       },
@@ -94,7 +94,7 @@ const trial_info = {
           v06: "Sehr klar               ",
           v07: "Absolut klares Bild     ",
           optionRight: ' ',
-          dilemma: 'bikers',
+          dilemma: 'car',
           language: 'german',
           question_kind: 'vivid_man'
       },
@@ -109,7 +109,7 @@ const trial_info = {
           v06: "Sehr klar               ",
           v07: "Absolut klares Bild     ",
           optionRight: ' ',
-          dilemma: 'bikers',
+          dilemma: 'car',
           language: 'german',
           question_kind: 'vivid_people'
       },
@@ -124,7 +124,7 @@ const trial_info = {
           v06: "Sehr klar               ",
           v07: "Absolut klares Bild     ",
           optionRight: ' ',
-          dilemma: 'bikers',
+          dilemma: 'car',
           language: 'german',
           question_kind: 'vivid_overall'
       }
@@ -203,7 +203,7 @@ const trial_info = {
           v06: "6",
           v07: "7",
           optionRight: 'Definitely would run over him',
-          dilemma: 'bikers',
+          dilemma: 'car',
           language: 'english',
           question_kind: 'decision'
       },
@@ -218,7 +218,7 @@ const trial_info = {
           v06: "Very clear",
           v07: "Absolutely clear image",
           optionRight: ' ',
-          dilemma: 'bikers',
+          dilemma: 'car',
           language: 'english',
           question_kind: 'vivid_man'
       },
@@ -233,7 +233,7 @@ const trial_info = {
           v06: "Very clear",
           v07: "Absolutely clear image",
           optionRight: ' ',
-          dilemma: 'bikers',
+          dilemma: 'car',
           language: 'english',
           question_kind: 'vivid_people'
       },
@@ -248,7 +248,7 @@ const trial_info = {
           v06: "Very clear",
           v07: "Absolutely clear image",
           optionRight: ' ',
-          dilemma: 'bikers',
+          dilemma: 'car',
           language: 'english',
           question_kind: 'vivid_overall'
       },
@@ -280,7 +280,7 @@ const comprehension_test = {
     pic2:"<img src='images/weather.jpg' alt='trolly2' style='width:100%;height:auto;'>",
     pic3:"<img src='images/weather.jpg' alt='trolly3' style='width:100%;height:auto;'>",
     pic4:"<img src='images/weather.jpg' alt='trolly4' style='width:100%;height:auto;'>",
-    dilemma: 'bikers',
+    dilemma: 'car',
     language: 'english',
     question_kind: 'english_test'
   },
@@ -294,7 +294,7 @@ forced_choice_german_test_trolly:[
   pic2:"<img src='images/trolly2.jpg' alt='trolly2' style='width:100%;height:auto;'>",
   pic3:"<img src='images/trolly3.jpg' alt='trolly3' style='width:100%;height:auto;'>",
   pic4:"<img src='images/trolly4.jpg' alt='trolly4' style='width:100%;height:auto;'>",
-  dilemma: 'footbride',
+  dilemma: 'footbridge',
   language: 'german',
   question_kind: 'german_test'
 },
@@ -308,7 +308,7 @@ forced_choice_german_test_car:[
   pic3:"<img src='images/weather.jpg' alt='trolly3' style='width:100%;height:auto;'>",
   pic4:"<img src='images/weather.jpg' alt='trolly4' style='width:100%;height:auto;'>",
   dilemma: 'car',
-  language: 'bikers',
+  language: 'german',
   question_kind: 'german_test'
 },
 ],
