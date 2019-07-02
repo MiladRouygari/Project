@@ -84,7 +84,7 @@ const trial_info = {
           question_kind: 'decision'
       },
       {
-          question: "Wie lebhaft stellst du dir den Mann vor?",
+        question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir den Mann vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
