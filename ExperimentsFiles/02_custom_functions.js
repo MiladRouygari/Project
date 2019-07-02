@@ -275,6 +275,10 @@ const handle_response_functions_2 = {
            babe.global_data.dominant = $("#dominant").val();
            babe.global_data.proficiency_german = $("#proficiency_german").val();
            babe.global_data.proficiency_english = $("#proficiency").val();
+           babe.global_data.encountered_1 = $("#encountered_1").val();
+           babe.global_data.encountered_2 = $("#encountered_2").val();
+
+
            babe.global_data.comments = $("#comments")
            .val()
            .trim();
@@ -286,10 +290,13 @@ const handle_response_functions_2 = {
 
            // moves to the next view
            babe.findNextView();
+           babe.global_data.sub_id = generateID(8); babe.global_data.encountered_2 = $("#encountered_2").val();
+
            $('html, body').css('overflow: scroll','position: relative','backgroundColor:pink');
        });
    },
    button_choice: function(config, CT, babe, answer_container_generator, startingTime) {
+
         $(".babe-view").append(answer_container_generator(config, CT));
 
         // attaches an event listener to the yes / no radio inputs

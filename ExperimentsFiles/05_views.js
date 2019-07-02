@@ -117,7 +117,7 @@ const post_test = babeViews.view_generator("post_test", {
     trials: 1,
     name: 'post_test',
     title: 'Zusätzliche Informationen',
-    text: 'Die folgenden Fragen zu beantworten ist optional, aber deine Antworten helfen uns bei der Analyse.',
+    text: 'Bitte beantworte die folgenden Fragen, deine Daten bleiben dabei anonym.',
 
     // You can change much of what appears here, e.g., to present it in a different language, as follows:
     buttonText: 'Weiter',
@@ -131,10 +131,10 @@ const post_test = babeViews.view_generator("post_test", {
     edu_graduated_high_school: '(Fach-)Abitur',
     edu_graduated_college: 'Bachelor oder vergleichbares',
     edu_higher_degree: 'Höherer Universitärer Abschluss',
-    languages_question: 'Deutsch als Muttersprache',
-    languages_more: '(in der Regel die Sprache, die Sie als Kind zu Hause gesprochen haben)',
+    languages_question: 'Ist Deutsch deine Muttersprache?',
+    languages_more: '(in der Regel die Sprache, die du als Kind zu Hause gesprochen hast)',
     //age_question: 'Alter ab dem Englisch gerlernt',
-    comments_question: 'Weitere Kommentare'
+    comments_question: 'Hast du uns noch mehr zu sagen?'
 },
 
 //{
@@ -170,7 +170,7 @@ const post_test = babeViews.view_generator("post_test", {
             </p>
 
             <p class='babe-view-text'>
-                <label for="languages">${quest.langs.title}:</label>
+                <label for="languages">${quest.langs.title}</label>
                 <select id="languages" name="languages">
                     <option></option>
                     <option value="${"ja"}">${"ja"}</option>
@@ -184,22 +184,22 @@ const post_test = babeViews.view_generator("post_test", {
                   <option value="${"nein"}">${"nein"}</option>
               </select>
            <p class='babe-view-text'>
-              <label for="spoken_at_home">${"Wurde Englisch in denem Haushalt gesprochen in dem du aufgewachsen bist?"}</label>
+              <label for="spoken_at_home">${"Wurde Englisch in dem Haushalt gesprochen, in dem du aufgewachsen bist?"}</label>
               <select id="athome" name="athome">
                   <option></option>
                   <option value="${"ja"}">${"ja"}</option>
                   <option value="${"nein"}">${"nein"}</option>
               </select>
             <p class='babe-view-text'>
-                <label if="foreign" for="foreign">${"Startzeitpunk des English Lernens/Nutzens"}:</label>
+                <label if="foreign" for="foreign">${"Mit wieviel Jahre hast du angefangen Englisch zu lernen?"}:</label>
                 <input type="number" name="foreign" min="0" max="110" id="years" />
             </p>
             <p class='babe-view-text'>
-                <label for="living_abroad">${"Auslandsaufenthalte in englischsprachigen Ländern<br>(in Monaten)"}:</label>
+                <label for="living_abroad">${"Wieviele Monate hast du im englischsprachigem Ausland verbracht?"}:</label>
                 <input type="number" name="living_abroad" min="0" max="110" id="abroad_months" />
             </p>
             <p class='babe-view-text'>
-                <label for="proficiency">${"Bewerte deine Deutschkenntinisse auf einer Skala von 1 bis 7 <br> (7= sehr gut)"}:</label>
+                <label for="proficiency">${"Bewerte deine Deutschkenntinisse auf einer Skala von 1 bis 7 <br> (1= sehr schlecht, 7= sehr gut)"}:</label>
                 <select id="proficiency_german" name="proficiency_german">
                     <option></option>
                     <option value="${"1"}">${"1"}</option>
@@ -213,7 +213,7 @@ const post_test = babeViews.view_generator("post_test", {
 
                 </select>
             <p class='babe-view-text'>
-                <label for="proficiency">${"Bewerte deine Englischkenntinisse auf einer Skala von 1 bis 7 <br> (7= sehr gut)"}:</label>
+                <label for="proficiency">${"Bewerte deine Englischkenntinisse auf einer Skala von 1 bis 7 <br> (1= sehr schlecht, 7= sehr gut)"}:</label>
                 <select id="proficiency" name="proficiency">
                     <option></option>
                     <option value="${"1"}">${"1"}</option>
@@ -225,6 +225,20 @@ const post_test = babeViews.view_generator("post_test", {
                     <option value="${"7"}">${"7"}</option>
 
 
+                </select>
+            <p class='babe-view-text'>
+               <label for="spoken_at_home">${"Hast du schon Mal vom ersten Dilemma gehört?"}</label>
+               <select id="encountered_1" name="encountered_1">
+                   <option></option>
+                   <option value="${"ja"}">${"ja"}</option>
+                   <option value="${"nein"}">${"nein"}</option>
+               </select>
+             <p class='babe-view-text'>
+                <label for="spoken_at_home">${"Hast du schon Mal vom zweiten Dilemma gehört?"}</label>
+                <select id="encountered_2" name="encountered_2">
+                    <option></option>
+                    <option value="${"ja"}">${"ja"}</option>
+                    <option value="${"nein"}">${"nein"}</option>
                 </select>
             <p class="babe-view-text">
                 <label for="comments">${quest.comments.title}</label>
