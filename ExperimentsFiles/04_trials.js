@@ -303,9 +303,9 @@ forced_choice_german_test_trolly:[
 forced_choice_german_test_car:[
   {
   question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
-  pic1:"<img src='images/car_1.jpg' alt='car1' style='width:100%;height:auto;'>",
+  pic1:"<img src='images/car_3.jpg' alt='car3' style='width:100%;height:auto;'>",
   pic2:"<img src='images/car_2.jpg' alt='car2' style='width:100%;height:auto;'>",
-  pic3:"<img src='images/car_3.jpg' alt='car3' style='width:100%;height:auto;'>",
+  pic3:"<img src='images/car_1.jpg' alt='car1' style='width:100%;height:auto;'>",
   pic4:"<img src='images/car_4.jpg' alt='car4' style='width:100%;height:auto;'>",
   dilemma: 'car',
   language: 'german',

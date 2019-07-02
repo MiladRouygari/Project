@@ -632,7 +632,7 @@ const test_german_man= babeViews.view_generator("forced_choice", {
      return  ` <div class='babe-view-answer-container'>
               <p class='babe-view-question'>${config.data[CT].question}</p>
                <label for='o1' class='babe-response-buttons'>${config.data[CT].pic1}</label>
-               <input type='radio' name='answer' id='o1' value='falset' />
+               <input type='radio' name='answer' id='o1' value='false' />
                <label for='o2' class='babe-response-buttons'>${config.data[CT].pic2}</label>
                <input type='radio' name='answer' id='o2' value='false' />
                <br>
