@@ -148,7 +148,7 @@ const trial_info = {
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the man?",
           optionLeft: '',
-          v01: 'no image                   ',
+          v01: 'No image                   ',
           v02: 'Very vague & dim           ',
           v03: "Vague and dim              ",
           v04: "Not clear, but recognizable",
@@ -163,7 +163,7 @@ const trial_info = {
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the five people?",
           optionLeft: '',
-          v01: 'no image                    ',
+          v01: 'No image                    ',
           v02: 'Very vague & dim            ',
           v03: "Vague and dim               ",
           v04: "Not clear, but recognizable ",
@@ -178,7 +178,7 @@ const trial_info = {
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the overall scene?",
           optionLeft: '',
-          v01: 'no image                    ',
+          v01: 'No image                    ',
           v02: 'Very vague & dim            ',
           v03: "Vague and dim               ",
           v04: "Not clear, but recognizable ",
@@ -210,7 +210,7 @@ const trial_info = {
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the man?",
           optionLeft: '',
-          v01: 'no image',
+          v01: 'No image',
           v02: 'Very vague & dim',
           v03: "Vague and dim",
           v04: "Not clear, but recognizable ",
@@ -225,7 +225,7 @@ const trial_info = {
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the five people?",
           optionLeft: '',
-          v01: 'no image',
+          v01: 'No image',
           v02: 'Very vague & dim',
           v03: "Vague and dim",
           v04: "Not clear, but recognizable ",
@@ -240,7 +240,7 @@ const trial_info = {
       {
           question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the overall scene?",
           optionLeft: '',
-          v01: 'no image',
+          v01: 'No image',
           v02: 'Very vague & dim',
           v03: "Vague and dim",
           v04: "Not clear, but recognizable ",
