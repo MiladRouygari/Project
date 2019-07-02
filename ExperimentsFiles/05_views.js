@@ -191,7 +191,7 @@ const post_test = babeViews.view_generator("post_test", {
                   <option value="${"nein"}">${"nein"}</option>
               </select>
             <p class='babe-view-text'>
-                <label if="foreign" for="foreign">${"Startzeitpunk des English Lernens/Nutzens"}:</label>
+                <label if="foreign" for="foreign">${"Startzeitpunkt des English Lernens/Nutzens"}:</label>
                 <input type="number" name="foreign" min="0" max="110" id="years" />
             </p>
             <p class='babe-view-text'>
