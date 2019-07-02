@@ -276,10 +276,10 @@ const comprehension_test = {
   forced_choice_english_test_car:[
     {
     question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
-    pic1:"<img src='images/weather.jpg' alt='trolly1' style='width:100%;height:auto;'>",
-    pic2:"<img src='images/weather.jpg' alt='trolly2' style='width:100%;height:auto;'>",
-    pic3:"<img src='images/weather.jpg' alt='trolly3' style='width:100%;height:auto;'>",
-    pic4:"<img src='images/weather.jpg' alt='trolly4' style='width:100%;height:auto;'>",
+    pic1:"<img src='images/car1.png' alt='car1' style='width:100%;height:auto;'>",
+    pic2:"<img src='images/car2.png' alt='car2' style='width:100%;height:auto;'>",
+    pic3:"<img src='images/car3.png' alt='car3' style='width:100%;height:auto;'>",
+    pic4:"<img src='images/car4.png' alt='car4' style='width:100%;height:auto;'>",
     dilemma: 'car',
     language: 'english',
     question_kind: 'english_test'
