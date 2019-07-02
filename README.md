@@ -6,7 +6,7 @@ This is a replication of the third experiment of the study "Using a foreign lang
 The experiment examines whether the use of foreign language (i.e. English) decreases vividness of mental imagery and leads to more utalitarian moral decisions 
 in comparison to native language (i.e. German).
 
-Participants face a moral dilemma, the so called "trolley problem". They have to make a decision whether or not to kill one man to save five others. 
+Participants face a moral dilemma, the so called "footbridge problem". They have to make a decision whether or not to kill one man to save five others. 
 
 In addition to the original experimental setup, we included another dilemma, the "self-driving car problem" to examine moral decision making in another context.
 
