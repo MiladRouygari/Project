@@ -560,12 +560,12 @@ const test_comprehension_1_english = babeViews.view_generator("forced_choice", {
                <label for='o2' class='babe-response-buttons'>${config.data[CT].pic2}</label>
                <input type='radio' name='answer' id='o2' value='false' />
                <br>
-               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic3}</label>
+               <label for='o3' class='babe-response-buttons'>${config.data[CT].pic3}</label>
                <input type='radio' name='answer' id='o3' value='false' />
-               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic4}</label>
+               <label for='o4' class='babe-response-buttons'>${config.data[CT].pic4}</label>
                <input type='radio' name='answer' id='o4' value='false' />
                <br>
-               <label for='o2' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
+               <label for='o5' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
                <input type='radio' name='answer' id='o5' value='false' />
                </div>`;
 
@@ -598,12 +598,12 @@ const test_comprehension_2_english= babeViews.view_generator("forced_choice", {
                <label for='o2' class='babe-response-buttons'>${config.data[CT].pic2}</label>
                <input type='radio' name='answer' id='o2' value='false' />
                <br>
-               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic3}</label>
+               <label for='o3' class='babe-response-buttons'>${config.data[CT].pic3}</label>
                <input type='radio' name='answer' id='o3' value='correct' />
-               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic4}</label>
+               <label for='o4'class='babe-response-buttons'>${config.data[CT].pic4}</label>
                <input type='radio' name='answer' id='o4' value='false' />
                <br>
-               <label for='o2' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
+               <label for='o5' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
                <input type='radio' name='answer' id='o5' value='false' />
                </div>`;
 
@@ -636,12 +636,12 @@ const test_german_man= babeViews.view_generator("forced_choice", {
                <label for='o2' class='babe-response-buttons'>${config.data[CT].pic2}</label>
                <input type='radio' name='answer' id='o2' value='false' />
                <br>
-               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic3}</label>
+               <label for='o3' class='babe-response-buttons'>${config.data[CT].pic3}</label>
                <input type='radio' name='answer' id='o3' value='false' />
-               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic4}</label>
+               <label for='o4' class='babe-response-buttons'>${config.data[CT].pic4}</label>
                <input type='radio' name='answer' id='o4' value='false' />
                <br>
-               <label for='o2' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
+               <label for='o5' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
                <input type='radio' name='answer' id='o5' value='false' />
                </div>`;
 
@@ -674,12 +674,12 @@ const test_german_car= babeViews.view_generator("forced_choice", {
                <label for='o2' class='babe-response-buttons'>${config.data[CT].pic2}</label>
                <input type='radio' name='answer' id='o2' value='false' />
                <br>
-               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic3}</label>
+               <label for='o3' class='babe-response-buttons'>${config.data[CT].pic3}</label>
                <input type='radio' name='answer' id='o3' value='correct' />
-               <label for='o2' class='babe-response-buttons'>${config.data[CT].pic4}</label>
+               <label for='o4' class='babe-response-buttons'>${config.data[CT].pic4}</label>
                <input type='radio' name='answer' id='o4' value='false' />
                <br>
-               <label for='o2' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
+               <label for='o5' class='babe-response-buttons'>Ich hab das Dilemma nicht verstanden</label>
                <input type='radio' name='answer' id='o5' value='false' />
                </div>`;
 
