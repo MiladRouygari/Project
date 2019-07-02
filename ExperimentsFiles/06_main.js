@@ -74,13 +74,21 @@ else if (getLanguage() == 'english') {
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
+                dilemma_1_german.name,
                 rating_choice_1_german.name,
+                test_german_man.name,
+                dilemma_2_german.name,
                 rating_choice_2_german.name,
+                test_german_car.name,
+                dilemma_1_english.name,
                 rating_choice_1_english.name,
+                test_comprehension_1_english.name,
+                dilemma_2_english.name,
                 rating_choice_2_english.name,
+                test_comprehension_2_english.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
-            style: "separate",
+            style: "default",
             width: 100
         }
 

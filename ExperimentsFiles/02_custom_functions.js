@@ -275,9 +275,9 @@ const handle_response_functions_2 = {
            babe.global_data.dominant = $("#dominant").val();
            babe.global_data.proficiency_german = $("#proficiency_german").val();
            babe.global_data.proficiency_english = $("#proficiency").val();
-           babe.global_data.encountered_1 = $("#encountered_1").val();
-           babe.global_data.encountered_2 = $("#encountered_2").val();
+           babe.global_data.encountered_trolley = $("#encountered_1").val();
 
+           babe.global_data.encountered_car = $("#encountered_2").val();
 
            babe.global_data.comments = $("#comments")
            .val()
@@ -290,7 +290,7 @@ const handle_response_functions_2 = {
 
            // moves to the next view
            babe.findNextView();
-           babe.global_data.sub_id = generateID(8); babe.global_data.encountered_2 = $("#encountered_2").val();
+           babe.global_data.sub_id = generateID(8);
 
            $('html, body').css('overflow: scroll','position: relative','backgroundColor:pink');
        });

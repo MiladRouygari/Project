@@ -227,14 +227,14 @@ const post_test = babeViews.view_generator("post_test", {
 
                 </select>
             <p class='babe-view-text'>
-               <label for="spoken_at_home">${"Hast du schon Mal vom ersten Dilemma gehört?"}</label>
+               <label for="encountered_1">${"Hast du schon Mal vom ersten Dilemma gehört?"}</label>
                <select id="encountered_1" name="encountered_1">
                    <option></option>
                    <option value="${"ja"}">${"ja"}</option>
                    <option value="${"nein"}">${"nein"}</option>
                </select>
              <p class='babe-view-text'>
-                <label for="spoken_at_home">${"Hast du schon Mal vom zweiten Dilemma gehört?"}</label>
+                <label for="encountered_2">${"Hast du schon Mal vom zweiten Dilemma gehört?"}</label>
                 <select id="encountered_2" name="encountered_2">
                     <option></option>
                     <option value="${"ja"}">${"ja"}</option>
