@@ -150,6 +150,8 @@ function getRandomisedRatingChoiceEnglish2(){
 
 
 function getRandomisedRatingChoiceEnglishtest(){
+
+
   firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
 
   var nums = [1,2,3],
@@ -253,6 +255,7 @@ check_response = function(data, next) {
 
 const handle_response_functions_2 = {
   post_test: function(config, CT, babe, answer_container_generator, startingTime) {
+    $("html, body").css({"overflow":"auto","position":"relative"} );
       console.log("In handle response");
        $(".babe-view").append(answer_container_generator(config, CT));
 
@@ -283,6 +286,7 @@ const handle_response_functions_2 = {
 
            // moves to the next view
            babe.findNextView();
+           $('html, body').css('overflow: scroll','position: relative','backgroundColor:pink');
        });
    },
    button_choice: function(config, CT, babe, answer_container_generator, startingTime) {
@@ -305,6 +309,7 @@ const handle_response_functions_2 = {
 
             babe.trial_data.push(trial_data);
             babe.findNextView();
+
         });
     },
 

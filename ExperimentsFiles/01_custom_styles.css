@@ -10,8 +10,9 @@ body{
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */ */
-/*overflow: hidden;
-position: fixed;*/
+overflow: hidden;
+position: fixed;
+max-height: 100%;
 }
 
 .babe-view-stimulus-container {
