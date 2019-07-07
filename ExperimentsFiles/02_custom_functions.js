@@ -5,6 +5,95 @@
 *
 */
 // Costume function for randomization
+function getLanguage(){
+  return (Math.floor(Math.random()*2) == 0) ? 'german': 'english';
+}
+
+function getDilemma(){
+  return (Math.floor(Math.random()*2) == 0) ? 'car': 'fairy';
+}
+function randomiseViewSeq(){
+  views_seq_language = [];
+  var language= getLanguage();
+  console.log(language);
+  var dilemma = getDilemma();
+  console.log(dilemma);
+  if(language == 'german'){
+    if(dilemma =="car"){
+      views_seq_language = [
+          intro,
+          instructions,
+          dilemma_1_german,
+          rating_choice_1_german,
+          test_german_man,
+          dilemma_2_german,
+          rating_choice_2_german,
+          test_german_car,
+          dilemma_3_german,
+          rating_choice_3_german,
+          test_german_fairy,
+          post_test,
+          thanks,
+        ]
+    }else {
+      views_seq_language = [
+          intro,
+          instructions,
+          dilemma_1_german,
+          rating_choice_1_german,
+          test_german_man,
+          dilemma_3_german,
+          rating_choice_3_german,
+          test_german_fairy,
+          dilemma_2_german,
+          rating_choice_2_german,
+          test_german_car,
+          post_test,
+          thanks,
+        ]
+    }
+
+  }else{
+    if(dilemma =="car"){
+      views_seq_language = [
+          intro,
+          instructions,
+          dilemma_1_english,
+          rating_choice_1_english,
+          test_comprehension_1_english,
+          dilemma_2_english,
+          rating_choice_2_english,
+          test_comprehension_2_english,
+          dilemma_3_english,
+          rating_choice_3_english,
+          test_comprehension_3_english,
+          post_test,
+          thanks,
+        ]
+
+    }else {
+      views_seq_language = [
+          intro,
+          instructions,
+          dilemma_1_english,
+          rating_choice_1_english,
+          test_comprehension_1_english,
+          dilemma_3_english,
+          rating_choice_3_english,
+          test_comprehension_3_english,
+          dilemma_2_english,
+          rating_choice_2_english,
+          test_comprehension_2_english,
+          post_test,
+          thanks,
+        ]
+
+    }
+  }
+
+return views_seq_language
+}
+
 
 // This is for German1
 function getRandomisedRatingChoiceGerman1(){
@@ -73,6 +162,39 @@ function getRandomisedRatingChoiceGerman2(){
     randomised[1] = trial_info.forced_choice_2_german[ranNums[1]]
     randomised[2] = trial_info.forced_choice_2_german[ranNums[2]]
     randomised[3] = trial_info.forced_choice_2_german[0]
+  }
+
+   return randomised
+}
+function getRandomisedRatingChoiceGerman3(){
+  firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
+
+  var nums = [1,2,3],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+  while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+  }
+
+   var randomised = new Array(4)
+  if (firstBlock == 'decision'){
+    randomised[0] = trial_info.forced_choice_3_german[0]
+    // Populate randomised with the next 3 values
+    randomised[1] = trial_info.forced_choice_3_german[ranNums[0]]
+    randomised[2] = trial_info.forced_choice_3_german[ranNums[1]]
+    randomised[3] = trial_info.forced_choice_3_german[ranNums[2]]
+  }
+
+  else {
+    // vividness is the first 3
+    randomised[0] = trial_info.forced_choice_3_german[ranNums[0]]
+    randomised[1] = trial_info.forced_choice_3_german[ranNums[1]]
+    randomised[2] = trial_info.forced_choice_3_german[ranNums[2]]
+    randomised[3] = trial_info.forced_choice_3_german[0]
   }
 
    return randomised
@@ -147,7 +269,39 @@ function getRandomisedRatingChoiceEnglish2(){
 
    return randomised
 }
+function getRandomisedRatingChoiceEnglish3(){
+  firstBlock = (Math.floor(Math.random()*2) == 0) ? 'decision': 'vividness';
 
+  var nums = [1,2,3],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+  while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+  }
+
+   var randomised = new Array(4)
+  if (firstBlock == 'decision'){
+    randomised[0] = trial_info.forced_choice_3_english[0]
+    // Populate randomised with the next 3 values
+    randomised[1] = trial_info.forced_choice_3_english[ranNums[0]]
+    randomised[2] = trial_info.forced_choice_3_english[ranNums[1]]
+    randomised[3] = trial_info.forced_choice_3_english[ranNums[2]]
+  }
+
+  else {
+    // vividness is the first 3
+    randomised[0] = trial_info.forced_choice_3_english[ranNums[0]]
+    randomised[1] = trial_info.forced_choice_3_english[ranNums[1]]
+    randomised[2] = trial_info.forced_choice_3_english[ranNums[2]]
+    randomised[3] = trial_info.forced_choice_3_english[0]
+  }
+
+   return randomised
+}
 
 function getRandomisedRatingChoiceEnglishtest(){
 
@@ -278,6 +432,7 @@ const handle_response_functions_2 = {
            babe.global_data.encountered_trolley = $("#encountered_1").val();
 
            babe.global_data.encountered_car = $("#encountered_2").val();
+           babe.global_data.encountered_fairy = $("#encountered_3").val();
 
            babe.global_data.comments = $("#comments")
            .val()

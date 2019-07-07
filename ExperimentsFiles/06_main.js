@@ -2,47 +2,43 @@
 $(window).bind("load", function() {
 // this function returns random languege english/german
 // could also make this global variable
-function getLanguage(){
-  return (Math.floor(Math.random()*2) == 0) ? 'german': 'english';
-}
 
-
-views_seq_language = []
-if(getLanguage() == 'german') {
-  console.log("german");
-  views_seq_language = [
-      intro,
-      instructions,
-      dilemma_1_german,
-      rating_choice_1_german,
-      test_german_man,
-      dilemma_2_german,
-      rating_choice_2_german,
-      test_german_car,
-      post_test,
-      thanks,
-    ]
-<<<<<<< HEAD
-} else {
-=======
-}
-
-else if (getLanguage() == 'english') { 
->>>>>>> 76eb47fa4d2f29bd08bad89cfd14a0a72e5621bb
-  console.log("english");
-  views_seq_language = [
-      intro,
-      instructions,
-      dilemma_1_english,
-      rating_choice_1_english,
-      test_comprehension_1_english,
-      dilemma_2_english,
-      rating_choice_2_english,
-      test_comprehension_2_english,
-      post_test,
-      thanks,
-    ]
-}
+//
+// views_seq_language = []
+// if(getLanguage() == 'german') {
+//   console.log("german");
+//   views_seq_language = [
+//       intro,
+//       instructions,
+//       dilemma_1_german,
+//       rating_choice_1_german,
+//       test_german_man,
+//       dilemma_2_german,
+//       rating_choice_2_german,
+//       test_german_car,
+//       dilemma_3_german,
+//       rating_choice_3_german,
+//       test_german_fairy,
+//       post_test,
+//       thanks,
+//     ]
+// } else {
+//   console.log("english");
+//   views_seq_language = [
+//       intro,
+//       instructions,
+//       dilemma_1_english,
+//       rating_choice_1_english,
+//       test_comprehension_1_english,
+//       dilemma_2_english,
+//       rating_choice_2_english,
+//       test_comprehension_2_english,
+//       post_test,
+//       thanks,
+//     ]
+// }
+views_seq = [];
+views_seq =  randomiseViewSeq();
 
 
 
@@ -62,7 +58,7 @@ else if (getLanguage() == 'english') {
 
       window.babe_monitor = babeInit({
         // You have to specify all views you want to use in this experiment and the order of them
-        views_seq: views_seq_language,
+        views_seq: views_seq,
         // Here, you can specify all information for the deployment
         deploy: {
             experimentID: 31442,
@@ -90,6 +86,12 @@ else if (getLanguage() == 'english') {
                 dilemma_2_english.name,
                 rating_choice_2_english.name,
                 test_comprehension_2_english.name,
+                dilemma_3_english.name,
+                rating_choice_3_english.name,
+                test_comprehension_3_english.name,
+                dilemma_3_german.name,
+                rating_choice_3_german.name,
+                test_german_fairy.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
             style: "default",
