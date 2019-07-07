@@ -22,9 +22,7 @@ if(getLanguage() == 'german') {
       post_test,
       thanks,
     ]
-}
-
-else if (getLanguage() == 'english') {
+} else {
   console.log("english");
   views_seq_language = [
       intro,
