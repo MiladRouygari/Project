@@ -24,8 +24,8 @@ const intro = babeViews.view_generator("intro",{
     name: 'intro',
     // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
     title: 'Willkommen!',
-    text:   `Im Rahmen von unserem Kurs „Experimental Psychology Lab“ replizieren wir eine Studie.
-            Vielen Dank, dass du an unserem Experiment teilnimmst, damit unterstützt Du uns sehr.
+    text:   `Vielen Dank, dass Du an unserem Experiment teilnimmst, damit unterstützt Du uns sehr.
+            Im Rahmen von unserem Kurs „Experimental Psychology Lab“ replizieren wir eine Studie.
             <br />
             <br />
             Es ist wichtig, dass Du dieses Experiment eigenständig und fokussiert bearbeitest.
@@ -34,7 +34,7 @@ const intro = babeViews.view_generator("intro",{
             <br />
             Das Experiment wird ungefähr 15 Minuten dauern.
  `,
-   buttonText: 'Zum Experiment'
+   buttonText: 'Zu der Anleitung'
 });
 
 // For most tasks, you need instructions views
@@ -42,16 +42,17 @@ const instructions = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'instrucions',
     title: 'Anleitung',
-    text:  `Um an diesem Experiment teilzunehmen, ist es notwendig, dass Du Deutsch Muttersprachler*in bist und in der Lage Englisch zu verstehen.
+    text:  `Um an diesem Experiment teilzunehmen, ist es notwendig, dass Deine Muttersprache Deutsch ist und Du in der Lage bist grundlegendes Englisch zu verstehen.
+            Falls du dir bezüglich Deiner Englisch-Kenntnisse unsicher bist, kannst Du es dennoch einfach ausprobieren.
             <br />
             <br />
-            Im Folgenden wirst Du 2 Dilemmata lesen und dazu Fragen beantworten.
-            Lese Dir die Dilemmata sorgfältig durch und stelle sicher, dass Du sie verstanden hast.
-            Bitte nutze dafür keine Übersetzungsinstrumente.
+            Im Folgenden wirst Du 3 Dilemmas lesen und jeweils 4 Fragen dazu beantworten. Lese Dir die Dilemmas sorgfältig durch und stelle sicher, dass Du sie verstanden hast.
+            Bitte nutze dafür keine Übersetzungshilfen. Es gibt keine Zeitbegrenzung.
             <br />
             <br />
             Falls Du auch nach sorgfältigem Lesen das Dilemma nicht verstanden haben solltest,
             wirst du später die Möglichkeit haben, dies anzugeben.
+            Während des Experiments gibt es keine Möglichkeit einen Schritt zurückzugehen.
             <br />
             <br />
             Wenn Du bereit bist, kannst du nun das Experiment beginnen.
@@ -284,7 +285,7 @@ const post_test = babeViews.view_generator("post_test", {
 const thanks = babeViews.view_generator("thanks", {
     trials: 1,
     name: 'thanks',
-    title: 'Vielen Dank für deine Teilnahme an diesem Experiment! Wir freuen uns, wenn Du es mit deinen Freund*innnen teilst',
+    title: 'Vielen Dank für Deine Teilnahme an diesem Experiment! Wir freuen uns, wenn Du es mit deinen Freund*innnen teilst',
     prolificConfirmText: 'Drück den Knopf!'
 });
 
