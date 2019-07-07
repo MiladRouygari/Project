@@ -46,7 +46,7 @@ const instructions = babeViews.view_generator("instructions",{
             Falls du dir bezüglich Deiner Englisch-Kenntnisse unsicher bist, kannst Du es dennoch einfach ausprobieren.
             <br />
             <br />
-            Im Folgenden wirst Du 3 Dilemmas lesen und jeweils 4 Fragen dazu beantworten. Lese Dir die Dilemmas sorgfältig durch und stelle sicher, dass Du sie verstanden hast.
+            Im Folgenden wirst Du 3 Dilemmas lesen und jeweils 5 Fragen dazu beantworten. Lese Dir die Dilemmas sorgfältig durch und stelle sicher, dass Du sie verstanden hast.
             Bitte nutze dafür keine Übersetzungshilfen. Es gibt keine Zeitbegrenzung.
             <br />
             <br />
@@ -55,7 +55,7 @@ const instructions = babeViews.view_generator("instructions",{
             Während des Experiments gibt es keine Möglichkeit einen Schritt zurückzugehen.
             <br />
             <br />
-            Wenn Du bereit bist, kannst du nun das Experiment beginnen.
+            Wenn Du bereit bist, kannst Du nun das Experiment beginnen.
 `,
     buttonText: 'Zum Experiment'
 });
