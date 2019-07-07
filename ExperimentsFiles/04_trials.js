@@ -22,7 +22,7 @@ const trial_info = {
             question_kind: 'decision'
         },
         {
-            question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir den Mann vor?",
+            question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir <strong>den Mann</strong> vor?",
             optionLeft: '',
             v01: 'Kein Bild                 ',
             v02: 'Sehr wage & trüb           ',
@@ -37,7 +37,7 @@ const trial_info = {
             question_kind: 'vivid_man'
         },
         {
-            question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die fünf Menschen vor?",
+            question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir <strong>die fünf Menschen</strong> vor?",
             optionLeft: '',
             v01: 'Kein Bild                 ',
             v02: 'Sehr wage & trüb           ',
@@ -52,7 +52,7 @@ const trial_info = {
             question_kind: 'vivid_people'
         },
         {
-            question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die gesamte Situation vor?",
+            question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir <strong>die gesamte Situation</strong> vor?",
             optionLeft: '',
             v01: 'Kein Bild                 ',
             v02: 'Sehr wage & trüb           ',
@@ -84,7 +84,7 @@ const trial_info = {
           question_kind: 'decision'
       },
       {
-        question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir den Mann vor?",
+        question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir <strong>den Mann</strong> vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -99,7 +99,7 @@ const trial_info = {
           question_kind: 'vivid_man'
       },
       {
-          question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die fünf Menschen vor?",
+          question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir <strong>die fünf Menschen</strong> vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -114,7 +114,7 @@ const trial_info = {
           question_kind: 'vivid_people'
       },
       {
-          question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir die gesamte Situation vor?",
+          question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jede der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir <strong>die gesamte Situation</strong> vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -146,9 +146,9 @@ const trial_info = {
           question_kind: 'decision'
       },
       {
-          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the man?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture <strong>the man</strong>?",
           optionLeft: '',
-          v01: 'no image                   ',
+          v01: 'No image                   ',
           v02: 'Very vague & dim           ',
           v03: "Vague and dim              ",
           v04: "Not clear, but recognizable",
@@ -161,9 +161,9 @@ const trial_info = {
           question_kind: 'vivid_man'
       },
       {
-          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the five people?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture <strong>the five people</strong>?",
           optionLeft: '',
-          v01: 'no image                    ',
+          v01: 'No image                    ',
           v02: 'Very vague & dim            ',
           v03: "Vague and dim               ",
           v04: "Not clear, but recognizable ",
@@ -176,9 +176,9 @@ const trial_info = {
           question_kind: 'vivid_people'
       },
       {
-          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the overall scene?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture <strong>the overall scene</strong>?",
           optionLeft: '',
-          v01: 'no image                    ',
+          v01: 'No image                    ',
           v02: 'Very vague & dim            ',
           v03: "Vague and dim               ",
           v04: "Not clear, but recognizable ",
@@ -208,9 +208,9 @@ const trial_info = {
           question_kind: 'decision'
       },
       {
-          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the man?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture <strong>the man</strong>?",
           optionLeft: '',
-          v01: 'no image',
+          v01: 'No image',
           v02: 'Very vague & dim',
           v03: "Vague and dim",
           v04: "Not clear, but recognizable ",
@@ -223,9 +223,9 @@ const trial_info = {
           question_kind: 'vivid_man'
       },
       {
-          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the five people?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture <strong>the five people</strong>?",
           optionLeft: '',
-          v01: 'no image',
+          v01: 'No image',
           v02: 'Very vague & dim',
           v03: "Vague and dim",
           v04: "Not clear, but recognizable ",
@@ -238,9 +238,9 @@ const trial_info = {
           question_kind: 'vivid_people'
       },
       {
-          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture the overall scene?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture <strong>the overall scene</strong>?",
           optionLeft: '',
-          v01: 'no image',
+          v01: 'No image',
           v02: 'Very vague & dim',
           v03: "Vague and dim",
           v04: "Not clear, but recognizable ",
@@ -262,7 +262,7 @@ const comprehension_test = {
 
   forced_choice_english_test_trolly:[
     {
-    question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
+    question: "Erinnere dich an das Dilemma, welches du gelesen hast. Welches Bild beschreibt das Szenario am besten?",
     pic1:"<img src='images/trolly1.jpg' alt='trolly1' style='width:100%;height:auto;'>",
     pic2:"<img src='images/trolly2.jpg' alt='trolly2' style='width:100%;height:auto;'>",
     pic3:"<img src='images/trolly3.jpg' alt='trolly3' style='width:100%;height:auto;'>",
@@ -275,7 +275,7 @@ const comprehension_test = {
   ],
   forced_choice_english_test_car:[
     {
-    question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
+    question: "Erinnere dich an das Dilemma, welches du gelesen hast. Welches Bild beschreibt das Szenario am besten?",
     pic1:"<img src='images/car_3.jpg' alt='car3' style='width:100%;height:auto;'>",
     pic2:"<img src='images/car_2.jpg' alt='car2' style='width:100%;height:auto;'>",
     pic3:"<img src='images/car_1.jpg' alt='car1' style='width:100%;height:auto;'>",
@@ -290,7 +290,7 @@ const comprehension_test = {
 
 forced_choice_german_test_trolly:[
   {
-  question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
+  question: "Erinnere dich an das Dilemma, welches du gelesen hast. Welches Bild beschreibt das Szenario am besten?",
   pic1:"<img src='images/trolly1.jpg' alt='trolly1' style='width:100%;height:auto;'>",
   pic2:"<img src='images/trolly2.jpg' alt='trolly2' style='width:100%;height:auto;'>",
   pic3:"<img src='images/trolly3.jpg' alt='trolly3' style='width:100%;height:auto;'>",
@@ -303,7 +303,7 @@ forced_choice_german_test_trolly:[
 ],
 forced_choice_german_test_car:[
   {
-  question: "Erinner dich an das dilemma was du gelesen hast, welches Bild passt am best zu ihm?",
+  question: "Erinnere dich an das Dilemma, welches du gelesen hast. Welches Bild beschreibt das Szenario am besten?",
   pic1:"<img src='images/car_3.jpg' alt='car3' style='width:100%;height:auto;'>",
   pic2:"<img src='images/car_2.jpg' alt='car2' style='width:100%;height:auto;'>",
   pic3:"<img src='images/car_1.jpg' alt='car1' style='width:100%;height:auto;'>",

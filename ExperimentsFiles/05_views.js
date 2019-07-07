@@ -24,8 +24,8 @@ const intro = babeViews.view_generator("intro",{
     name: 'intro',
     // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
     title: 'Willkommen!',
-    text:   `Im Rahmen von unserem Kurs „Experimental Psychology Lab“ replizieren wir eine Studie.
-            Vielen Dank, dass du an unserem Experiment teilnimmst, damit unterstützt Du uns sehr.
+    text:   `Vielen Dank, dass Du an unserem Experiment teilnimmst, damit unterstützt Du uns sehr.
+            Im Rahmen von unserem Kurs „Experimental Psychology Lab“ replizieren wir eine Studie.
             <br />
             <br />
             Es ist wichtig, dass Du dieses Experiment eigenständig und fokussiert bearbeitest.
@@ -34,7 +34,7 @@ const intro = babeViews.view_generator("intro",{
             <br />
             Das Experiment wird ungefähr 15 Minuten dauern.
  `,
-   buttonText: 'Zum Experiment'
+   buttonText: 'Zu der Anleitung'
 });
 
 // For most tasks, you need instructions views
@@ -42,19 +42,20 @@ const instructions = babeViews.view_generator("instructions",{
     trials: 1,
     name: 'instrucions',
     title: 'Anleitung',
-    text:  `Um an diesem Experiment teilzunehmen, ist es notwendig, dass Du Deutsch Muttersprachler*in bist und in der Lage Englisch zu verstehen.
+    text:  `Um an diesem Experiment teilzunehmen, ist es notwendig, dass Deine Muttersprache Deutsch ist und Du in der Lage bist grundlegendes Englisch zu verstehen.
+            Falls du dir bezüglich Deiner Englisch-Kenntnisse unsicher bist, kannst Du es dennoch einfach ausprobieren.
             <br />
             <br />
-            Im Folgenden wirst Du 3 Dilemmata lesen und dazu Fragen beantworten.
-            Lese Dir die Dilemmata sorgfältig durch und stelle sicher, dass Du sie verstanden hast.
-            Bitte nutze dafür keine Übersetzungsinstrumente.
+            Im Folgenden wirst Du 3 Dilemmas lesen und jeweils 5 Fragen dazu beantworten. Lese Dir die Dilemmas sorgfältig durch und stelle sicher, dass Du sie verstanden hast.
+            Bitte nutze dafür keine Übersetzungshilfen. Es gibt keine Zeitbegrenzung.
             <br />
             <br />
             Falls Du auch nach sorgfältigem Lesen das Dilemma nicht verstanden haben solltest,
             wirst du später die Möglichkeit haben, dies anzugeben.
+            Während des Experiments gibt es keine Möglichkeit einen Schritt zurückzugehen.
             <br />
             <br />
-            Wenn Du bereit bist, kannst du nun das Experiment beginnen.
+            Wenn Du bereit bist, kannst Du nun das Experiment beginnen.
 `,
     buttonText: 'Zum Experiment'
 });
@@ -66,7 +67,7 @@ const dilemma_1_german = babeViews.view_generator("instructions",{
     title: 'Dilemma',
     text:  `Stell dir vor, du stehst auf einer Brücke von der aus du mehrere Bahngleise überblicken kannst.
     Du siehst ein Gleis auf dem fünf Personen festgebunden sind und einen Wagon, der auf sie zufährt.
-    Du schaust zu deiner linken und da ist ein großer und schwerer Mann, der neben dir steht.
+    Du schaust zu deiner Linken und da ist ein großer und schwerer Mann, der neben dir steht.
     Die einzige Möglichkeit den Wagon zu stoppen, wäre den Mann von der Brücke auf die Gleise zu stoßen,
     was den Mann tötet, aber fünf Menschen rettet.`,
     buttonText: 'Zu den Fragen'
@@ -78,7 +79,7 @@ const dilemma_2_german = babeViews.view_generator("instructions",{
     title: 'Dilemma',
     text:  `Stell dir vor, du reist mit einem selbstfahrenden Auto, vor dir siehst du zwei Fahrbahnen.
     Du siehst fünf Menschen, die einen Zebrastreifen überqueren und das Auto fährt auf sie zu.
-    Du schaust zu deiner linken auf die andere Fahrbahn und siehst eine Person, die den Zebrastreifen überquert.
+    Du schaust zu deiner Linken auf die andere Fahrbahn und siehst eine Person, die den Zebrastreifen überquert.
     Die einzige Möglichkeit den Zusammenstoß zu verhindern, wäre das Lenkrad herumzureißen, damit die
     Fahrbahn zu wechseln, was die eine Person tötet, aber fünf Menschen rettet.`,
     buttonText: 'Zu den Fragen'
@@ -94,7 +95,7 @@ const dilemma_1_english = babeViews.view_generator("instructions",{
     text:  `Imagine you are standing on a bridge overlooking a set of train tracks.
     You see five people tied to the track and a runaway trolley is barrelling towards them.
     You look to your left and there is a large and heavy man standing next to you.
-    The only way to stop the trolley would be to push that man off the bridge and onto the tracks,
+    The only way to stop the trolley would be to push the man off the bridge and onto the tracks,
     killing the man but saving five people.`,
     buttonText: 'To the questions'
 });
@@ -134,7 +135,7 @@ const post_test = babeViews.view_generator("post_test", {
     languages_question: 'Ist Deutsch deine Muttersprache?',
     languages_more: '(in der Regel die Sprache, die du als Kind zu Hause gesprochen hast)',
     //age_question: 'Alter ab dem Englisch gerlernt',
-    comments_question: 'Hast du uns noch mehr zu sagen?'
+    comments_question: 'Hast du noch Anmerkungen?'
 },
 
 //{
@@ -199,7 +200,7 @@ const post_test = babeViews.view_generator("post_test", {
                 <input type="number" name="living_abroad" min="0" max="110" id="abroad_months" />
             </p>
             <p class='babe-view-text'>
-                <label for="proficiency">${"Bewerte deine Deutschkenntinisse auf einer Skala von 1 bis 7 <br> (1= sehr schlecht, 7= sehr gut)"}:</label>
+                <label for="proficiency">${"Bewerte deine Deutschkenntnisse auf einer Skala von 1 bis 7 <br> (1= sehr schlecht, 7= sehr gut)"}:</label>
                 <select id="proficiency_german" name="proficiency_german">
                     <option></option>
                     <option value="${"1"}">${"1"}</option>
@@ -213,7 +214,7 @@ const post_test = babeViews.view_generator("post_test", {
 
                 </select>
             <p class='babe-view-text'>
-                <label for="proficiency">${"Bewerte deine Englischkenntinisse auf einer Skala von 1 bis 7 <br> (1= sehr schlecht, 7= sehr gut)"}:</label>
+                <label for="proficiency">${"Bewerte deine Englischkenntnisse auf einer Skala von 1 bis 7 <br> (1= sehr schlecht, 7= sehr gut)"}:</label>
                 <select id="proficiency" name="proficiency">
                     <option></option>
                     <option value="${"1"}">${"1"}</option>
@@ -227,14 +228,14 @@ const post_test = babeViews.view_generator("post_test", {
 
                 </select>
             <p class='babe-view-text'>
-               <label for="encountered_1">${"Hast du schon Mal vom ersten Dilemma gehört?"}</label>
+               <label for="encountered_1">${"Hast du schon vor diesem Experiment von dem ersten Dilemma gehört?"}</label>
                <select id="encountered_1" name="encountered_1">
                    <option></option>
                    <option value="${"ja"}">${"ja"}</option>
                    <option value="${"nein"}">${"nein"}</option>
                </select>
              <p class='babe-view-text'>
-                <label for="encountered_2">${"Hast du schon Mal vom zweiten Dilemma gehört?"}</label>
+                <label for="encountered_2">${"Hast du schon vor diesem Experiment von dem zweiten Dilemma gehört?"}</label>
                 <select id="encountered_2" name="encountered_2">
                     <option></option>
                     <option value="${"ja"}">${"ja"}</option>
@@ -284,7 +285,7 @@ const post_test = babeViews.view_generator("post_test", {
 const thanks = babeViews.view_generator("thanks", {
     trials: 1,
     name: 'thanks',
-    title: 'Vielen Dank für deine Teilnahme an diesem Experiment! Wir freuen uns, wenn Du es mit deinen Freund*innnen teilst',
+    title: 'Vielen Dank für Deine Teilnahme an diesem Experiment! Wir freuen uns, wenn Du es mit deinen Freund*innnen teilst',
     prolificConfirmText: 'Drück den Knopf!'
 });
 

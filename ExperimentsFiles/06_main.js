@@ -22,7 +22,13 @@ if(getLanguage() == 'german') {
       post_test,
       thanks,
     ]
+<<<<<<< HEAD
 } else {
+=======
+}
+
+else if (getLanguage() == 'english') { 
+>>>>>>> 76eb47fa4d2f29bd08bad89cfd14a0a72e5621bb
   console.log("english");
   views_seq_language = [
       intro,
