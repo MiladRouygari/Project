@@ -460,7 +460,7 @@ const handle_response_functions_2 = {
              mustfill_true_false[i]=0;
            }else {
             mustfill_true_false[i]=1;
-              $("#"+ mustfill_ids[i]).css( {"border": "2px inset initial","background-color":"#69d9ff"} );
+              $("#"+ mustfill_ids[i]).css( {"border": "0.5px inset gray","background-color":"#69d9ff"} );
            }
          }
            if(missing == true){
