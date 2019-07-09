@@ -175,37 +175,37 @@ const post_test = babeViews.view_generator("post_test", {
                 <input type="number" name="age" min="14" max="110" id="age" />
             </p>
             <p class='babe-view-text'>
-                <label for="languages">${quest.langs.title}</label>
-                <select id="languages" name="languages">
+                <label for="languages">${quest.langs.title}*</label>
+                <select id="languages" name="languages" class='must'>
                     <option></option>
                     <option value="${"ja"}">${"ja"}</option>
                     <option value="${"nein"}">${"nein"}</option>
                 </select>
           <p class='babe-view-text'>
-              <label for="dominant">${"Ist Deutsch deine dominate Sprache? <br> (Die Sprache die du am häugisten benutzt)"}</label>
-              <select id="dominant" name="dominant">
+              <label for="dominant">${"Ist Deutsch deine dominate Sprache?* <br> (Die Sprache die du am häugisten benutzt)"}</label>
+              <select id="dominant" name="dominant" class='must'>
                   <option></option>
                   <option value="${"ja"}">${"ja"}</option>
                   <option value="${"nein"}">${"nein"}</option>
               </select>
            <p class='babe-view-text'>
-              <label for="spoken_at_home">${"Wurde Englisch in dem Haushalt gesprochen, in dem du aufgewachsen bist?"}</label>
-              <select id="athome" name="athome">
+              <label for="spoken_at_home">${"Wurde Englisch in dem Haushalt gesprochen, in dem du aufgewachsen bist?*"}</label>
+              <select id="athome" name="athome" class='must'>
                   <option></option>
                   <option value="${"ja"}">${"ja"}</option>
                   <option value="${"nein"}">${"nein"}</option>
               </select>
             <p class='babe-view-text'>
-                <label if="foreign" for="foreign">${"Mit wieviel Jahre hast du angefangen Englisch zu lernen?"}:</label>
-                <input type="number" name="foreign" min="0" max="110" id="years" />
+                <label if="foreign" for="foreign">${"Mit wieviel Jahre hast du angefangen Englisch zu lernen?*"}:</label>
+                <input type="number" name="foreign" min="0" max="110" id="years" class='must'/>
             </p>
             <p class='babe-view-text'>
-                <label for="living_abroad">${"Wieviele Monate hast du im englischsprachigem Ausland verbracht?"}:</label>
-                <input type="number" name="living_abroad" min="0" max="110" id="abroad_months" />
+                <label for="living_abroad">${"Wieviele Monate hast du im englischsprachigem Ausland verbracht?*"}:</label>
+                <input type="number" name="living_abroad" min="0" max="110" id="abroad_months" class='must' />
             </p>
             <p class='babe-view-text'>
-                <label for="proficiency">${"Bewerte deine Deutschkenntnisse auf einer Skala von 1 bis 7 <br> (1= sehr schlecht, 7= sehr gut)"}:</label>
-                <select id="proficiency_german" name="proficiency_german">
+                <label for="proficiency">${"Bewerte deine Deutschkenntnisse auf einer Skala von 1 bis 7 * <br> (1= sehr schlecht, 7= sehr gut)"}:</label>
+                <select id="proficiency_german" name="proficiency_german" class='must'>
                     <option></option>
                     <option value="${"1"}">${"1"}</option>
                     <option value="${"2"}">${"2"}</option>
@@ -218,8 +218,8 @@ const post_test = babeViews.view_generator("post_test", {
 
                 </select>
             <p class='babe-view-text'>
-                <label for="proficiency">${"Bewerte deine Englischkenntnisse auf einer Skala von 1 bis 7 <br> (1= sehr schlecht, 7= sehr gut)"}:</label>
-                <select id="proficiency" name="proficiency">
+                <label for="proficiency">${"Bewerte deine Englischkenntnisse auf einer Skala von 1 bis 7 *<br> (1= sehr schlecht, 7= sehr gut)"}:</label>
+                <select id="proficiency" name="proficiency" class='must'>
                     <option></option>
                     <option value="${"1"}">${"1"}</option>
                     <option value="${"2"}">${"2"}</option>

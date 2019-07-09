@@ -420,7 +420,7 @@ const handle_response_functions_2 = {
            // records the post test info
            // babe.global_data.age = $("#age").val();
            babe.global_data.age = $("#age").val();
-           babe.global_data.gender = $("#gender").val();
+           //babe.global_data.gender = $("#gender").val();
            // babe.global_data.education = $("#education").val();
            babe.global_data.native = $("#languages").val();
            babe.global_data.athome = $("#athome").val();
@@ -430,7 +430,6 @@ const handle_response_functions_2 = {
            babe.global_data.proficiency_german = $("#proficiency_german").val();
            babe.global_data.proficiency_english = $("#proficiency").val();
            babe.global_data.encountered_trolley = $("#encountered_1").val();
-
            babe.global_data.encountered_car = $("#encountered_2").val();
            babe.global_data.encountered_fairy = $("#encountered_3").val();
 
@@ -444,10 +443,49 @@ const handle_response_functions_2 = {
                60000;
 
            // moves to the next view
-           babe.findNextView();
-           babe.global_data.sub_id = generateID(8);
+           //handle if data wasn't given
 
-           $('html, body').css('overflow: scroll','position: relative','backgroundColor:pink');
+          babe.global_data.sub_id = generateID(8);
+           var missing = false;
+           mustfill= [babe.global_data.native, babe.global_data.athome, babe.global_data.start_age,babe.global_data.abroad, babe.global_data.dominant, babe.global_data.proficiency_german,babe.global_data.proficiency_english];
+           mustfill_ids=["languages","athome","years","abroad_months","dominant","proficiency_german","proficiency_english"];
+           missingvalues =[];
+
+
+
+           for(i = 0; i<  mustfill.length;i++){
+           if( mustfill[i]== ""){
+             missing =  true;
+
+             //missingvalues.push(mustfill[i].trim("babe.global_data."));
+
+           }else {
+            // $("#"+ mustfill_ids[i]).css( {"border": "0px solid black","background-color":"green"} );
+             mustfill_ids.splice(i);
+           }
+         }
+
+
+           if(missing == true){
+             alert("Please fill in all fields with marked with *")
+             missing = false;
+
+             console.log(mustfill_ids);
+
+
+              for(j = 0; j<= mustfill_ids.length;j++){
+                console.log(missingvalues[j]);
+                $("#"+ mustfill_ids[j]).css( {"border": "3px solid red","background-color":"pink"} );
+
+
+              }
+              //missingvalues=[];
+             //document.getElementsByClassName("must").style.backgroundColor="red";
+             //$( ".must" ).css( {"border": "3px solid red","background-color":"pink"} );
+           } else{
+             babe.findNextView();
+           }
+
        });
    },
    button_choice: function(config, CT, babe, answer_container_generator, startingTime) {
