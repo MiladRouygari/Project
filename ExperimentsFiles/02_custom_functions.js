@@ -448,36 +448,29 @@ const handle_response_functions_2 = {
           babe.global_data.sub_id = generateID(8);
            var missing = false;
            mustfill= [babe.global_data.native, babe.global_data.athome, babe.global_data.start_age,babe.global_data.abroad, babe.global_data.dominant, babe.global_data.proficiency_german,babe.global_data.proficiency_english];
-           mustfill_ids=["languages","athome","years","abroad_months","dominant","proficiency_german","proficiency_english"];
+           mustfill_ids=["languages","athome","years","abroad_months","dominant","proficiency_german","proficiency"];
+           mustfill_true_false=[0,0,0,0,0,0,0]
            missingvalues =[];
 
 
 
-           for(i = 0; i<  mustfill.length;i++){
+           for(i = 0; i<=  mustfill.length;i++){
            if( mustfill[i]== ""){
              missing =  true;
-
-             //missingvalues.push(mustfill[i].trim("babe.global_data."));
-
+             mustfill_true_false[i]=0;
            }else {
-            // $("#"+ mustfill_ids[i]).css( {"border": "0px solid black","background-color":"green"} );
-             mustfill_ids.splice(i);
+            mustfill_true_false[i]=1;
+              $("#"+ mustfill_ids[i]).css( {"border": "2px inset initial","background-color":"#69d9ff"} );
            }
          }
-
-
            if(missing == true){
              alert("Please fill in all fields with marked with *")
-             missing = false;
-
-             console.log(mustfill_ids);
-
-
-              for(j = 0; j<= mustfill_ids.length;j++){
-                console.log(missingvalues[j]);
+             console.log(mustfill_true_false);
+              for(j = 0; j <= mustfill_true_false.length;j++){
+                if(mustfill_true_false[j]==0)
                 $("#"+ mustfill_ids[j]).css( {"border": "3px solid red","background-color":"pink"} );
 
-
+                  missing = false;
               }
               //missingvalues=[];
              //document.getElementsByClassName("must").style.backgroundColor="red";
