@@ -452,9 +452,6 @@ const handle_response_functions_2 = {
            mustfill_true_false=[0,0,0,0,0,0,0]
            missingvalues =[];
 
-           mustf
-
-
 
            for(i = 0; i<=  mustfill.length;i++){
            if( mustfill[i]== ""){
@@ -466,7 +463,7 @@ const handle_response_functions_2 = {
            }
          }
            if(missing == true){
-             alert("Please fill in all fields marked with *")
+             alert("Please fill in all fields with marked with *")
              console.log(mustfill_true_false);
               for(j = 0; j <= mustfill_true_false.length;j++){
                 if(mustfill_true_false[j]==0)
