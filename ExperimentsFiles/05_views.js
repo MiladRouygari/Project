@@ -32,7 +32,7 @@ const intro = babeViews.view_generator("intro",{
             Bitte schalte alles aus, was Dich ablenken könnte (z.B. Hintergrundmusik, Fernseher, Benachrichtigungsmitteilungen an deinem Handy, …).
             <br />
             <br />
-            Das Experiment wird ungefähr 15 Minuten dauern.
+            Das Experiment wird ungefähr 10 Minuten dauern.
  `,
    buttonText: 'Zu der Anleitung'
 });
@@ -51,7 +51,7 @@ const instructions = babeViews.view_generator("instructions",{
             <br />
             <br />
             Falls Du auch nach sorgfältigem Lesen das Dilemma nicht verstanden haben solltest,
-            wirst du später die Möglichkeit haben, dies anzugeben.
+            wirst du später die Möglichkeit haben, das anzugeben.
             Während des Experiments gibt es keine Möglichkeit einen Schritt zurückzugehen.
             <br />
             <br />
@@ -113,8 +113,8 @@ const dilemma_2_english = babeViews.view_generator("instructions",{
     title: 'Dilemma',
     text:  `Imagine you are traveling with a self-driving car seeing two lanes in front of you.
     You see five people on a pedestrian crossing and the car is heading towards them.
-    You look to the left to the other lane where one person is on the pedestrian crossing.
-    The only way to avoid the crash would be to jerk the wheel and thereby switch the lane,
+    You look to your left to the other lane where one person is on the pedestrian crossing.
+    The only way to avoid the crash would be to tear the wheel around and thereby switch the lane,
     killing the one person but saving five people.`,
     buttonText: 'To the questions'
 });
@@ -182,7 +182,7 @@ const post_test = babeViews.view_generator("post_test", {
                     <option value="${"nein"}">${"nein"}</option>
                 </select>
           <p class='babe-view-text'>
-              <label for="dominant">${"Ist Deutsch deine dominate Sprache?* <br> (Die Sprache die du am häugisten benutzt)"}</label>
+              <label for="dominant">${"Ist Deutsch deine dominate Sprache?* <br> (Die Sprache die du am häufigsten benutzt)"}</label>
               <select id="dominant" name="dominant" class='must'>
                   <option></option>
                   <option value="${"ja"}">${"ja"}</option>
@@ -196,7 +196,7 @@ const post_test = babeViews.view_generator("post_test", {
                   <option value="${"nein"}">${"nein"}</option>
               </select>
             <p class='babe-view-text'>
-                <label if="foreign" for="foreign">${"Mit wieviel Jahre hast du angefangen Englisch zu lernen?*"}:</label>
+                <label if="foreign" for="foreign">${"Mit wieviel Jahren hast du angefangen Englisch zu lernen?*"}:</label>
                 <input type="number" name="foreign" min="0" max="110" id="years" class='must'/>
             </p>
             <p class='babe-view-text'>
@@ -232,21 +232,21 @@ const post_test = babeViews.view_generator("post_test", {
 
                 </select>
             <p class='babe-view-text'>
-               <label for="encountered_1">${"Hast du schon vor diesem Experiment von dem <strong>ersten</strong> Dilemma gehört?"}</label>
+               <label for="encountered_1">${"Hast du schon vor diesem Experiment von dem <strong>Zugwagen</strong> Dilemma gehört?"}</label>
                <select id="encountered_1" name="encountered_1">
                    <option></option>
                    <option value="${"ja"}">${"ja"}</option>
                    <option value="${"nein"}">${"nein"}</option>
                </select>
              <p class='babe-view-text'>
-                <label for="encountered_2">${"Hast du schon vor diesem Experiment von dem <strong>zweiten</strong> Dilemma gehört?"}</label>
+                <label for="encountered_2">${"Hast du schon vor diesem Experiment von dem <strong>selbstfahrenden Auto</strong> Dilemma gehört?"}</label>
                 <select id="encountered_2" name="encountered_2">
                     <option></option>
                     <option value="${"ja"}">${"ja"}</option>
                     <option value="${"nein"}">${"nein"}</option>
                 </select>
                 <p class='babe-view-text'>
-                   <label for="encountered_3">${"Hast du schon vor diesem Experiment von dem <strong>dritten</strong> Dilemma gehört?"}</label>
+                   <label for="encountered_3">${"Hast du schon vor diesem Experiment von dem <strong>Troll</strong> Dilemma gehört?"}</label>
                    <select id="encountered_3" name="encountered_3">
                        <option></option>
                        <option value="${"ja"}">${"ja"}</option>
