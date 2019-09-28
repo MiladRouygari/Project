@@ -69,8 +69,8 @@ const trial_info = {
     ],
     forced_choice_2_german: [
       {
-          question: "Würdest du den Mann überfahren?",
-          optionLeft: 'Würde ihn definitiv nicht überfahren',
+          question: "Würdest du die Person überfahren?",
+          optionLeft: 'Würde sie definitiv nicht überfahren',
           v01: '1',
           v02: '2',
           v03: "3",
@@ -78,13 +78,13 @@ const trial_info = {
           v05: "5",
           v06: "6",
           v07: "7",
-          optionRight: 'Würde ihn definitiv überfahren',
+          optionRight: 'Würde sie definitiv überfahren',
           dilemma: 'car',
           language: 'german',
           question_kind: 'decision'
       },
       {
-        question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jeden der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir <strong>den Mann</strong> vor?",
+        question: "Erinnere dich an das Bild, das du im Kopf hattest, während du das Szenario gelesen hast. Bewerte, wie lebhaft du dir jeden der folgenden Teile der Szene vorgestellt hast. <br /><br /> Wie lebhaft stellst du dir <strong>die Person</strong> vor?",
           optionLeft: '',
           v01: 'Kein Bild                 ',
           v02: 'Sehr wage & trüb           ',
@@ -131,7 +131,7 @@ const trial_info = {
     ],
     forced_choice_3_german: [
       {
-          question: "Würdest du den stacheligen Troll werfen",
+          question: "Würdest du den stacheligen Troll werfen?",
           optionLeft: 'Würde ihn definitiv nicht werfen',
           v01: '1',
           v02: '2',
@@ -156,7 +156,7 @@ const trial_info = {
           v06: "Sehr klar               ",
           v07: "Absolut klares Bild     ",
           optionRight: ' ',
-          dilemma: 'car',
+          dilemma: 'fairy',
           language: 'german',
           question_kind: 'vivid_man'
       },
@@ -171,7 +171,7 @@ const trial_info = {
           v06: "Sehr klar               ",
           v07: "Absolut klares Bild     ",
           optionRight: ' ',
-          dilemma: 'car',
+          dilemma: 'fairy',
           language: 'german',
           question_kind: 'vivid_people'
       },
@@ -186,7 +186,7 @@ const trial_info = {
           v06: "Sehr klar               ",
           v07: "Absolut klares Bild     ",
           optionRight: ' ',
-          dilemma: 'car',
+          dilemma: 'fairy',
           language: 'german',
           question_kind: 'vivid_overall'
       }
@@ -255,8 +255,8 @@ const trial_info = {
     ],
     forced_choice_2_english: [
       {
-          question: "Would you run over the man?",
-          optionLeft: 'Definitely would not run over him',
+          question: "Would you run over the person?",
+          optionLeft: 'Definitely would not run over the person',
           v01: '1',
           v02: '2',
           v03: "3",
@@ -264,13 +264,13 @@ const trial_info = {
           v05: "5",
           v06: "6",
           v07: "7",
-          optionRight: 'Definitely would run over him',
+          optionRight: 'Definitely would run over the person',
           dilemma: 'car',
           language: 'english',
           question_kind: 'decision'
       },
       {
-          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture <strong>the man</strong>?",
+          question: "Remember the image you had in your mind while you read the scenario. Rate how vividly you imagined each of the following parts of the scene. <br /><br /> How vividly can you picture <strong>the person</strong>?",
           optionLeft: '',
           v01: 'No image',
           v02: 'Very vague & dim',
@@ -318,7 +318,7 @@ const trial_info = {
     forced_choice_3_english: [
     {
         question: "Would you throw the troll?",
-        optionLeft: 'Definitely would not throw',
+        optionLeft: 'Definitely would not throw the troll',
         v01: '1',
         v02: '2',
         v03: "3",
@@ -326,7 +326,7 @@ const trial_info = {
         v05: "5",
         v06: "6",
         v07: "7",
-        optionRight: 'Definitely would throw',
+        optionRight: 'Definitely would throw the troll',
         dilemma: 'fairy',
         language: 'english',
         question_kind: 'decision'

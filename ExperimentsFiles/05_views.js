@@ -43,7 +43,7 @@ const instructions = babeViews.view_generator("instructions",{
     name: 'instrucions',
     title: 'Anleitung',
     text:  `Um an diesem Experiment teilzunehmen, ist es notwendig, dass Deine Muttersprache Deutsch ist und Du in der Lage bist grundlegendes Englisch zu verstehen.
-            Falls du dir bezüglich Deiner Englisch-Kenntnisse unsicher bist, kannst Du es dennoch einfach ausprobieren.
+            Falls du dir bezüglich Deiner Englischkenntnisse unsicher bist, kannst Du es dennoch einfach ausprobieren.
             <br />
             <br />
             Im Folgenden wirst Du 3 Dilemmas lesen und jeweils 5 Fragen dazu beantworten. Lese Dir die Dilemmas sorgfältig durch und stelle sicher, dass Du sie verstanden hast.
@@ -196,11 +196,11 @@ const post_test = babeViews.view_generator("post_test", {
                   <option value="${"nein"}">${"nein"}</option>
               </select>
             <p class='babe-view-text'>
-                <label if="foreign" for="foreign">${"Mit wieviel Jahren hast du angefangen Englisch zu lernen?*"}:</label>
+                <label if="foreign" for="foreign">${"Mit wie viel Jahren hast du angefangen Englisch zu lernen?*"}:</label>
                 <input type="number" name="foreign" min="0" max="110" id="years" class='must'/>
             </p>
             <p class='babe-view-text'>
-                <label for="living_abroad">${"Wieviele Monate hast du im englischsprachigem Ausland verbracht?*"}:</label>
+                <label for="living_abroad">${"Wie viele Monate hast du im englischsprachigem Ausland verbracht?*"}:</label>
                 <input type="number" name="living_abroad" min="0" max="110" id="abroad_months" class='must' />
             </p>
             <p class='babe-view-text'>
